@@ -1,0 +1,47 @@
+﻿<Page
+    x:Class="TPCWare.SQLiteTest.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TPCWare.SQLiteTest"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" >
+    <Page.BottomAppBar>
+        <CommandBar>
+            <CommandBar.PrimaryCommands>
+                <AppBarButton x:ConnectionId='1' Icon="Add" Label="add user"
+                                                               />
+                <AppBarButton x:ConnectionId='2' Icon="Delete" Label="delete user"
+                                                                  />
+            </CommandBar.PrimaryCommands>
+
+            <CommandBar.SecondaryCommands>
+                <AppBarButton x:ConnectionId='3' Icon="Setting" Label="check db"
+                                                                />
+            </CommandBar.SecondaryCommands>
+        </CommandBar>
+    </Page.BottomAppBar>
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0"
+                   Margin="20"
+                   Text="SQLite Test"
+                   Style="{StaticResource HeaderTextBlockStyle}" />
+        
+        <ListView x:Name="UserList" Grid.Row="1" Margin="20">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Margin="10">
+                        <TextBlock Text="{Binding Name}" />
+                        <TextBlock Text="{Binding City}" />
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </Grid>
+</Page>
+

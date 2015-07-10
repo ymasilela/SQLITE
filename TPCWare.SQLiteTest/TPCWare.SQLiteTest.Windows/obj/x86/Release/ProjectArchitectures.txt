@@ -1,0 +1,1 @@
+C:\VSSRC\TPCWare.SQLiteTest\TPCWare.SQLiteTest\TPCWare.SQLiteTest.Windows\TPCWare.SQLiteTest.Windows.csproj;x86
