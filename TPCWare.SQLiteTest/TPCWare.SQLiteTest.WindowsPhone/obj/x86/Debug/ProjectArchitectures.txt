@@ -1,1 +1,1 @@
-F:\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.WindowsPhone\TPCWare.SQLiteTest.WindowsPhone.csproj;x86
+C:\Users\Mod\Desktop\project\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.WindowsPhone\TPCWare.SQLiteTest.WindowsPhone.csproj;x86

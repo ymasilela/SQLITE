@@ -29,7 +29,7 @@
         </Grid.RowDefinitions>
         <TextBlock Grid.Row="0"
                    Margin="20"
-                   Text="SQLite Test"
+                   Text="institution Finder App"
                    Style="{StaticResource HeaderTextBlockStyle}" />
         
         <ListView x:Name="UserList" Grid.Row="1" Margin="20">

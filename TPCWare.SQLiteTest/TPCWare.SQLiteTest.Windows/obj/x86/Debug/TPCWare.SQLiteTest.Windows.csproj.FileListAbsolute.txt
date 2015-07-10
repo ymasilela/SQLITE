@@ -188,3 +188,8 @@ C:\Users\Mod\Desktop\project\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.Window
 C:\Users\Mod\Desktop\project\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.Windows\obj\x86\Debug\Wrong.g.cs
 C:\Users\Mod\Desktop\project\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.Windows\obj\x86\Debug\Wrong.xaml
 C:\Users\Mod\Desktop\project\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.Windows\obj\x86\Debug\Wrong.xbf
+C:\Users\Mod\Desktop\project\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.Windows\bin\x86\Debug\SearchCollege.xbf
+C:\Users\Mod\Desktop\project\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.Windows\obj\x86\Debug\SearchCollege.g.i.cs
+C:\Users\Mod\Desktop\project\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.Windows\obj\x86\Debug\SearchCollege.g.cs
+C:\Users\Mod\Desktop\project\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.Windows\obj\x86\Debug\SearchCollege.xaml
+C:\Users\Mod\Desktop\project\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.Windows\obj\x86\Debug\SearchCollege.xbf

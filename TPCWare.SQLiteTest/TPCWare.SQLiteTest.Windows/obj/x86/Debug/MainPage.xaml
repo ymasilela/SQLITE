@@ -32,7 +32,7 @@
                    Text="institution Finder App"
                    Style="{StaticResource HeaderTextBlockStyle}" />
         
-        <ListView x:Name="UserList" Grid.Row="1" Margin="20">
+        <ListView x:ConnectionId='4' x:Name="UserList" Grid.Row="1" Margin="20"                                             >
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Margin="10">

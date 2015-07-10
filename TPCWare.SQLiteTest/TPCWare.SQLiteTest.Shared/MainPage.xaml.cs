@@ -119,28 +119,24 @@ namespace TPCWare.SQLiteTest
 
   
 
-        private async Task SearchUserByNameAsync(string name)
+        public async Task SearchUserByNameAsync(string name)
         {
 
-            var query = App.conn.Table<User>().Where(x => x.Name.Contains("Andy"));
-            var result = await query.ToListAsync();
-            foreach (var item in result)
-            {
-                // ...
-            }
+           
 
-            var allUsers = await App.conn.QueryAsync<User>("SELECT * FROM Users");
+            var allUsers = await App.conn.QueryAsync<User>("SELECT * FROM Users  "+ name) ;
             foreach (var user in allUsers)
             {
                 // ...
             }
 
-            var cityUsers = await App.conn.QueryAsync<User>(
+           var cityUsers = await App.conn.QueryAsync<User>(
                 "SELECT Name FROM Users WHERE City = ?", new object[] { "Rome, Italy" });
             foreach (var user in cityUsers)
             {
                 // ...
             }
+            
         }
 
         private async Task UpdateUserNameAsync(string oldName, string newName)
@@ -176,5 +172,14 @@ namespace TPCWare.SQLiteTest
         }
 
         #endregion SQLite utils
+
+        private void UserList_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+            if (UserList.SelectedItems.Count > 0)
+            {
+                this.Frame.Navigate(typeof(ViewPage));
+            }
+        }
     }
 }

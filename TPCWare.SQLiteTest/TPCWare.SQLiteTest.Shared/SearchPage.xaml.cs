@@ -36,16 +36,13 @@ namespace TPCWare.SQLiteTest
            {
               
                MessageBox("Please enter valid search criteria");
-           }else
-
-             if (name.Equals("Tut") || name.Equals("Tshwane University of Technology") || name.Equals("tut") || name.Equals("TUT"))
+           }
+           
+           else if (name.Equals("Tut") || name.Equals("Tshwane University of Technology") || name.Equals("tut") || name.Equals("TUT"))
             {
                 this.Frame.Navigate(typeof(MainPage));
             }
-            else if (name.Equals("tnc") || name.Equals("Tshwane North College") || name.Equals("Tut") || name.Equals("TNC"))
-            {
-                this.Frame.Navigate(typeof(Wrong));
-            }
+           
             else
             {
                 MessageBox("Not Registered");
