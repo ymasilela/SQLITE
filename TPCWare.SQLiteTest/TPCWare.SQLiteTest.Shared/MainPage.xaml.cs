@@ -182,4 +182,8 @@ namespace TPCWare.SQLiteTest
             }
         }
     }
+
+    public class IsolatedStorageFile
+    {
+    }
 }

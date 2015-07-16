@@ -8,12 +8,13 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <WebView Name="webView1" Width="1000" Height="800"/>
         <Button x:ConnectionId='1' Content="View Location" HorizontalAlignment="Left" Margin="64,515,0,0" VerticalAlignment="Top" Width="271" Height="48"                     />
         <Button x:ConnectionId='2' x:Name="pdf" Content="Download Application Form" HorizontalAlignment="Left" Margin="64,468,0,0" VerticalAlignment="Top" Width="271" Foreground="#FF33D8C2"                  />
         <TextBlock x:Name="loc" HorizontalAlignment="Left" Margin="23,26,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36"/>
         <TextBlock x:Name="course" HorizontalAlignment="Left" Margin="64,175,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <HyperlinkButton x:ConnectionId='3' NavigateUri="application.pdf"                              >Download PDF</HyperlinkButton>
-        <WebView Name="webView1" Width="1000" Height="800"/>
+      
+        
     </Grid>
 </Page>
 

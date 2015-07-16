@@ -8,6 +8,6 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-    
+        <WebView Name="webView1" Width="1000" Height="800" LoadCompleted="webView1_LoadCompleted"/>
     </Grid>
 </Page>

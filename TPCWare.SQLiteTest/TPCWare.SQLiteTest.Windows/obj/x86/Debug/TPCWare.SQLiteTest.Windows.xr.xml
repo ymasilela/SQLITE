@@ -89,15 +89,11 @@
     <RootType FullName="TPCWare.SQLiteTest.SearchCollege" />
     <RootType FullName="TPCWare.SQLiteTest.SearchPage" />
     <RootType FullName="TPCWare.SQLiteTest.ViewLocation" />
-    <RootType FullName="Windows.UI.Xaml.Controls.HyperlinkButton">
-      <RootProperty Name="NavigateUri" />
-      <RootProperty Name="Content" />
-      <RootEvent Name="Click" />
-    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.WebView">
       <RootProperty Name="Name" />
       <RootProperty Name="Width" />
       <RootProperty Name="Height" />
+      <RootEvent Name="LoadCompleted" />
     </RootType>
     <RootType FullName="TPCWare.SQLiteTest.ViewPage" />
     <RootType FullName="TPCWare.SQLiteTest.ViewPDF" />
