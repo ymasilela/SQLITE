@@ -222,7 +222,7 @@ namespace TPCWare.SQLiteTest
         private async Task AddCollegeAsync()
         {
             // Create a users list
-            var userList = new List<College>()
+            var userLists = new List<College>()
             {
                 new College()
                 {
@@ -249,7 +249,7 @@ namespace TPCWare.SQLiteTest
 
             // Add rows to the User Table
             SQLiteAsyncConnection conn = new SQLiteAsyncConnection("institutionFinder.db");
-            await conn.InsertAllAsync(userList);
+            await conn.InsertAllAsync(userLists);
         }
     }
       

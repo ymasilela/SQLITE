@@ -69,7 +69,7 @@ namespace TPCWare.SQLiteTest
             College newUser = new College()
             {
                 // the Id will be set by SQlite
-                Name = string.Format("User X (created at {0})", DateTime.Now),
+                Name = string.Format("College X (created at {0})", DateTime.Now),
                 
             };
 
@@ -115,25 +115,20 @@ namespace TPCWare.SQLiteTest
         private async Task SearchUserByNameAsync(string name)
         {
 
-            var query = App.conn.Table<College>().Where(x => x.Name.Contains("Andy"));
+            var query = App.conn.Table<College>().Where(x => x.Name.Contains(name));
             var result = await query.ToListAsync();
             foreach (var item in result)
             {
                 // ...
             }
 
-            var allUsers = await App.conn.QueryAsync<College>("SELECT * FROM Users");
+            var allUsers = await App.conn.QueryAsync<College>("SELECT * FROM Colleges");
             foreach (var user in allUsers)
             {
                 // ...
             }
 
-            var cityUsers = await App.conn.QueryAsync<College>(
-                "SELECT Name FROM Users WHERE City = ?", new object[] { "Rome, Italy" });
-            foreach (var user in cityUsers)
-            {
-                // ...
-            }
+           
         }
 
         private async Task UpdateUserNameAsync(string oldName, string newName)

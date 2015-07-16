@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Storage;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -31,5 +32,27 @@ namespace TPCWare.SQLiteTest
         {
             this.Frame.Navigate(typeof(ViewLocation));
         }
+
+        private async void pdf_Click(object sender, RoutedEventArgs e)
+        {
+            // Access isolated storage.
+            StorageFolder local = Windows.Storage.ApplicationData.Current.LocalFolder;
+
+            // Access the PDF.
+            StorageFile pdfFile = await local.GetFileAsync("D:/application.pdf");
+
+            // Launch the bug query file.
+           await Windows.System.Launcher.LaunchFileAsync(pdfFile);
+           
+        }
+
+
+        private void HyperlinkButton_Click(object sender, RoutedEventArgs e)
+        {
+            Uri targetUri = new Uri(@"http://www.tut.ac.za/enrol/apply/Documents");
+           
+        }
+
+       
     }
 }

@@ -19,6 +19,7 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Model\College.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Courses.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\User.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Search.xaml.cs">
       <DependentUpon>Search.xaml</DependentUpon>
@@ -36,6 +37,9 @@
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)ViewPage.xaml.cs">
       <DependentUpon>ViewPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)ViewPDF.xaml.cs">
+      <DependentUpon>ViewPDF.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Wrong.xaml.cs">
       <DependentUpon>Wrong.xaml</DependentUpon>
@@ -66,9 +70,16 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="$(MSBuildThisFileDirectory)ViewPDF.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="$(MSBuildThisFileDirectory)Wrong.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)application.pdf" />
   </ItemGroup>
 </Project>

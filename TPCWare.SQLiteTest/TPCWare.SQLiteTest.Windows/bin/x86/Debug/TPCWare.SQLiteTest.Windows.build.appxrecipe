@@ -59,6 +59,9 @@
     <AppxPackagedFile Include="C:\Users\Mod\Desktop\project\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.Windows\bin\x86\Debug\ViewPage.xbf">
       <PackagePath>ViewPage.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Mod\Desktop\project\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.Windows\bin\x86\Debug\ViewPDF.xbf">
+      <PackagePath>ViewPDF.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Mod\Desktop\project\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.Windows\bin\x86\Debug\Wrong.xbf">
       <PackagePath>Wrong.xbf</PackagePath>
     </AppxPackagedFile>
