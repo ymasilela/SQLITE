@@ -88,9 +88,9 @@
     </RootType>
     <RootType FullName="TPCWare.SQLiteTest.SearchCollege" />
     <RootType FullName="TPCWare.SQLiteTest.SearchPage" />
-    <RootType FullName="TPCWare.SQLiteTest.ViewLocation" />
     <RootType FullName="Windows.UI.Xaml.Controls.WebView">
       <RootProperty Name="Name" />
+      <RootProperty Name="Margin" />
       <RootProperty Name="Width" />
       <RootProperty Name="Height" />
       <RootEvent Name="LoadCompleted" />
