@@ -37,6 +37,7 @@ namespace TPCWare.SQLiteTest
               
                MessageBox("Please enter valid search criteria");
            }
+              
            
            else if (name.Equals("Tut") || name.Equals("Tshwane University of Technology") || name.Equals("tut") || name.Equals("TUT"))
             {

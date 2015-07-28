@@ -27,8 +27,17 @@ namespace TPCWare.SQLiteTest
             this.InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private async void Button_Click(object sender, RoutedEventArgs e)
         {
+            var myPosition = new Windows.Devices.Geolocation.BasicGeoposition();
+            myPosition.Latitude = 41.7446;
+            myPosition.Longitude = -087.7915;
+
+            var myPoint = new Windows.Devices.Geolocation.Geopoint(myPosition);
+            if (await map.TrySetViewAsync(myPoint, 10D))
+            {
+                // Haven't really thought that through!
+            }
 
         }
     }

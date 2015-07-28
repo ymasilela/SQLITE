@@ -66,7 +66,7 @@ namespace TPCWare.SQLiteTest
             {
                 await CreateDatabaseAsync();
                 await AddUsersAsync();
-              
+                await AddCoursesAsync();
                 await AddCollegeAsync();
             }
             Frame rootFrame = Window.Current.Content as Frame;
@@ -169,6 +169,7 @@ namespace TPCWare.SQLiteTest
         {
             SQLiteAsyncConnection conn = new SQLiteAsyncConnection("institutionFinder.db");
             await conn.CreateTableAsync<User>();
+            await conn.CreateTableAsync<Courses>();
             await conn.CreateTableAsync<College>();
         }
       
@@ -212,6 +213,35 @@ namespace TPCWare.SQLiteTest
                     Name = "Arcadia Campus",
                 
                 }
+            };
+
+
+
+            // Add rows to the User Table
+            SQLiteAsyncConnection conn = new SQLiteAsyncConnection("institutionFinder.db");
+            await conn.InsertAllAsync(userList);
+        }
+        private async Task AddCoursesAsync()
+        {
+            // Create a users list
+            var userList = new List<Courses>()
+            {
+                new Courses()
+                {
+                    courses = "IT",
+                    
+                },
+                new Courses()
+                {
+                    courses = "Public Management",
+                   
+                },
+                new Courses()
+                {
+                    courses = "Language Practise",
+                
+                }
+             
             };
 
 

@@ -23,22 +23,30 @@ namespace TPCWare.SQLiteTest
     /// </summary>
     public sealed partial class ViewPage : Page
     {
+        
         public ViewPage()
         {
             this.InitializeComponent();
+
+            course.Text = "IT";
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            
             this.Frame.Navigate(typeof(ViewLocation));
         }
 
+      
         private async void pdf_Click(object sender, RoutedEventArgs e)
         {
             // Access isolated storage.
-            Uri targetUri = new Uri(@"http://www.tut.ac.za/enrol/apply");
-            webView1.Navigate(targetUri);
-           
+
+            if (pdf.IsEnabled)
+            {
+                Uri targetUri = new Uri(@"http://www.tut.ac.za/enrol/apply");
+                webView1.Navigate(targetUri);
+            }
           
            
         }

@@ -10,8 +10,8 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-        <Maps:MapControl HorizontalAlignment="Left" VerticalAlignment="Top" Height="535" Width="400"/>
-        <Button Content="Get Directions" HorizontalAlignment="Left" Margin="249,558,0,0" VerticalAlignment="Top" Background="#FF49D6CA" Click="Button_Click">
+
+        <Button Content="Get Directions" HorizontalAlignment="Left" Margin="30,558,0,0" VerticalAlignment="Top" Background="#FF49D6CA" Click="Button_Click" Width="344">
             <Button.Foreground>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black" Offset="0"/>
@@ -19,7 +19,7 @@
                 </LinearGradientBrush>
             </Button.Foreground>
         </Button>
-        <TextBox x:Name="txtmap" HorizontalAlignment="Left" Margin="10,568,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196"/>
+        <Maps:MapControl x:Name="map" HorizontalAlignment="Left" VerticalAlignment="Top" Width="400" Height="541"/>
 
     </Grid>
 </Page>

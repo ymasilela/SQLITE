@@ -37,7 +37,7 @@ namespace TPCWare.SQLiteTest
                 MessageBox("Please enter valid search criteria");
             }
          
-            else if (name.Equals("tnc") || name.Equals("Tshwane North College") || name.Equals("Tut") || name.Equals("TNC"))
+            else if (name.Equals("tnc") || name.Equals("Tshwane North College") || name.Equals("Tnc") || name.Equals("TNC"))
             {
                 this.Frame.Navigate(typeof(Wrong));
             }
