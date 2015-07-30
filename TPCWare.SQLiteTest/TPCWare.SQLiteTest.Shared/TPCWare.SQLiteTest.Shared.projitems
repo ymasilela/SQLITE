@@ -20,6 +20,7 @@
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Model\College.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Courses.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Universities.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\User.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Search.xaml.cs">
       <DependentUpon>Search.xaml</DependentUpon>

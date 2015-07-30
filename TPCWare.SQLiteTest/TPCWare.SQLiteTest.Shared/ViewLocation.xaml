@@ -9,17 +9,10 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock x:Name="txt" HorizontalAlignment="Left" Margin="163,541,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="21,20,0,0" TextWrapping="Wrap" Text="Institution Finder App" VerticalAlignment="Top" FontSize="36" Height="62"/>
+        <TextBlock HorizontalAlignment="Left" Margin="47,87,0,0" TextWrapping="Wrap" Text="This Are The Courses They Offer" VerticalAlignment="Top" FontSize="20" Height="62" FontStyle="Italic" FontWeight="Bold" FontFamily="Arial Black" Foreground="#FF40D47D"/>
 
-
-        <Button Content="Get Directions" HorizontalAlignment="Left" Margin="30,558,0,0" VerticalAlignment="Top" Background="#FF49D6CA" Click="Button_Click" Width="344">
-            <Button.Foreground>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="Black" Offset="0"/>
-                    <GradientStop Color="#FF1F1919" Offset="1"/>
-                </LinearGradientBrush>
-            </Button.Foreground>
-        </Button>
-        <Maps:MapControl x:Name="map" HorizontalAlignment="Left" VerticalAlignment="Top" Width="400" Height="541"/>
 
     </Grid>
 </Page>

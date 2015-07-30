@@ -13,6 +13,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
+
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace TPCWare.SQLiteTest
@@ -24,21 +25,13 @@ namespace TPCWare.SQLiteTest
     {
         public ViewLocation()
         {
-            this.InitializeComponent();
+          
         }
 
         private async void Button_Click(object sender, RoutedEventArgs e)
         {
-            var myPosition = new Windows.Devices.Geolocation.BasicGeoposition();
-            myPosition.Latitude = 41.7446;
-            myPosition.Longitude = -087.7915;
 
-            var myPoint = new Windows.Devices.Geolocation.Geopoint(myPosition);
-            if (await map.TrySetViewAsync(myPoint, 10D))
-            {
-                // Haven't really thought that through!
-            }
-
+           
         }
     }
 }
