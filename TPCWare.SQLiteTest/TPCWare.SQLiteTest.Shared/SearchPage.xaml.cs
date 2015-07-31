@@ -55,6 +55,11 @@ namespace TPCWare.SQLiteTest
             await dialog.ShowAsync();
         }
 
+        private void back_se_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Search));
+        }
+
        
       
     }

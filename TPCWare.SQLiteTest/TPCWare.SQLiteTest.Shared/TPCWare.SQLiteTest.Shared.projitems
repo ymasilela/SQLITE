@@ -90,4 +90,7 @@
   <ItemGroup>
     <None Include="$(MSBuildThisFileDirectory)application.pdf" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)B.jpg" />
+  </ItemGroup>
 </Project>

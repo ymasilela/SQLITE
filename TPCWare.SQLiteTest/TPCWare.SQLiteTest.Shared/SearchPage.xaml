@@ -13,6 +13,7 @@
         <TextBlock HorizontalAlignment="Left" Margin="29,267,0,0" TextWrapping="Wrap" Text="Institution Name:" VerticalAlignment="Top" FontSize="20"/>
         <TextBox x:Name="txtName" HorizontalAlignment="Left" Margin="201,267,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="175"/>
         <TextBlock HorizontalAlignment="Left" Margin="10,26,0,0" TextWrapping="Wrap" Text="Institution Finder App" VerticalAlignment="Top" FontSize="36" Height="101" FontWeight="Bold" Width="380"/>
+        <Button x:Name="back_se" Content="Back" HorizontalAlignment="Left" Margin="29,411,0,0" VerticalAlignment="Top" Width="347" Height="73" Background="#FF27996F" Foreground="#FF060606" Click="back_se_Click"/>
 
     </Grid>
 </Page>

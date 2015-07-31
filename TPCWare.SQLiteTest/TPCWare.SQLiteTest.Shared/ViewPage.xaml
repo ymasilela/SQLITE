@@ -15,6 +15,7 @@
         <Button x:Name="view_courses" Content="View Courses " HorizontalAlignment="Left" Margin="23,249,0,0" VerticalAlignment="Top" Width="178" Background="#FF27996F" Click="Button_Click_1" Height="141" RenderTransformOrigin="0.755,0.255" Foreground="#FF151515" ToolTipService.ToolTip="View Courses"/>
         <TextBlock HorizontalAlignment="Left" Margin="10,59,0,0" TextWrapping="Wrap" Text="Institution Finder App" VerticalAlignment="Top" FontSize="36" Height="73" FontWeight="Bold" Width="380"/>
         <Button Content="Back" HorizontalAlignment="Left" Margin="212,424,0,0" VerticalAlignment="Top" Width="178" Height="134" Background="#FF27996F" Foreground="#FF0F0F0F" Click="Button_Click_2"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,154,0,0" TextWrapping="Wrap" Text="SET INSTITUTION HERE" VerticalAlignment="Top" Foreground="#FF27996F" FontSize="34" FontWeight="Bold" Width="390" Height="83"/>
 
 
     </Grid>

@@ -39,7 +39,7 @@
             </ListView.ItemTemplate>
         </ListView>
         <TextBlock HorizontalAlignment="Left" Margin="10,26,0,0" TextWrapping="Wrap" Text="Institution Finder App" VerticalAlignment="Top" FontSize="36" Height="101" FontWeight="Bold" Width="380" Grid.RowSpan="2"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="20,515,0,-80" Grid.Row="1" VerticalAlignment="Top" Width="360" Height="64" Foreground="#FF0E0D0D" Background="#FF27996F"/>
+        <Button x:ConnectionId='5' x:Name="back_main" Content="Back" HorizontalAlignment="Left" Margin="20,515,0,-80" Grid.Row="1" VerticalAlignment="Top" Width="360" Height="64" Foreground="#FF0E0D0D" Background="#FF27996F"                        />
     </Grid>
 </Page>
 
