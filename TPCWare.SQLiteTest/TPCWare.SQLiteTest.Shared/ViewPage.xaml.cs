@@ -28,33 +28,32 @@ namespace TPCWare.SQLiteTest
         {
             this.InitializeComponent();
 
-            course.Text = "IT";
+           
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
 
-            Uri targetUris = new Uri(@"https://www.google.co.za/maps/@-25.7759525,28.1377125,13z?hl=en");
-            webView1.Navigate(targetUris);
+            this.Frame.Navigate(typeof(ViewLocation));
         }
 
       
         private async void pdf_Click(object sender, RoutedEventArgs e)
         {
             // Access isolated storage.
-
-            if (pdf.IsEnabled)
-            {
-                Uri targetUri = new Uri(@"http://www.tut.ac.za/enrol/apply");
-                webView1.Navigate(targetUri);
-            }
+            this.Frame.Navigate(typeof(ViewPDF));
           
            
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(ViewLocation));
+            this.Frame.Navigate(typeof(ViewCourses));
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(MainPage));
         }
 
      

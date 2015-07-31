@@ -13,7 +13,6 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace TPCWare.SQLiteTest
@@ -21,18 +20,14 @@ namespace TPCWare.SQLiteTest
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class ViewLocation : Page
+    public sealed partial class ViewCourses : Page
     {
-        public ViewLocation()
+        public ViewCourses()
         {
             this.InitializeComponent();
-            Uri targetUris = new Uri(@"https://www.google.co.za/maps/@-25.7759525,28.1377125,13z?hl=en");
-            webView.Navigate(targetUris);
         }
 
- 
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void Back_button_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(ViewPage));
         }

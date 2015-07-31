@@ -33,6 +33,9 @@
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)SQLite.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)SQLiteAsync.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewCourses.xaml.cs">
+      <DependentUpon>ViewCourses.xaml</DependentUpon>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)ViewLocation.xaml.cs">
       <DependentUpon>ViewLocation.xaml</DependentUpon>
     </Compile>
@@ -60,6 +63,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="$(MSBuildThisFileDirectory)SearchPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)ViewCourses.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

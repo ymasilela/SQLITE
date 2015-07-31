@@ -181,6 +181,12 @@ namespace TPCWare.SQLiteTest
                 this.Frame.Navigate(typeof(ViewPage));
             }
         }
+
+        private void back_main_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(SearchPage));
+
+        }
     }
 
     public class IsolatedStorageFile

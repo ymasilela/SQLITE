@@ -9,7 +9,7 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Hub Header="Institution Finder App">
-            <HubSection Header="Search" Width="385">
+            <HubSection Header="Search" Width="400">
                 <DataTemplate>
                     <Grid/>
                 </DataTemplate>

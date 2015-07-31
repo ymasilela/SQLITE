@@ -61,6 +61,9 @@
     <AppxPackagedFile Include="C:\Users\Mod\Desktop\project\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.WindowsPhone\bin\x86\Debug\SearchPage.xbf">
       <PackagePath>SearchPage.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Mod\Desktop\project\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.WindowsPhone\bin\x86\Debug\ViewCourses.xbf">
+      <PackagePath>ViewCourses.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Mod\Desktop\project\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.WindowsPhone\bin\x86\Debug\ViewLocation.xbf">
       <PackagePath>ViewLocation.xbf</PackagePath>
     </AppxPackagedFile>

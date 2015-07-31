@@ -8,12 +8,13 @@
     mc:Ignorable="d">
 
     <Grid Background="#FF090A09">
-        <WebView Name="webView1" Margin="0,0,0,173"/>
-        <Button x:ConnectionId='1' Content="View Location" HorizontalAlignment="Left" Margin="48,569,0,13" VerticalAlignment="Stretch" Width="271" Height="48"                      Background="#FF27996F" Foreground="#FF151515"/>
-        <Button x:ConnectionId='2' x:Name="pdf" Content="Download Application Form" HorizontalAlignment="Left" Margin="48,525,0,0" VerticalAlignment="Top" Width="271" Foreground="#FF151515"                   Background="#FF27996F"/>
+        <Button x:ConnectionId='1' Content="View Location" HorizontalAlignment="Left" Margin="23,424,0,82" VerticalAlignment="Stretch" Width="178"                      Background="#FF27996F" Foreground="#FF151515"/>
+        <Button x:ConnectionId='2' x:Name="pdf" Content="Download Form" HorizontalAlignment="Left" Margin="212,249,0,0" VerticalAlignment="Top" Width="178" Foreground="#FF151515"                   Background="#FF27996F" Height="139"/>
         <TextBlock x:Name="loc" HorizontalAlignment="Left" Margin="23,26,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36"/>
         <TextBlock x:Name="course" HorizontalAlignment="Left" Margin="64,175,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <Button x:ConnectionId='3' x:Name="view_courses" Content="View Courses " HorizontalAlignment="Left" Margin="48,481,0,0" VerticalAlignment="Top" Width="271" Background="#FF27996F" Foreground="#FF151515"                       />
+        <Button x:ConnectionId='3' x:Name="view_courses" Content="View Courses " HorizontalAlignment="Left" Margin="23,249,0,0" VerticalAlignment="Top" Width="178" Background="#FF27996F"                        Height="141" RenderTransformOrigin="0.755,0.255" Foreground="#FF151515" ToolTipService.ToolTip="View Courses"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,59,0,0" TextWrapping="Wrap" Text="Institution Finder App" VerticalAlignment="Top" FontSize="36" Height="73" FontWeight="Bold" Width="380"/>
+        <Button x:ConnectionId='4' Content="Back" HorizontalAlignment="Left" Margin="212,424,0,0" VerticalAlignment="Top" Width="178" Height="134" Background="#FF27996F" Foreground="#FF0F0F0F"                       />
 
 
     </Grid>

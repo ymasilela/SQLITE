@@ -132,3 +132,8 @@ C:\Users\Mod\Desktop\project\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.Window
 C:\Users\Mod\Desktop\project\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.WindowsPhone\obj\x86\Debug\qualifiers.txt.intermediate
 C:\Users\Mod\Desktop\project\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.WindowsPhone\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Mod\Desktop\project\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.WindowsPhone\obj\x86\Debug\ProjectArchitectures.txt
+C:\Users\Mod\Desktop\project\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.WindowsPhone\bin\x86\Debug\ViewCourses.xbf
+C:\Users\Mod\Desktop\project\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.WindowsPhone\obj\x86\Debug\ViewCourses.g.i.cs
+C:\Users\Mod\Desktop\project\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.WindowsPhone\obj\x86\Debug\ViewCourses.g.cs
+C:\Users\Mod\Desktop\project\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.WindowsPhone\obj\x86\Debug\ViewCourses.xaml
+C:\Users\Mod\Desktop\project\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.WindowsPhone\obj\x86\Debug\ViewCourses.xbf

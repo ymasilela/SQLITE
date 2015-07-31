@@ -25,14 +25,15 @@ namespace TPCWare.SQLiteTest
         public ViewPDF()
         {
             this.InitializeComponent();
-        }
-
-        private void webView1_LoadCompleted(object sender, NavigationEventArgs e)
-        {
-
-            Uri targetUri = new Uri(@"http://www.tut.ac.za");
+            Uri targetUri = new Uri(@"http://www.tut.ac.za/enrol/apply");
             webView1.Navigate(targetUri);
-
         }
+
+        private void back_web_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(ViewPage));
+        }
+
+    
     }
 }

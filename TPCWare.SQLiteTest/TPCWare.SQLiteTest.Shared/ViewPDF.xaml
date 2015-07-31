@@ -8,6 +8,7 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <WebView Name="webView1" Width="1000" Height="800" LoadCompleted="webView1_LoadCompleted"/>
+        <WebView Name="webView1"  Margin="0,0,0,85"/>
+        <Button x:Name="back_web" Content="Back" HorizontalAlignment="Left" Margin="10,569,0,0" VerticalAlignment="Top" Width="380" Click="back_web_Click" Background="#FF27996F" Foreground="#FF171616"/>
     </Grid>
 </Page>
