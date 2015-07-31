@@ -23,6 +23,8 @@ namespace TPCWare.SQLiteTest
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 4.0.0.0")]
         private global::Windows.UI.Xaml.Controls.TextBlock course; 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 4.0.0.0")]
+        private global::Windows.UI.Xaml.Controls.Button view_courses; 
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 4.0.0.0")]
         private bool _contentLoaded;
 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 4.0.0.0")]
@@ -39,6 +41,7 @@ namespace TPCWare.SQLiteTest
             pdf = (global::Windows.UI.Xaml.Controls.Button)this.FindName("pdf");
             loc = (global::Windows.UI.Xaml.Controls.TextBlock)this.FindName("loc");
             course = (global::Windows.UI.Xaml.Controls.TextBlock)this.FindName("course");
+            view_courses = (global::Windows.UI.Xaml.Controls.Button)this.FindName("view_courses");
         }
     }
 }

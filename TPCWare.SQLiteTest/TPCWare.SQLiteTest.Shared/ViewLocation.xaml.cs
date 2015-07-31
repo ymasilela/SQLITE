@@ -33,5 +33,20 @@ namespace TPCWare.SQLiteTest
 
            
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Frame frame = Window.Current.Content as Frame;
+            if (frame == null)
+            {
+                return;
+            }
+
+            if (frame.CanGoBack)
+            {
+                frame.GoBack();
+                
+            }
+        }
     }
 }

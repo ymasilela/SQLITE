@@ -13,7 +13,7 @@
         <Button x:ConnectionId='2' x:Name="pdf" Content="Download Application Form" HorizontalAlignment="Left" Margin="48,525,0,0" VerticalAlignment="Top" Width="271" Foreground="#FF151515"                   Background="#FF27996F"/>
         <TextBlock x:Name="loc" HorizontalAlignment="Left" Margin="23,26,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36"/>
         <TextBlock x:Name="course" HorizontalAlignment="Left" Margin="64,175,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <Button x:ConnectionId='3' Content="View Courses " HorizontalAlignment="Left" Margin="48,481,0,0" VerticalAlignment="Top" Width="271" Background="#FF27996F" Foreground="#FF151515"                       />
+        <Button x:ConnectionId='3' x:Name="view_courses" Content="View Courses " HorizontalAlignment="Left" Margin="48,481,0,0" VerticalAlignment="Top" Width="271" Background="#FF27996F" Foreground="#FF151515"                       />
 
 
     </Grid>

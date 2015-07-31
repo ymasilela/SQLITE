@@ -57,7 +57,11 @@ namespace TPCWare.SQLiteTest
             this.Frame.Navigate(typeof(ViewLocation));
         }
 
+     
 
+        
+
+       
        
        
     }

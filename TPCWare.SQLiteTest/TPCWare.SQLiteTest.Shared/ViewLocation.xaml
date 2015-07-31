@@ -9,9 +9,15 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBlock x:Name="txt" HorizontalAlignment="Left" Margin="163,541,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="21,20,0,0" TextWrapping="Wrap" Text="Institution Finder App" VerticalAlignment="Top" FontSize="36" Height="62"/>
-        <TextBlock HorizontalAlignment="Left" Margin="47,87,0,0" TextWrapping="Wrap" Text="This Are The Courses They Offer" VerticalAlignment="Top" FontSize="20" Height="62" FontStyle="Italic" FontWeight="Bold" FontFamily="Arial Black" Foreground="#FF40D47D"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="92*"/>
+            <ColumnDefinition Width="23*"/>
+            <ColumnDefinition Width="85*"/>
+        </Grid.ColumnDefinitions>
+    
+        <TextBlock HorizontalAlignment="Left" Margin="21,20,0,0" TextWrapping="Wrap" Text="Institution Finder App" VerticalAlignment="Top" FontSize="36" Height="62" Grid.ColumnSpan="3"/>
+        <TextBlock HorizontalAlignment="Left" Margin="47,87,0,0" TextWrapping="Wrap" Text="This Are The Courses They Offer" VerticalAlignment="Top" FontSize="20" Height="22" FontStyle="Italic" FontWeight="Bold" FontFamily="Arial Black" Foreground="#FF40D47D" Grid.ColumnSpan="3"/>
+        <Button Grid.ColumnSpan="3" Content="Button" HorizontalAlignment="Left" Margin="130,547,0,0" VerticalAlignment="Top" Click="Button_Click_1"/>
 
 
     </Grid>
