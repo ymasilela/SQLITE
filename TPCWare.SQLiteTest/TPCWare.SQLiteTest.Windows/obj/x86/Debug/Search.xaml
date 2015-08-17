@@ -8,9 +8,9 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBlock HorizontalAlignment="Left" Margin="33,98,0,0" TextWrapping="Wrap" Text="Institution Finder App" VerticalAlignment="Top" FontSize="36" Height="62"/>
-        <Button x:ConnectionId='1' Content="Universities" HorizontalAlignment="Left" Margin="79,246,0,0" VerticalAlignment="Top" Width="225"                        Height="68"/>
-        <Button x:ConnectionId='2' Content="FET Colleges&#xA;" HorizontalAlignment="Left" Margin="79,360,0,0" VerticalAlignment="Top" Width="225" Height="70"                       />
+        <TextBlock HorizontalAlignment="Left" Margin="10,59,0,0" TextWrapping="Wrap" Text="Institution Finder App" VerticalAlignment="Top" FontSize="36" Height="101" FontWeight="Bold" Width="380"/>
+        <Button x:ConnectionId='1' Content="Universities" HorizontalAlignment="Left" Margin="79,155,0,0" VerticalAlignment="Top" Width="225"                        Height="159" Foreground="#FF0F0F0F" Background="#FF27996F"/>
+        <Button x:ConnectionId='2' Content="FET Colleges&#xA;" HorizontalAlignment="Left" Margin="79,360,0,0" VerticalAlignment="Top" Width="225" Height="166"                        Background="#FF27996F" Foreground="#FF151515"/>
 
     </Grid>
 </Page>

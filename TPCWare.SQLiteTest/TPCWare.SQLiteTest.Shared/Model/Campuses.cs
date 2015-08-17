@@ -2,8 +2,8 @@
 
 namespace TPCWare.SQLiteTest.Model
 {
-    [Table("Users")]
-    public class User
+    [Table("Campuses")]
+    public class Campuses
     {
         [PrimaryKey, AutoIncrement]
         public int Id { get; set; }

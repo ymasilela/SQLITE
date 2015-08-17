@@ -34,6 +34,11 @@ namespace TPCWare.SQLiteTest
             this.Frame.Navigate(typeof(ViewPage));
         }
 
+        private void webView1_LoadCompleted(object sender, NavigationEventArgs e)
+        {
+
+        }
+
     
     }
 }

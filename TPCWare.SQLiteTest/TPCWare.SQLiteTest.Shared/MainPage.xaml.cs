@@ -28,8 +28,10 @@ namespace TPCWare.SQLiteTest
     /// </summary>
     public sealed partial class MainPage : Page
     {
-        public List<User> users { get; set; }
-
+        public List<Campuses> users { get; set; }
+     
+       
+           Campuses newUser = new Campuses();
         public MainPage()
         {
             this.InitializeComponent();
@@ -37,14 +39,16 @@ namespace TPCWare.SQLiteTest
 
         protected async override void OnNavigatedTo(NavigationEventArgs e)
         {
-           
 
-            // Get users
-            var query = App.conn.Table<User>();
-            users = await query.ToListAsync();
 
-            // Show users
-            UserList.ItemsSource = users;
+          
+                // Get users
+                var query = App.conn.Table<Campuses>();
+                users = await query.ToListAsync();
+
+                // Show users
+                UserList.ItemsSource = users;
+            
         }
 
         private async void CreateDbAppBarButton_Click(object sender, RoutedEventArgs e)
@@ -66,23 +70,20 @@ namespace TPCWare.SQLiteTest
         private async void AddUserAppBarButton_Click(object sender, RoutedEventArgs e)
         {
             // Create a random user
-            User newUser = new User()
-            {
-                // the Id will be set by SQlite
-                Name = string.Format("User X (created at {0})", DateTime.Now),
-                City = "Rome, Italy"
-            };
+         
+          
+          
+               // Add row to the User Table
+               SQLiteAsyncConnection conn = new SQLiteAsyncConnection("institutionFinder.db");
+               await conn.InsertAsync(newUser);
 
-            // Add row to the User Table
-            SQLiteAsyncConnection conn = new SQLiteAsyncConnection("institutionFinder.db");
-            await conn.InsertAsync(newUser);
+               // Add to the user list
+               users.Add(newUser);
 
-            // Add to the user list
-            users.Add(newUser);
-
-            // Refresh user list
-            UserList.ItemsSource = null;
-            UserList.ItemsSource = users;
+               // Refresh user list
+               UserList.ItemsSource = null;
+               UserList.ItemsSource = users;
+           
         }
         private void listView1_DoubleClick(object sender, EventArgs e)
         {
@@ -97,7 +98,7 @@ namespace TPCWare.SQLiteTest
             if (users != null && users.Count > 0)
             {
                 // get last inserted user
-                User user = users.Last();
+                Campuses user = users.Last();
 
                 // delete the row of the table
                 // SQLite uses the User.Id to find witch row correspond to the user instance
@@ -115,35 +116,25 @@ namespace TPCWare.SQLiteTest
         }
 
         #region SQLite utils
-     
 
-  
 
-        public async Task SearchUserByNameAsync(string name)
+
+
+        public async Task<Campuses> SearchUniversities(string name)
         {
-
-           
-
-            var allUsers = await App.conn.QueryAsync<User>("SELECT * FROM Users  "+ name) ;
-            foreach (var user in allUsers)
-            {
-                // ...
-            }
-
-           var cityUsers = await App.conn.QueryAsync<User>(
-                "SELECT Name FROM Users WHERE City = ?", new object[] { "Rome, Italy" });
-            foreach (var user in cityUsers)
-            {
-                // ...
-            }
-            
+            SQLiteAsyncConnection connection = new SQLiteAsyncConnection("institutionFinder.db");
+            var result = await connection.QueryAsync<Campuses>("Select * FROM Campuses WHERE Name ='" + name + "'");
+            return result.SingleOrDefault();
         }
+       
+     
+       
 
         private async Task UpdateUserNameAsync(string oldName, string newName)
         {
           
             // Retrieve user
-            var user = await App.conn.Table<User>().Where(x => x.Name == oldName).FirstOrDefaultAsync();
+            var user = await App.conn.Table<Campuses>().Where(x => x.Name == oldName).FirstOrDefaultAsync();
             if (user != null)
             {
                 // Modify user
@@ -158,7 +149,7 @@ namespace TPCWare.SQLiteTest
         {
            
             // Retrieve user
-            var user = await App.conn.Table<User>().Where(x => x.Name == name).FirstOrDefaultAsync();
+            var user = await App.conn.Table<Campuses>().Where(x => x.Name == name).FirstOrDefaultAsync();
             if (user != null)
             {
                 // Delete record
@@ -168,7 +159,7 @@ namespace TPCWare.SQLiteTest
 
         private async Task DropTableAsync(string name)
         {
-            await App.conn.DropTableAsync<User>();
+            await App.conn.DropTableAsync<Campuses>();
         }
 
         #endregion SQLite utils

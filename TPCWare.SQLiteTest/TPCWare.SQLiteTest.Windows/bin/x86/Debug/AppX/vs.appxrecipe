@@ -8,7 +8,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>3dc2711f-56c7-4baf-8d37-cd8f603b2acf</PackageIdentityName>
     <IntermediateOutputPath>C:\Users\Mod\Desktop\project\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.Windows\obj\x86\Debug\</IntermediateOutputPath>
-    <RegisteredManifestChecksum>45C3D2F902933197EF1F85683302DA63E2CE1ECB55246C97A38B2122BE586B05</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>D2351BE714B5204DD20B59FA80B18BB3330914EB7BA9E55089862BA428193CEA</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>3dc2711f-56c7-4baf-8d37-cd8f603b2acf_1.0.0.0_x86__chny7cy2kxrnj</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>3dc2711f-56c7-4baf-8d37-cd8f603b2acf_chny7cy2kxrnj!App</RegisteredUserModeAppID>
     <RegisteredPackageID>3dc2711f-56c7-4baf-8d37-cd8f603b2acf</RegisteredPackageID>
@@ -20,13 +20,13 @@
     <AppXManifest Include="C:\Users\Mod\Desktop\project\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.Windows\bin\x86\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-07-16T10:53:47.821</Modified>
+      <Modified>2015-08-17T10:45:40.386</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Mod\Desktop\project\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.Windows\bin\x86\Debug\TPCWare.SQLiteTest.Windows.exe">
       <PackagePath>TPCWare.SQLiteTest.Windows.exe</PackagePath>
-      <Modified>2015-07-16T13:41:03.698</Modified>
+      <Modified>2015-08-17T10:45:40.181</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\SQLite.WinRT81\3.8.10.2\Redist\Debug\x86\sqlite3.dll">
       <PackagePath>sqlite3.dll</PackagePath>
@@ -52,49 +52,57 @@
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2014-03-14T08:54:50.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Mod\Desktop\project\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.Shared\B.jpg">
+      <PackagePath>B.jpg</PackagePath>
+      <Modified>2015-07-31T13:19:59.453</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Mod\Desktop\project\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.Windows\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2014-04-29T10:01:32.000</Modified>
+      <Modified>2015-08-17T10:45:39.924</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Mod\Desktop\project\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.Windows\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2015-07-10T10:25:17.183</Modified>
+      <Modified>2015-08-17T10:45:39.925</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Mod\Desktop\project\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.Windows\bin\x86\Debug\Search.xbf">
       <PackagePath>Search.xbf</PackagePath>
-      <Modified>2015-07-09T09:03:58.519</Modified>
+      <Modified>2015-08-17T10:45:39.925</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Mod\Desktop\project\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.Windows\bin\x86\Debug\SearchCollege.xbf">
       <PackagePath>SearchCollege.xbf</PackagePath>
-      <Modified>2015-07-10T10:25:17.185</Modified>
+      <Modified>2015-08-17T10:45:39.926</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Mod\Desktop\project\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.Windows\bin\x86\Debug\SearchPage.xbf">
       <PackagePath>SearchPage.xbf</PackagePath>
-      <Modified>2015-07-09T10:43:16.822</Modified>
+      <Modified>2015-08-17T10:45:39.928</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Mod\Desktop\project\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.Windows\bin\x86\Debug\ViewCourses.xbf">
+      <PackagePath>ViewCourses.xbf</PackagePath>
+      <Modified>2015-08-17T10:45:39.928</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Mod\Desktop\project\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.Windows\bin\x86\Debug\ViewLocation.xbf">
       <PackagePath>ViewLocation.xbf</PackagePath>
-      <Modified>2015-07-09T08:10:09.593</Modified>
+      <Modified>2015-08-17T10:45:39.929</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Mod\Desktop\project\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.Windows\bin\x86\Debug\ViewPage.xbf">
       <PackagePath>ViewPage.xbf</PackagePath>
-      <Modified>2015-07-16T13:41:03.463</Modified>
+      <Modified>2015-08-17T10:45:39.931</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Mod\Desktop\project\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.Windows\bin\x86\Debug\ViewPDF.xbf">
       <PackagePath>ViewPDF.xbf</PackagePath>
-      <Modified>2015-07-16T13:41:03.463</Modified>
+      <Modified>2015-08-17T10:45:39.933</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Mod\Desktop\project\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.Windows\bin\x86\Debug\Wrong.xbf">
       <PackagePath>Wrong.xbf</PackagePath>
-      <Modified>2015-07-09T10:43:16.824</Modified>
+      <Modified>2015-08-17T10:45:39.934</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Mod\Desktop\project\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.Windows\bin\x86\Debug\TPCWare.SQLiteTest.Windows.xr.xml">
       <PackagePath>TPCWare.SQLiteTest.Windows.xr.xml</PackagePath>
-      <Modified>2015-07-16T13:41:03.448</Modified>
+      <Modified>2015-08-17T10:42:21.380</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Mod\Desktop\project\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.Windows\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-07-16T10:53:47.736</Modified>
+      <Modified>2015-08-17T10:45:40.290</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

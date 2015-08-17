@@ -28,7 +28,7 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <ListView x:Name="UserList" Grid.Row="1" Margin="20,93,20,83" SelectionChanged="UserList_SelectionChanged">
+        <ListView x:Name="UserList" Grid.Row="1" Margin="20,93,20,0" SelectionChanged="UserList_SelectionChanged">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Margin="10">
