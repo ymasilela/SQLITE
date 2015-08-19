@@ -33,7 +33,7 @@ namespace TPCWare.SQLiteTest
         private TransitionCollection transitions;
 #endif
 
-        public static SQLiteAsyncConnection conn = new SQLiteAsyncConnection("institution.sqlite");
+        public static SQLiteAsyncConnection conn = new SQLiteAsyncConnection("institutionFinder.db");
       
 
 
@@ -63,11 +63,14 @@ namespace TPCWare.SQLiteTest
 #endif
 
             // Create Db if not exist
-            bool dbExist = await CheckDbAsync("institution.sqlite");
+            bool dbExist = await CheckDbAsync("institutionFinder.db");
             if (!dbExist)
             {
                 await CreateDatabaseAsync();
+                await AddUniversitiesAsync();
                 await AddUsersAsync();
+                await AddCoursesAsync();             
+                await AddCollegeAsync();
              
             }
             Frame rootFrame = Window.Current.Content as Frame;
@@ -168,7 +171,7 @@ namespace TPCWare.SQLiteTest
 
         private async Task CreateDatabaseAsync()
         {
-            SQLiteAsyncConnection conn = new SQLiteAsyncConnection("institution.sqlite");
+            SQLiteAsyncConnection conn = new SQLiteAsyncConnection("institutionFinder.db");
             await conn.CreateTableAsync<Campuses>();
             await conn.CreateTableAsync<Courses>();
             await conn.CreateTableAsync<College>();
@@ -218,7 +221,7 @@ namespace TPCWare.SQLiteTest
                 },
                  new Campuses()
                 {
-                    City = "TUT",
+                    City = "University Of Johannesburg",
                     Name = "Arcadia Campus",
                 
                 },
@@ -226,13 +229,13 @@ namespace TPCWare.SQLiteTest
                  new Campuses()
             
                 {
-                    City = "TNC",
+                    City = "University Of Johannesburg",
                     Name = "Nelpruit Campus",
                 
                 },
                  new Campuses()
                 {
-                    City = "TNC",
+                    City = "University Of Johannesburg",
                     Name = "Ga-Rankuwa Campus",
                 
                 },
@@ -259,13 +262,19 @@ namespace TPCWare.SQLiteTest
                     City = "UL",
                     Name = "Medunsa campus",
                 
+                },
+                   new Campuses()
+                {
+                    City = "Ufgdg",
+                    Name = "fgdfgdgdgdfg",
+                
                 }
             };
 
 
 
             // Add rows to the User Table
-            SQLiteAsyncConnection conn = new SQLiteAsyncConnection("institution.sqlite");
+            SQLiteAsyncConnection conn = new SQLiteAsyncConnection("institutionFinder.db");
             await conn.InsertAllAsync(CampusesList);
         }
         private async Task AddCoursesAsync()
@@ -357,7 +366,7 @@ namespace TPCWare.SQLiteTest
 
 
             // Add rows to the User Table
-            SQLiteAsyncConnection conn = new SQLiteAsyncConnection("institution.sqlite");
+            SQLiteAsyncConnection conn = new SQLiteAsyncConnection("institutionFinder.db");
             await conn.InsertAllAsync(userList);
         }
         private async Task AddCollegeAsync()
@@ -367,39 +376,75 @@ namespace TPCWare.SQLiteTest
             {
                 new College()
                 {
-                    Id = 1,
-                    Name = "TNC",
+                   
+                    Name = "Port Elizabeth TVET College",
                     
                 },
                 new College()
                 {
-                     Id = 2,
-                    Name = "JEPEE",
+                     
+                    Name = "Central JHB TVET College",
                    
                 },
                 new College()
                 {
-                     Id = 3,
-                    Name = "ROSEBANK",
+                    
+                    Name = "Sedibeng TVET College",
                 
                 },
                  new College()
                 {
-                     Id = 4,
-                    Name = "TSC",
+                   
+                    Name = "Tshwane North TVET College",
                 
                 },
                    new College()
                 {
-                     Id = 5,
+                     
                     Name = "CN Mahlangu",
+                
+                },
+                    new College()
+                {
+                   
+                    Name = "Tshwane South TVET College",
+                
+                },
+                    new College()
+                {
+                   
+                    Name = "Thekwini TVET College",
+                
+                },
+                    new College()
+                {
+                   
+                    Name = "Nkangala TVET College",
+                
+                },
+                    new College()
+                {
+                   
+                    Name = "False Bay TVET College",
+                
+                },
+                    new College()
+                {
+                   
+                    Name = "South Cape TVET College",
+                
+                },
+                    new College()
+                {
+                   
+                    Name = "Buffalo City TVET College",
                 
                 },
                  
             };
 
             // Add rows to the User Table
-            SQLiteAsyncConnection conn = new SQLiteAsyncConnection("institution.sqlite");
+            SQLiteAsyncConnection conn = new SQLiteAsyncConnection("institutionFinder.db");
             await conn.InsertAllAsync(CollegeLists);
         }
 
@@ -410,31 +455,62 @@ namespace TPCWare.SQLiteTest
             {
                 new Universities()
                 {
-                      U_Id = 1,
-                    Name = "TUT",
+                    
+                    Name = "Tshwane University of Technology",
+
                     
                 },
                 new Universities()
                 {
-                     U_Id = 2,
-                    Name = "UJ",
+                     
+                    Name = "University Of Johannesburg",
                    
                 },
                 new Universities()
                 {
-                     U_Id = 3,
-                    Name = "UP",
+                    
+                    Name = "University Of Pretoria",
                 
                 },
                   new Universities()
                 {
-                     U_Id = 3,
-                    Name = "UL",
+                  
+                    Name = "University Of Limpopo",
+                
+                },
+                      new Universities()
+                {
+                  
+                    Name = "University of South Africa",
+                
+                },
+                      new Universities()
+                {
+                  
+                    Name = "University of Kwazulu Natal",
+                
+                },
+                new Universities()
+                  {
+                  
+                    Name = "University of Stellenbosch",
+                
+                },
+                new Universities()
+                  {
+                  
+                    Name = "University of Mpumalanga",
+                
+                },
+                new Universities()
+             {
+                  
+                    Name = "University of Venda",
                 
                 },
                   new Universities()
                 {
-                     U_Id = 3,
+                    
                     Name = "Nelson Mandela Metropolitan Univesity",
                 
                 },
@@ -443,7 +519,7 @@ namespace TPCWare.SQLiteTest
             };
 
             // Add rows to the User Table
-            SQLiteAsyncConnection conn = new SQLiteAsyncConnection("institution.sqlite");
+            SQLiteAsyncConnection conn = new SQLiteAsyncConnection("institutionFinder.db");
             await conn.InsertAllAsync(universitiesLists);
         }
     }

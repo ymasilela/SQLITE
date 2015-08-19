@@ -1,8 +1,10 @@
-﻿using System;
+﻿using SQLite;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using TPCWare.SQLiteTest.Model;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -22,34 +24,52 @@ namespace TPCWare.SQLiteTest
     /// </summary>
     public sealed partial class SearchCollege : Page
     {
+        public List<College> college { get; set; }
+        College newColleges = new College();
+
         public SearchCollege()
         {
             this.InitializeComponent();
         }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
+        protected async override void OnNavigatedTo(NavigationEventArgs e)
         {
-            String name;
-            name = txtNameCollege.Text;
-            if (name == "" | name == null)
-            {
 
-                MessageBox("Please enter valid search criteria");
-            }
-         
-            else if (name.Equals("tnc") || name.Equals("Tshwane North College") || name.Equals("Tnc") || name.Equals("TNC"))
-            {
-                this.Frame.Navigate(typeof(Wrong));
-            }
-            else
-            {
-                MessageBox("Not Registered");
-            }
+
+            // Get users
+            var query = App.conn.Table<College>();
+            college = await query.ToListAsync();
+
+            // Show users
+            searchColleges.ItemsSource = college;
+
+
+        }
+        private async void Button_Click(object sender, RoutedEventArgs e)
+        {
+            SQLiteAsyncConnection conn = new SQLiteAsyncConnection("institutionFinder.db");
+            await conn.InsertAsync(newColleges);
+
+            // Add to the user list
+            college.Add(newColleges);
+
+            // Refresh user list
+            searchColleges.ItemsSource = null;
+            searchColleges.ItemsSource = college;
         }
         public async void MessageBox(String message)
         {
             var dialog = new Windows.UI.Popups.MessageDialog(message);
             await dialog.ShowAsync();
+        }
+
+        private void UserList_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void back_main_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

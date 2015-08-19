@@ -8,16 +8,19 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Hub Header="Institution Finder App">
-            <HubSection Header="Search" Width="385">
+        <ListView x:Name="searchColleges" Margin="20,93" SelectionChanged="UserList_SelectionChanged">
+            <ListView.ItemTemplate>
                 <DataTemplate>
-                    <Grid/>
+                    <StackPanel Margin="10">
+                        <TextBlock Text="{Binding Name}" />
+                      
+                    </StackPanel>
                 </DataTemplate>
-            </HubSection>
-        </Hub>
-        <Button Content="Search" HorizontalAlignment="Left" Margin="64,400,0,0" VerticalAlignment="Top" Width="201" Click="Button_Click"/>
-        <TextBlock HorizontalAlignment="Left" Margin="29,267,0,0" TextWrapping="Wrap" Text="Institution Name:" VerticalAlignment="Top" FontSize="20"/>
-        <TextBox x:Name="txtNameCollege" HorizontalAlignment="Left" Margin="201,267,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="175"/>
+            </ListView.ItemTemplate>
+        </ListView>
+        <TextBlock HorizontalAlignment="Left" Margin="10,26,0,0" TextWrapping="Wrap" Text="Institution Finder App" VerticalAlignment="Top" FontSize="36" Height="101" FontWeight="Bold" Width="380" Grid.RowSpan="2"/>
+        <Button x:Name="back_main" Content="Back" HorizontalAlignment="Left" Margin="20,575,0,0" VerticalAlignment="Top" Width="360" Height="64" Foreground="#FF0E0D0D" Background="#FF27996F" Click="back_main_Click" RenderTransformOrigin="0.449,1.584"/>
+
 
     </Grid>
 </Page>

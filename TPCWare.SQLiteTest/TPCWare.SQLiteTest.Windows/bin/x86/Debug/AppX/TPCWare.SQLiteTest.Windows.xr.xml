@@ -39,6 +39,7 @@
     <RootType FullName="Windows.UI.Xaml.Controls.ListView">
       <RootProperty Name="Margin" />
       <RootProperty Name="ItemTemplate" />
+      <RootProperty Name="SelectionMode" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Height" />
       <RootProperty Name="VerticalAlignment" />
@@ -80,22 +81,6 @@
     <RootType FullName="Windows.UI.Xaml.Data.Binding" />
     <RootType FullName="TPCWare.SQLiteTest.MainPage" />
     <RootType FullName="TPCWare.SQLiteTest.Search" />
-    <RootType FullName="Windows.UI.Xaml.Controls.Hub">
-      <RootProperty Name="Header" />
-      <RootProperty Name="Sections" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="TextWrapping" />
-      <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Width" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.HubSection">
-      <RootProperty Name="Header" />
-      <RootProperty Name="Width" />
-      <RootProperty Name="ContentTemplate" />
-    </RootType>
     <RootType FullName="TPCWare.SQLiteTest.SearchCollege" />
     <RootType FullName="TPCWare.SQLiteTest.SearchPage" />
     <RootType FullName="TPCWare.SQLiteTest.ViewCourses" />

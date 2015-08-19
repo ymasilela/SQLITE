@@ -41,16 +41,21 @@ namespace TPCWare.SQLiteTest
         {
 
 
-          
+            string part = e.Parameter as string;
+            navigated.Text = part;
                 // Get users
-                var query = App.conn.Table<Campuses>();
-                users = await query.ToListAsync();
-
+             
+                SQLiteAsyncConnection connection = new SQLiteAsyncConnection("institutionFinder.db");
+               users = await connection.QueryAsync<Campuses>("Select * FROM Campuses WHERE City ='" + part + "'");
                 // Show users
                 UserList.ItemsSource = users;
             
         }
-
+           public async void MessageBox(String message)
+        {
+            var dialog = new Windows.UI.Popups.MessageDialog(message);
+            await dialog.ShowAsync();
+        }
         private async void CreateDbAppBarButton_Click(object sender, RoutedEventArgs e)
         {
             
@@ -87,6 +92,7 @@ namespace TPCWare.SQLiteTest
         }
         private void listView1_DoubleClick(object sender, EventArgs e)
         {
+
             if (UserList.SelectedItems.Count > 0)
             {
                 this.Frame.Navigate(typeof(Search));

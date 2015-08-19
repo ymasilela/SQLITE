@@ -1,13 +1,17 @@
-﻿using System;
+﻿using SQLite;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Text;
+using System.Threading.Tasks;
 using TPCWare.SQLiteTest.Model;
+using System.Linq;
 
 namespace TPCWare.SQLiteTest.ViewModels
 {
     class U_Models 
     {
+
         private ObservableCollection<U_Models> projects;
         public ObservableCollection<U_Models> Projects
         {
@@ -44,7 +48,12 @@ namespace TPCWare.SQLiteTest.ViewModels
         }
 
         private TPCWare.SQLiteTest.App app = (App.Current as App);
-
+       /* public async Task<Campuses> SearchUniversities(string name)
+        {
+            SQLiteAsyncConnection connection = new SQLiteAsyncConnection("institutionFinder.db");
+            var result = await connection.QueryAsync<Campuses>("Select * FROM Campuses WHERE Name ='" + name + "'");
+            return result.SingleOrDefault();
+        }*/
        
     }
 }

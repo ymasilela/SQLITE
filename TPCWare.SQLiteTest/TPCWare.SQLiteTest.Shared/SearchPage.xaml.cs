@@ -25,8 +25,12 @@ namespace TPCWare.SQLiteTest
     /// </summary>
     public sealed partial class SearchPage : Page
     {
-        private TPCWare.SQLiteTest.App apps = (Application.Current as App);
-        Campuses newUser = new Campuses();
+        public List<Universities> users { get; set; }
+
+        Universities newUser = new Universities();
+
+     
+      
         public SearchPage()
         {
             this.InitializeComponent();
@@ -35,12 +39,12 @@ namespace TPCWare.SQLiteTest
         {
 
 
-
             // Get users
-            var query = App.conn.Table<Campuses>();
-         
+            var query = App.conn.Table<Universities>();
+            users = await query.ToListAsync();
 
             // Show users
+            searchViewList.ItemsSource = users;
         
 
         }
@@ -48,42 +52,16 @@ namespace TPCWare.SQLiteTest
         private async void Button_Click(object sender, RoutedEventArgs e)
         {
 
-            try
-            {
+            // Add row to the User Table
+            SQLiteAsyncConnection conn = new SQLiteAsyncConnection("institutionFinder.db");
+            await conn.InsertAsync(newUser);
 
-                MainPage app = new MainPage();
-                SQLiteAsyncConnection conn = new SQLiteAsyncConnection("institution.sqlite");
-                await conn.InsertAsync(newUser);
+            // Add to the user list
+            users.Add(newUser);
 
-
-                if (txtName.Text == "" | txtName.Text == null)
-                {
-
-                    MessageBox("Please enter valid search criteria");
-
-                }
-                else
-                {
-
-
-
-                    var result = await conn.QueryAsync<Universities>("Select * FROM Universities WHERE Name ='" + txtName.Text + "'");
-
-
-                    if (result != null)
-                    {
-                        this.Frame.Navigate(typeof(MainPage));
-                    }
-                    else
-                    {
-                        MessageBox("NOT Registered");
-                    }
-                }
-            }
-            catch (Exception exc)
-            {
-                MessageBox("Error Occured" + exc);
-            }
+            // Refresh user list
+            searchViewList.ItemsSource = null;
+            searchViewList.ItemsSource = users;
            
         }
         private async void CheckDbAppBarButton_Click(object sender, RoutedEventArgs e)
@@ -91,7 +69,7 @@ namespace TPCWare.SQLiteTest
             var dbExist = false;
             if (App.conn != null)
                 dbExist = true;
-            string msg = "The database institution.sqlite " + (dbExist ? "is present" : "is not present");
+            string msg = "The database institutionFinder.db " + (dbExist ? "is present" : "is not present");
 
             MessageDialog dialog = new MessageDialog(msg);
             await dialog.ShowAsync();
@@ -106,6 +84,135 @@ namespace TPCWare.SQLiteTest
         private void back_se_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(Search));
+        }
+
+        private void ListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (searchViewList.SelectedItems.Count > 0)
+            {
+               string name = "TUT";
+                //this.Frame.Navigate(typeof(MainPage));
+                Universities uni = new Universities();
+                var sel = searchViewList.SelectedItems.Cast<Object>().ToArray();
+                string[] applianceNames = {""};
+               
+
+                for (int i = 0; i < sel.Count(); i++)
+                {
+                    string Name = "";
+
+                    if (searchViewList.SelectedItems.Count == 0)
+                    {
+                        Name = "Tshwane University of Technology";
+
+                    }
+                    else if (searchViewList.SelectedItems.Count == 1)
+                    {
+                        Name = "University Of Johannesburg";
+
+                    }
+                    else if (searchViewList.SelectedItems.Count == 2)
+                    {
+                        Name = "University Of Pretoria";
+
+                    }
+                    else if (searchViewList.SelectedItems.Count == 3)
+                    {
+                        Name = "University Of Limpopo";
+
+                    }
+                    else if (searchViewList.SelectedItems.Count == 4)
+                    {
+                        Name = "University of South Africa";
+
+                    }
+                    else if (searchViewList.SelectedItems.Count == 5)
+                    {
+                        Name = "University of Kwazulu Natal";
+
+                    }
+                    else if (searchViewList.SelectedItems.Count == 6)
+                    {
+                        Name = "University of Stellenbosch";
+
+                    }
+                    else if (searchViewList.SelectedItems.Count == 7)
+                    {
+                        Name = "University of Mpumalanga";
+                    }
+                    else if (searchViewList.SelectedItems.Count == 8)
+                    {
+                        Name = "University of Venda";
+
+                    }
+                    else
+                    {
+                        Name = "Nelson Mandela Metropolitan Univesity";
+
+                    }
+                    MessageBox(Name + "");
+                }
+           
+            }
+        }
+
+        private void UserList_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            string Name = "";
+          
+                if (searchViewList.SelectedItems.Count == 0)
+                {
+                    Name = "Tshwane University of Technology";
+
+                }
+                else if (searchViewList.SelectedItems.Count == 1)
+                {
+                    Name = "University Of Johannesburg";
+
+                }
+                else if (searchViewList.SelectedItems.Count == 2)
+                {
+                    Name = "University Of Pretoria";
+
+                }
+                else if (searchViewList.SelectedItems.Count == 3)
+                {
+                    Name = "University Of Limpopo";
+
+                }
+                else if (searchViewList.SelectedItems.Count == 4)
+                {
+                    Name = "University of South Africa";
+
+                }
+                else if (searchViewList.SelectedItems.Count == 5)
+                {
+                    Name = "University of Kwazulu Natal";
+
+                }
+                else if (searchViewList.SelectedItems.Count == 6)
+                {
+                    Name = "University of Stellenbosch";
+
+                }
+                else if (searchViewList.SelectedItems.Count == 7)
+                {
+                    Name = "University of Mpumalanga";
+                }
+                else if (searchViewList.SelectedItems.Count == 8)
+                {
+                    Name = "University of Venda";
+
+                }
+                else
+                {
+                    Name = "Nelson Mandela Metropolitan Univesity";
+
+                }
+            
+
+            this.Frame.Navigate(typeof(MainPage), Name);
+           
         }
 
        
