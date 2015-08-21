@@ -29,7 +29,7 @@ namespace TPCWare.SQLiteTest
     public sealed partial class MainPage : Page
     {
         public List<Campuses> users { get; set; }
-     
+        private string item = string.Empty;
        
            Campuses newUser = new Campuses();
         public MainPage()
@@ -44,12 +44,14 @@ namespace TPCWare.SQLiteTest
             string part = e.Parameter as string;
             navigated.Text = part;
                 // Get users
-             
-                SQLiteAsyncConnection connection = new SQLiteAsyncConnection("institutionFinder.db");
+
+               SQLiteAsyncConnection connection = new SQLiteAsyncConnection("institutionFinder.db");
                users = await connection.QueryAsync<Campuses>("Select * FROM Campuses WHERE City ='" + part + "'");
                 // Show users
                 UserList.ItemsSource = users;
-            
+
+
+         
         }
            public async void MessageBox(String message)
         {
@@ -92,11 +94,13 @@ namespace TPCWare.SQLiteTest
         }
         private void listView1_DoubleClick(object sender, EventArgs e)
         {
-
-            if (UserList.SelectedItems.Count > 0)
+            var i = UserList.SelectedItems.ToArray();
+            foreach (var it in i)
             {
-                this.Frame.Navigate(typeof(Search));
+                item = it.ToString();
             }
+      
+            MessageBox(item +"");
         }
 
         private async void DeleteUserAppBarButton_Click(object sender, RoutedEventArgs e)
@@ -172,12 +176,13 @@ namespace TPCWare.SQLiteTest
 
         private void UserList_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-
-            if (UserList.SelectedItems.Count > 0)
+            Campuses seg = UserList.SelectedItem as Campuses;
+            if (seg != null)
             {
-                this.Frame.Navigate(typeof(ViewPage));
+                this.Frame.Navigate(typeof(ViewPage),seg.Name);//TextBlock called bckChoiceSelected
             }
-        }
+       }
+           
 
         private void back_main_Click(object sender, RoutedEventArgs e)
         {

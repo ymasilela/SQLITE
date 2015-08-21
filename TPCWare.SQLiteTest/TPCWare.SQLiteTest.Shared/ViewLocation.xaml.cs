@@ -34,7 +34,7 @@ namespace TPCWare.SQLiteTest
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(ViewPage));
+            this.Frame.Navigate(typeof(MainPage));
         }
     }
 }

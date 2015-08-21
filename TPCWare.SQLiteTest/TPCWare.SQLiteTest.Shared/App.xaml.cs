@@ -29,6 +29,7 @@ namespace TPCWare.SQLiteTest
     /// </summary>
     public sealed partial class App : Application
     {
+        public string DBPath { get; set; }
 #if WINDOWS_PHONE_APP
         private TransitionCollection transitions;
 #endif
@@ -185,44 +186,44 @@ namespace TPCWare.SQLiteTest
             {
                 new Campuses()
                 {
-                    City = "TUT",
-                    Name = "Soshanguve South Campus",
+                    City = "Tshwane University of Technology",
+                    Name = "Soshanguve South Campus"
                     
                 },
                 new Campuses()
                 {
-                    City = "TUT",
-                    Name = "Soshanguve North Campus",
+                    City = "Tshwane University of Technology",
+                    Name = "Soshanguve North Campus"
                    
                 },
                 new Campuses()
                 {
-                    City = "TUT",
-                    Name = "Pretoria Campus",
+                    City = "Tshwane University of Technology",
+                    Name = "Pretoria Campus"
                 
                 },
                  new Campuses()
                 {
-                    City = "TUT",
-                    Name = "Malahleni Campus",
+                    City = "Tshwane University of Technology",
+                    Name = "Malahleni Campus"
                 
                 },
                  new Campuses()
                 {
-                    City = "TUT",
-                    Name = "Nelpruit Campus",
+                    City = "Tshwane University of Technology",
+                    Name = "Nelpruit Campus"
                 
                 },
                  new Campuses()
                 {
-                    City = "TUT",
-                    Name = "Ga-Rankuwa Campus",
+                    City = "Tshwane University of Technology",
+                    Name = "Ga-Rankuwa Campus"
                 
                 },
                  new Campuses()
                 {
                     City = "University Of Johannesburg",
-                    Name = "Arcadia Campus",
+                    Name = "Randburg Campus"
                 
                 },
                     //TNC
@@ -230,43 +231,43 @@ namespace TPCWare.SQLiteTest
             
                 {
                     City = "University Of Johannesburg",
-                    Name = "Nelpruit Campus",
+                    Name = "Soweto Campus"
                 
                 },
                  new Campuses()
                 {
                     City = "University Of Johannesburg",
-                    Name = "Ga-Rankuwa Campus",
+                    Name = "Johannesburg Campus"
                 
                 },
                  new Campuses()
                 {
                    City = "TNC",
-                    Name = "Arcadia Campus",
+                    Name = "Arcadia Campus"
                 
                 },
                  new Campuses()
                 {
                     City = "ROSEBANK",
-                    Name = "Only Pretoria campus",
+                    Name = "Only Pretoria campus"
                 
                 },
                   new Campuses()
                 {
-                    City = "UL",
-                    Name = "Polokwane campus",
+                    City = "University Of Limpopo",
+                    Name = "Polokwane campus"
                 
                 },
                    new Campuses()
                 {
-                    City = "UL",
-                    Name = "Medunsa campus",
+                    City = "University Of Limpopo",
+                    Name = "Medunsa campus"
                 
                 },
                    new Campuses()
                 {
-                    City = "Ufgdg",
-                    Name = "fgdfgdgdgdfg",
+                    City = "University Of Limpopo",
+                    Name = "Turfloop Campus"
                 
                 }
             };

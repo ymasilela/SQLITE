@@ -39,6 +39,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)ViewLocation.xaml.cs">
       <DependentUpon>ViewLocation.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\CampusModels.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\U_Models.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewPage.xaml.cs">
       <DependentUpon>ViewPage.xaml</DependentUpon>

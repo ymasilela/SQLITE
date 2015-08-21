@@ -124,7 +124,7 @@ namespace TPCWare.SQLiteTest.TPCWare_SQLiteTest_Windows_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[20];
+            _typeNameTable = new string[22];
             _typeNameTable[0] = "TPCWare.SQLiteTest.MainPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
@@ -141,12 +141,14 @@ namespace TPCWare.SQLiteTest.TPCWare_SQLiteTest_Windows_XamlTypeInfo
             _typeNameTable[13] = "System.Collections.Generic.List`1<TPCWare.SQLiteTest.Model.Universities>";
             _typeNameTable[14] = "TPCWare.SQLiteTest.Model.Universities";
             _typeNameTable[15] = "TPCWare.SQLiteTest.ViewCourses";
-            _typeNameTable[16] = "TPCWare.SQLiteTest.ViewLocation";
-            _typeNameTable[17] = "TPCWare.SQLiteTest.ViewPage";
-            _typeNameTable[18] = "TPCWare.SQLiteTest.ViewPDF";
-            _typeNameTable[19] = "TPCWare.SQLiteTest.Wrong";
+            _typeNameTable[16] = "System.Collections.Generic.List`1<TPCWare.SQLiteTest.Model.Courses>";
+            _typeNameTable[17] = "TPCWare.SQLiteTest.Model.Courses";
+            _typeNameTable[18] = "TPCWare.SQLiteTest.ViewLocation";
+            _typeNameTable[19] = "TPCWare.SQLiteTest.ViewPage";
+            _typeNameTable[20] = "TPCWare.SQLiteTest.ViewPDF";
+            _typeNameTable[21] = "TPCWare.SQLiteTest.Wrong";
 
-            _typeTable = new global::System.Type[20];
+            _typeTable = new global::System.Type[22];
             _typeTable[0] = typeof(global::TPCWare.SQLiteTest.MainPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
@@ -163,10 +165,12 @@ namespace TPCWare.SQLiteTest.TPCWare_SQLiteTest_Windows_XamlTypeInfo
             _typeTable[13] = typeof(global::System.Collections.Generic.List<global::TPCWare.SQLiteTest.Model.Universities>);
             _typeTable[14] = typeof(global::TPCWare.SQLiteTest.Model.Universities);
             _typeTable[15] = typeof(global::TPCWare.SQLiteTest.ViewCourses);
-            _typeTable[16] = typeof(global::TPCWare.SQLiteTest.ViewLocation);
-            _typeTable[17] = typeof(global::TPCWare.SQLiteTest.ViewPage);
-            _typeTable[18] = typeof(global::TPCWare.SQLiteTest.ViewPDF);
-            _typeTable[19] = typeof(global::TPCWare.SQLiteTest.Wrong);
+            _typeTable[16] = typeof(global::System.Collections.Generic.List<global::TPCWare.SQLiteTest.Model.Courses>);
+            _typeTable[17] = typeof(global::TPCWare.SQLiteTest.Model.Courses);
+            _typeTable[18] = typeof(global::TPCWare.SQLiteTest.ViewLocation);
+            _typeTable[19] = typeof(global::TPCWare.SQLiteTest.ViewPage);
+            _typeTable[20] = typeof(global::TPCWare.SQLiteTest.ViewPDF);
+            _typeTable[21] = typeof(global::TPCWare.SQLiteTest.Wrong);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -212,10 +216,12 @@ namespace TPCWare.SQLiteTest.TPCWare_SQLiteTest_Windows_XamlTypeInfo
         private object Activate_13_List() { return new global::System.Collections.Generic.List<global::TPCWare.SQLiteTest.Model.Universities>(); }
         private object Activate_14_Universities() { return new global::TPCWare.SQLiteTest.Model.Universities(); }
         private object Activate_15_ViewCourses() { return new global::TPCWare.SQLiteTest.ViewCourses(); }
-        private object Activate_16_ViewLocation() { return new global::TPCWare.SQLiteTest.ViewLocation(); }
-        private object Activate_17_ViewPage() { return new global::TPCWare.SQLiteTest.ViewPage(); }
-        private object Activate_18_ViewPDF() { return new global::TPCWare.SQLiteTest.ViewPDF(); }
-        private object Activate_19_Wrong() { return new global::TPCWare.SQLiteTest.Wrong(); }
+        private object Activate_16_List() { return new global::System.Collections.Generic.List<global::TPCWare.SQLiteTest.Model.Courses>(); }
+        private object Activate_17_Courses() { return new global::TPCWare.SQLiteTest.Model.Courses(); }
+        private object Activate_18_ViewLocation() { return new global::TPCWare.SQLiteTest.ViewLocation(); }
+        private object Activate_19_ViewPage() { return new global::TPCWare.SQLiteTest.ViewPage(); }
+        private object Activate_20_ViewPDF() { return new global::TPCWare.SQLiteTest.ViewPDF(); }
+        private object Activate_21_Wrong() { return new global::TPCWare.SQLiteTest.Wrong(); }
         private void VectorAdd_3_List(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::TPCWare.SQLiteTest.Model.Campuses>)instance;
@@ -232,6 +238,12 @@ namespace TPCWare.SQLiteTest.TPCWare_SQLiteTest_Windows_XamlTypeInfo
         {
             var collection = (global::System.Collections.Generic.ICollection<global::TPCWare.SQLiteTest.Model.Universities>)instance;
             var newItem = (global::TPCWare.SQLiteTest.Model.Universities)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_16_List(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::TPCWare.SQLiteTest.Model.Courses>)instance;
+            var newItem = (global::TPCWare.SQLiteTest.Model.Courses)item;
             collection.Add(newItem);
         }
 
@@ -278,6 +290,9 @@ namespace TPCWare.SQLiteTest.TPCWare_SQLiteTest_Windows_XamlTypeInfo
                 userType.AddMemberName("Id");
                 userType.AddMemberName("Name");
                 userType.AddMemberName("City");
+                userType.AddMemberName("WebsiteLink");
+                userType.AddMemberName("Latitude");
+                userType.AddMemberName("Longitude");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -340,6 +355,7 @@ namespace TPCWare.SQLiteTest.TPCWare_SQLiteTest_Windows_XamlTypeInfo
             case 14:   //  TPCWare.SQLiteTest.Model.Universities
                 userType = new global::TPCWare.SQLiteTest.TPCWare_SQLiteTest_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.Activator = Activate_14_Universities;
+                userType.AddMemberName("Id");
                 userType.AddMemberName("Name");
                 userType.SetIsLocalType();
                 xamlType = userType;
@@ -348,34 +364,53 @@ namespace TPCWare.SQLiteTest.TPCWare_SQLiteTest_Windows_XamlTypeInfo
             case 15:   //  TPCWare.SQLiteTest.ViewCourses
                 userType = new global::TPCWare.SQLiteTest.TPCWare_SQLiteTest_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_15_ViewCourses;
+                userType.AddMemberName("users");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 16:   //  TPCWare.SQLiteTest.ViewLocation
-                userType = new global::TPCWare.SQLiteTest.TPCWare_SQLiteTest_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_16_ViewLocation;
+            case 16:   //  System.Collections.Generic.List`1<TPCWare.SQLiteTest.Model.Courses>
+                userType = new global::TPCWare.SQLiteTest.TPCWare_SQLiteTest_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.CollectionAdd = VectorAdd_16_List;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 17:   //  TPCWare.SQLiteTest.Model.Courses
+                userType = new global::TPCWare.SQLiteTest.TPCWare_SQLiteTest_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_17_Courses;
+                userType.AddMemberName("Id");
+                userType.AddMemberName("Name");
+                userType.AddMemberName("courses");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 17:   //  TPCWare.SQLiteTest.ViewPage
+            case 18:   //  TPCWare.SQLiteTest.ViewLocation
                 userType = new global::TPCWare.SQLiteTest.TPCWare_SQLiteTest_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_17_ViewPage;
+                userType.Activator = Activate_18_ViewLocation;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 18:   //  TPCWare.SQLiteTest.ViewPDF
+            case 19:   //  TPCWare.SQLiteTest.ViewPage
                 userType = new global::TPCWare.SQLiteTest.TPCWare_SQLiteTest_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_18_ViewPDF;
+                userType.Activator = Activate_19_ViewPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 19:   //  TPCWare.SQLiteTest.Wrong
+            case 20:   //  TPCWare.SQLiteTest.ViewPDF
                 userType = new global::TPCWare.SQLiteTest.TPCWare_SQLiteTest_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_19_Wrong;
+                userType.Activator = Activate_20_ViewPDF;
+                userType.AddMemberName("users");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 21:   //  TPCWare.SQLiteTest.Wrong
+                userType = new global::TPCWare.SQLiteTest.TPCWare_SQLiteTest_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_21_Wrong;
                 userType.AddMemberName("users");
                 userType.SetIsLocalType();
                 xamlType = userType;
@@ -425,72 +460,162 @@ namespace TPCWare.SQLiteTest.TPCWare_SQLiteTest_Windows_XamlTypeInfo
             var that = (global::TPCWare.SQLiteTest.Model.Campuses)instance;
             that.City = (global::System.String)Value;
         }
-        private object get_4_SearchCollege_college(object instance)
+        private object get_4_Campuses_WebsiteLink(object instance)
+        {
+            var that = (global::TPCWare.SQLiteTest.Model.Campuses)instance;
+            return that.WebsiteLink;
+        }
+        private void set_4_Campuses_WebsiteLink(object instance, object Value)
+        {
+            var that = (global::TPCWare.SQLiteTest.Model.Campuses)instance;
+            that.WebsiteLink = (global::System.String)Value;
+        }
+        private object get_5_Campuses_Latitude(object instance)
+        {
+            var that = (global::TPCWare.SQLiteTest.Model.Campuses)instance;
+            return that.Latitude;
+        }
+        private void set_5_Campuses_Latitude(object instance, object Value)
+        {
+            var that = (global::TPCWare.SQLiteTest.Model.Campuses)instance;
+            that.Latitude = (global::System.String)Value;
+        }
+        private object get_6_Campuses_Longitude(object instance)
+        {
+            var that = (global::TPCWare.SQLiteTest.Model.Campuses)instance;
+            return that.Longitude;
+        }
+        private void set_6_Campuses_Longitude(object instance, object Value)
+        {
+            var that = (global::TPCWare.SQLiteTest.Model.Campuses)instance;
+            that.Longitude = (global::System.String)Value;
+        }
+        private object get_7_SearchCollege_college(object instance)
         {
             var that = (global::TPCWare.SQLiteTest.SearchCollege)instance;
             return that.college;
         }
-        private void set_4_SearchCollege_college(object instance, object Value)
+        private void set_7_SearchCollege_college(object instance, object Value)
         {
             var that = (global::TPCWare.SQLiteTest.SearchCollege)instance;
             that.college = (global::System.Collections.Generic.List<global::TPCWare.SQLiteTest.Model.College>)Value;
         }
-        private object get_5_College_Id(object instance)
+        private object get_8_College_Id(object instance)
         {
             var that = (global::TPCWare.SQLiteTest.Model.College)instance;
             return that.Id;
         }
-        private void set_5_College_Id(object instance, object Value)
+        private void set_8_College_Id(object instance, object Value)
         {
             var that = (global::TPCWare.SQLiteTest.Model.College)instance;
             that.Id = (global::System.Int32)Value;
         }
-        private object get_6_College_Name(object instance)
+        private object get_9_College_Name(object instance)
         {
             var that = (global::TPCWare.SQLiteTest.Model.College)instance;
             return that.Name;
         }
-        private void set_6_College_Name(object instance, object Value)
+        private void set_9_College_Name(object instance, object Value)
         {
             var that = (global::TPCWare.SQLiteTest.Model.College)instance;
             that.Name = (global::System.String)Value;
         }
-        private object get_7_College_City(object instance)
+        private object get_10_College_City(object instance)
         {
             var that = (global::TPCWare.SQLiteTest.Model.College)instance;
             return that.City;
         }
-        private void set_7_College_City(object instance, object Value)
+        private void set_10_College_City(object instance, object Value)
         {
             var that = (global::TPCWare.SQLiteTest.Model.College)instance;
             that.City = (global::System.String)Value;
         }
-        private object get_8_SearchPage_users(object instance)
+        private object get_11_SearchPage_users(object instance)
         {
             var that = (global::TPCWare.SQLiteTest.SearchPage)instance;
             return that.users;
         }
-        private void set_8_SearchPage_users(object instance, object Value)
+        private void set_11_SearchPage_users(object instance, object Value)
         {
             var that = (global::TPCWare.SQLiteTest.SearchPage)instance;
             that.users = (global::System.Collections.Generic.List<global::TPCWare.SQLiteTest.Model.Universities>)Value;
         }
-        private object get_9_Universities_Name(object instance)
+        private object get_12_Universities_Id(object instance)
+        {
+            var that = (global::TPCWare.SQLiteTest.Model.Universities)instance;
+            return that.Id;
+        }
+        private void set_12_Universities_Id(object instance, object Value)
+        {
+            var that = (global::TPCWare.SQLiteTest.Model.Universities)instance;
+            that.Id = (global::System.Int32)Value;
+        }
+        private object get_13_Universities_Name(object instance)
         {
             var that = (global::TPCWare.SQLiteTest.Model.Universities)instance;
             return that.Name;
         }
-        private void set_9_Universities_Name(object instance, object Value)
+        private void set_13_Universities_Name(object instance, object Value)
         {
             var that = (global::TPCWare.SQLiteTest.Model.Universities)instance;
             that.Name = (global::System.String)Value;
         }
-        private object get_10_Wrong_users(object instance)
+        private object get_14_ViewCourses_users(object instance)
+        {
+            var that = (global::TPCWare.SQLiteTest.ViewCourses)instance;
+            return that.users;
+        }
+        private void set_14_ViewCourses_users(object instance, object Value)
+        {
+            var that = (global::TPCWare.SQLiteTest.ViewCourses)instance;
+            that.users = (global::System.Collections.Generic.List<global::TPCWare.SQLiteTest.Model.Courses>)Value;
+        }
+        private object get_15_Courses_Id(object instance)
+        {
+            var that = (global::TPCWare.SQLiteTest.Model.Courses)instance;
+            return that.Id;
+        }
+        private void set_15_Courses_Id(object instance, object Value)
+        {
+            var that = (global::TPCWare.SQLiteTest.Model.Courses)instance;
+            that.Id = (global::System.Int32)Value;
+        }
+        private object get_16_Courses_Name(object instance)
+        {
+            var that = (global::TPCWare.SQLiteTest.Model.Courses)instance;
+            return that.Name;
+        }
+        private void set_16_Courses_Name(object instance, object Value)
+        {
+            var that = (global::TPCWare.SQLiteTest.Model.Courses)instance;
+            that.Name = (global::System.String)Value;
+        }
+        private object get_17_Courses_courses(object instance)
+        {
+            var that = (global::TPCWare.SQLiteTest.Model.Courses)instance;
+            return that.courses;
+        }
+        private void set_17_Courses_courses(object instance, object Value)
+        {
+            var that = (global::TPCWare.SQLiteTest.Model.Courses)instance;
+            that.courses = (global::System.String)Value;
+        }
+        private object get_18_ViewPDF_users(object instance)
+        {
+            var that = (global::TPCWare.SQLiteTest.ViewPDF)instance;
+            return that.users;
+        }
+        private void set_18_ViewPDF_users(object instance, object Value)
+        {
+            var that = (global::TPCWare.SQLiteTest.ViewPDF)instance;
+            that.users = (global::System.Collections.Generic.List<global::TPCWare.SQLiteTest.Model.Campuses>)Value;
+        }
+        private object get_19_Wrong_users(object instance)
         {
             var that = (global::TPCWare.SQLiteTest.Wrong)instance;
             return that.users;
         }
-        private void set_10_Wrong_users(object instance, object Value)
+        private void set_19_Wrong_users(object instance, object Value)
         {
             var that = (global::TPCWare.SQLiteTest.Wrong)instance;
             that.users = (global::System.Collections.Generic.List<global::TPCWare.SQLiteTest.Model.College>)Value;
@@ -527,47 +652,101 @@ namespace TPCWare.SQLiteTest.TPCWare_SQLiteTest_Windows_XamlTypeInfo
                 xamlMember.Getter = get_3_Campuses_City;
                 xamlMember.Setter = set_3_Campuses_City;
                 break;
+            case "TPCWare.SQLiteTest.Model.Campuses.WebsiteLink":
+                userType = (global::TPCWare.SQLiteTest.TPCWare_SQLiteTest_Windows_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TPCWare.SQLiteTest.Model.Campuses");
+                xamlMember = new global::TPCWare.SQLiteTest.TPCWare_SQLiteTest_Windows_XamlTypeInfo.XamlMember(this, "WebsiteLink", "String");
+                xamlMember.Getter = get_4_Campuses_WebsiteLink;
+                xamlMember.Setter = set_4_Campuses_WebsiteLink;
+                break;
+            case "TPCWare.SQLiteTest.Model.Campuses.Latitude":
+                userType = (global::TPCWare.SQLiteTest.TPCWare_SQLiteTest_Windows_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TPCWare.SQLiteTest.Model.Campuses");
+                xamlMember = new global::TPCWare.SQLiteTest.TPCWare_SQLiteTest_Windows_XamlTypeInfo.XamlMember(this, "Latitude", "String");
+                xamlMember.Getter = get_5_Campuses_Latitude;
+                xamlMember.Setter = set_5_Campuses_Latitude;
+                break;
+            case "TPCWare.SQLiteTest.Model.Campuses.Longitude":
+                userType = (global::TPCWare.SQLiteTest.TPCWare_SQLiteTest_Windows_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TPCWare.SQLiteTest.Model.Campuses");
+                xamlMember = new global::TPCWare.SQLiteTest.TPCWare_SQLiteTest_Windows_XamlTypeInfo.XamlMember(this, "Longitude", "String");
+                xamlMember.Getter = get_6_Campuses_Longitude;
+                xamlMember.Setter = set_6_Campuses_Longitude;
+                break;
             case "TPCWare.SQLiteTest.SearchCollege.college":
                 userType = (global::TPCWare.SQLiteTest.TPCWare_SQLiteTest_Windows_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TPCWare.SQLiteTest.SearchCollege");
                 xamlMember = new global::TPCWare.SQLiteTest.TPCWare_SQLiteTest_Windows_XamlTypeInfo.XamlMember(this, "college", "System.Collections.Generic.List`1<TPCWare.SQLiteTest.Model.College>");
-                xamlMember.Getter = get_4_SearchCollege_college;
-                xamlMember.Setter = set_4_SearchCollege_college;
+                xamlMember.Getter = get_7_SearchCollege_college;
+                xamlMember.Setter = set_7_SearchCollege_college;
                 break;
             case "TPCWare.SQLiteTest.Model.College.Id":
                 userType = (global::TPCWare.SQLiteTest.TPCWare_SQLiteTest_Windows_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TPCWare.SQLiteTest.Model.College");
                 xamlMember = new global::TPCWare.SQLiteTest.TPCWare_SQLiteTest_Windows_XamlTypeInfo.XamlMember(this, "Id", "Int32");
-                xamlMember.Getter = get_5_College_Id;
-                xamlMember.Setter = set_5_College_Id;
+                xamlMember.Getter = get_8_College_Id;
+                xamlMember.Setter = set_8_College_Id;
                 break;
             case "TPCWare.SQLiteTest.Model.College.Name":
                 userType = (global::TPCWare.SQLiteTest.TPCWare_SQLiteTest_Windows_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TPCWare.SQLiteTest.Model.College");
                 xamlMember = new global::TPCWare.SQLiteTest.TPCWare_SQLiteTest_Windows_XamlTypeInfo.XamlMember(this, "Name", "String");
-                xamlMember.Getter = get_6_College_Name;
-                xamlMember.Setter = set_6_College_Name;
+                xamlMember.Getter = get_9_College_Name;
+                xamlMember.Setter = set_9_College_Name;
                 break;
             case "TPCWare.SQLiteTest.Model.College.City":
                 userType = (global::TPCWare.SQLiteTest.TPCWare_SQLiteTest_Windows_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TPCWare.SQLiteTest.Model.College");
                 xamlMember = new global::TPCWare.SQLiteTest.TPCWare_SQLiteTest_Windows_XamlTypeInfo.XamlMember(this, "City", "String");
-                xamlMember.Getter = get_7_College_City;
-                xamlMember.Setter = set_7_College_City;
+                xamlMember.Getter = get_10_College_City;
+                xamlMember.Setter = set_10_College_City;
                 break;
             case "TPCWare.SQLiteTest.SearchPage.users":
                 userType = (global::TPCWare.SQLiteTest.TPCWare_SQLiteTest_Windows_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TPCWare.SQLiteTest.SearchPage");
                 xamlMember = new global::TPCWare.SQLiteTest.TPCWare_SQLiteTest_Windows_XamlTypeInfo.XamlMember(this, "users", "System.Collections.Generic.List`1<TPCWare.SQLiteTest.Model.Universities>");
-                xamlMember.Getter = get_8_SearchPage_users;
-                xamlMember.Setter = set_8_SearchPage_users;
+                xamlMember.Getter = get_11_SearchPage_users;
+                xamlMember.Setter = set_11_SearchPage_users;
+                break;
+            case "TPCWare.SQLiteTest.Model.Universities.Id":
+                userType = (global::TPCWare.SQLiteTest.TPCWare_SQLiteTest_Windows_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TPCWare.SQLiteTest.Model.Universities");
+                xamlMember = new global::TPCWare.SQLiteTest.TPCWare_SQLiteTest_Windows_XamlTypeInfo.XamlMember(this, "Id", "Int32");
+                xamlMember.Getter = get_12_Universities_Id;
+                xamlMember.Setter = set_12_Universities_Id;
                 break;
             case "TPCWare.SQLiteTest.Model.Universities.Name":
                 userType = (global::TPCWare.SQLiteTest.TPCWare_SQLiteTest_Windows_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TPCWare.SQLiteTest.Model.Universities");
                 xamlMember = new global::TPCWare.SQLiteTest.TPCWare_SQLiteTest_Windows_XamlTypeInfo.XamlMember(this, "Name", "String");
-                xamlMember.Getter = get_9_Universities_Name;
-                xamlMember.Setter = set_9_Universities_Name;
+                xamlMember.Getter = get_13_Universities_Name;
+                xamlMember.Setter = set_13_Universities_Name;
+                break;
+            case "TPCWare.SQLiteTest.ViewCourses.users":
+                userType = (global::TPCWare.SQLiteTest.TPCWare_SQLiteTest_Windows_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TPCWare.SQLiteTest.ViewCourses");
+                xamlMember = new global::TPCWare.SQLiteTest.TPCWare_SQLiteTest_Windows_XamlTypeInfo.XamlMember(this, "users", "System.Collections.Generic.List`1<TPCWare.SQLiteTest.Model.Courses>");
+                xamlMember.Getter = get_14_ViewCourses_users;
+                xamlMember.Setter = set_14_ViewCourses_users;
+                break;
+            case "TPCWare.SQLiteTest.Model.Courses.Id":
+                userType = (global::TPCWare.SQLiteTest.TPCWare_SQLiteTest_Windows_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TPCWare.SQLiteTest.Model.Courses");
+                xamlMember = new global::TPCWare.SQLiteTest.TPCWare_SQLiteTest_Windows_XamlTypeInfo.XamlMember(this, "Id", "Int32");
+                xamlMember.Getter = get_15_Courses_Id;
+                xamlMember.Setter = set_15_Courses_Id;
+                break;
+            case "TPCWare.SQLiteTest.Model.Courses.Name":
+                userType = (global::TPCWare.SQLiteTest.TPCWare_SQLiteTest_Windows_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TPCWare.SQLiteTest.Model.Courses");
+                xamlMember = new global::TPCWare.SQLiteTest.TPCWare_SQLiteTest_Windows_XamlTypeInfo.XamlMember(this, "Name", "String");
+                xamlMember.Getter = get_16_Courses_Name;
+                xamlMember.Setter = set_16_Courses_Name;
+                break;
+            case "TPCWare.SQLiteTest.Model.Courses.courses":
+                userType = (global::TPCWare.SQLiteTest.TPCWare_SQLiteTest_Windows_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TPCWare.SQLiteTest.Model.Courses");
+                xamlMember = new global::TPCWare.SQLiteTest.TPCWare_SQLiteTest_Windows_XamlTypeInfo.XamlMember(this, "courses", "String");
+                xamlMember.Getter = get_17_Courses_courses;
+                xamlMember.Setter = set_17_Courses_courses;
+                break;
+            case "TPCWare.SQLiteTest.ViewPDF.users":
+                userType = (global::TPCWare.SQLiteTest.TPCWare_SQLiteTest_Windows_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TPCWare.SQLiteTest.ViewPDF");
+                xamlMember = new global::TPCWare.SQLiteTest.TPCWare_SQLiteTest_Windows_XamlTypeInfo.XamlMember(this, "users", "System.Collections.Generic.List`1<TPCWare.SQLiteTest.Model.Campuses>");
+                xamlMember.Getter = get_18_ViewPDF_users;
+                xamlMember.Setter = set_18_ViewPDF_users;
                 break;
             case "TPCWare.SQLiteTest.Wrong.users":
                 userType = (global::TPCWare.SQLiteTest.TPCWare_SQLiteTest_Windows_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TPCWare.SQLiteTest.Wrong");
                 xamlMember = new global::TPCWare.SQLiteTest.TPCWare_SQLiteTest_Windows_XamlTypeInfo.XamlMember(this, "users", "System.Collections.Generic.List`1<TPCWare.SQLiteTest.Model.College>");
-                xamlMember.Getter = get_10_Wrong_users;
-                xamlMember.Setter = set_10_Wrong_users;
+                xamlMember.Getter = get_19_Wrong_users;
+                xamlMember.Setter = set_19_Wrong_users;
                 break;
             }
             return xamlMember;

@@ -1,8 +1,10 @@
-﻿using System;
+﻿using SQLite;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using TPCWare.SQLiteTest.Model;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -22,14 +24,33 @@ namespace TPCWare.SQLiteTest
     /// </summary>
     public sealed partial class ViewCourses : Page
     {
+        public List<Courses> users { get; set; }
         public ViewCourses()
         {
             this.InitializeComponent();
         }
+        protected async override void OnNavigatedTo(NavigationEventArgs e)
+        {
 
+
+            string part = e.Parameter as string;
+           // label.Text = part;
+            // Get users
+
+            SQLiteAsyncConnection connection = new SQLiteAsyncConnection("institutionFinder.db");
+            users = await connection.QueryAsync<Courses>("Select * FROM Courses");
+            // Show users
+            viewcourses.ItemsSource = users;
+
+        }
         private void Back_button_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(ViewPage));
+            this.Frame.Navigate(typeof(MainPage));
+        }
+
+        private void UserList_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }

@@ -1,8 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Roots >
   <Roots.PropertyPathNames>
-    <RootPropertyPathName Name="City" />
     <RootPropertyPathName Name="Name" />
+    <RootPropertyPathName Name="SelectedItem" />
+    <RootPropertyPathName Name="courses" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application" />
@@ -39,7 +40,6 @@
     <RootType FullName="Windows.UI.Xaml.Controls.ListView">
       <RootProperty Name="Margin" />
       <RootProperty Name="ItemTemplate" />
-      <RootProperty Name="SelectionMode" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Height" />
       <RootProperty Name="VerticalAlignment" />
@@ -56,6 +56,7 @@
       <RootProperty Name="Height" />
       <RootProperty Name="FontWeight" />
       <RootProperty Name="Width" />
+      <RootProperty Name="Inlines" />
       <RootProperty Name="Foreground" />
       <RootProperty Name="FontStyle" />
     </RootType>
@@ -78,7 +79,14 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="Children" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Data.Binding" />
+    <RootType FullName="Windows.UI.Xaml.Data.Binding">
+      <RootProperty Name="ElementName" />
+      <RootProperty Name="Path" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Documents.Run">
+      <RootProperty Name="Text" />
+      <RootProperty Name="FontWeight" />
+    </RootType>
     <RootType FullName="TPCWare.SQLiteTest.MainPage" />
     <RootType FullName="TPCWare.SQLiteTest.Search" />
     <RootType FullName="TPCWare.SQLiteTest.SearchCollege" />

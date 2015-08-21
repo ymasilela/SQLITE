@@ -1,4 +1,5 @@
 ﻿using System;
+
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -88,130 +89,25 @@ namespace TPCWare.SQLiteTest
 
         private void ListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            if (searchViewList.SelectedItems.Count > 0)
+            Universities seg = searchViewList.SelectedItem as Universities;
+            if (seg != null)
             {
-               string name = "TUT";
-                //this.Frame.Navigate(typeof(MainPage));
-                Universities uni = new Universities();
-                var sel = searchViewList.SelectedItems.Cast<Object>().ToArray();
-                string[] applianceNames = {""};
-               
+                this.Frame.Navigate(typeof(MainPage), seg.Name);
 
-                for (int i = 0; i < sel.Count(); i++)
-                {
-                    string Name = "";
-
-                    if (searchViewList.SelectedItems.Count == 0)
-                    {
-                        Name = "Tshwane University of Technology";
-
-                    }
-                    else if (searchViewList.SelectedItems.Count == 1)
-                    {
-                        Name = "University Of Johannesburg";
-
-                    }
-                    else if (searchViewList.SelectedItems.Count == 2)
-                    {
-                        Name = "University Of Pretoria";
-
-                    }
-                    else if (searchViewList.SelectedItems.Count == 3)
-                    {
-                        Name = "University Of Limpopo";
-
-                    }
-                    else if (searchViewList.SelectedItems.Count == 4)
-                    {
-                        Name = "University of South Africa";
-
-                    }
-                    else if (searchViewList.SelectedItems.Count == 5)
-                    {
-                        Name = "University of Kwazulu Natal";
-
-                    }
-                    else if (searchViewList.SelectedItems.Count == 6)
-                    {
-                        Name = "University of Stellenbosch";
-
-                    }
-                    else if (searchViewList.SelectedItems.Count == 7)
-                    {
-                        Name = "University of Mpumalanga";
-                    }
-                    else if (searchViewList.SelectedItems.Count == 8)
-                    {
-                        Name = "University of Venda";
-
-                    }
-                    else
-                    {
-                        Name = "Nelson Mandela Metropolitan Univesity";
-
-                    }
-                    MessageBox(Name + "");
-                }
-           
             }
+            
         }
 
-        private void UserList_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private async void UserList_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            string Name = "";
-          
-                if (searchViewList.SelectedItems.Count == 0)
-                {
-                    Name = "Tshwane University of Technology";
 
-                }
-                else if (searchViewList.SelectedItems.Count == 1)
-                {
-                    Name = "University Of Johannesburg";
+            Universities seg = searchViewList.SelectedItem as Universities;
+            if (seg != null)
+            {
+               this.Frame.Navigate(typeof(MainPage), seg.Name);
+               
+            }
 
-                }
-                else if (searchViewList.SelectedItems.Count == 2)
-                {
-                    Name = "University Of Pretoria";
-
-                }
-                else if (searchViewList.SelectedItems.Count == 3)
-                {
-                    Name = "University Of Limpopo";
-
-                }
-                else if (searchViewList.SelectedItems.Count == 4)
-                {
-                    Name = "University of South Africa";
-
-                }
-                else if (searchViewList.SelectedItems.Count == 5)
-                {
-                    Name = "University of Kwazulu Natal";
-
-                }
-                else if (searchViewList.SelectedItems.Count == 6)
-                {
-                    Name = "University of Stellenbosch";
-
-                }
-                else if (searchViewList.SelectedItems.Count == 7)
-                {
-                    Name = "University of Mpumalanga";
-                }
-                else if (searchViewList.SelectedItems.Count == 8)
-                {
-                    Name = "University of Venda";
-
-                }
-                else
-                {
-                    Name = "Nelson Mandela Metropolitan Univesity";
-
-                }
-            
-
-            this.Frame.Navigate(typeof(MainPage), Name);
            
         }
 

@@ -14,8 +14,10 @@
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Margin="10">
-                        <TextBlock Text="{Binding Name}" />
-                        <TextBlock Text="{Binding City}" />
+                        <TextBlock Text="{Binding Name}" >
+                     
+                        <Run Text="{Binding ElementName=searchViewList, Path=SelectedItem.Name}" FontWeight="Bold" />
+                        </TextBlock>
                     </StackPanel>
                 </DataTemplate>
             </ListView.ItemTemplate>

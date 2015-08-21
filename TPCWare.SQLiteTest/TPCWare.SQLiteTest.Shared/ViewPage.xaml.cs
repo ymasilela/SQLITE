@@ -24,25 +24,40 @@ namespace TPCWare.SQLiteTest
     /// </summary>
     public sealed partial class ViewPage : Page
     {
-        
+        string part;
         public ViewPage()
         {
             this.InitializeComponent();
 
            
         }
+        protected async override void OnNavigatedTo(NavigationEventArgs e)
+        {
 
+
+             part = e.Parameter as string;
+            campName.Text = part;
+            // Get users
+         
+
+                   
+
+
+
+        }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
 
-            this.Frame.Navigate(typeof(ViewLocation));
+            string name = part;
+            this.Frame.Navigate(typeof(ViewLocation),part);
         }
 
-      
+
         private async void pdf_Click(object sender, RoutedEventArgs e)
         {
             // Access isolated storage.
-            this.Frame.Navigate(typeof(ViewPDF));
+            string name = part;
+            this.Frame.Navigate(typeof(ViewPDF),part);
           
            
         }
@@ -56,7 +71,7 @@ namespace TPCWare.SQLiteTest
         {
         
             
-            this.Frame.Navigate(typeof(MainPage));
+            this.Frame.Navigate(typeof(SearchPage));
         }
 
      

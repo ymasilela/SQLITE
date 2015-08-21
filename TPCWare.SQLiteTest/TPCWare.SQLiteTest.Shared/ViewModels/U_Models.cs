@@ -9,7 +9,7 @@ using System.Linq;
 
 namespace TPCWare.SQLiteTest.ViewModels
 {
-    class U_Models 
+    public class U_Models 
     {
 
         private ObservableCollection<U_Models> projects;
@@ -54,6 +54,14 @@ namespace TPCWare.SQLiteTest.ViewModels
             var result = await connection.QueryAsync<Campuses>("Select * FROM Campuses WHERE Name ='" + name + "'");
             return result.SingleOrDefault();
         }*/
-       
+
+        public async Task<Campuses> getCampus(string CampusName)
+        {
+            SQLiteAsyncConnection connection = new SQLiteAsyncConnection("institutionFinder.db");
+            var result = await connection.QueryAsync<Campuses>("Select * FROM Campuses WHERE Name ='" + CampusName + "'");
+            return result.SingleOrDefault();
+        }
+
+
     }
 }
