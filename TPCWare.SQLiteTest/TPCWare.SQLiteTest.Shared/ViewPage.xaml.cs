@@ -49,7 +49,7 @@ namespace TPCWare.SQLiteTest
         {
 
             string name = part;
-            this.Frame.Navigate(typeof(ViewLocation),part);
+            this.Frame.Navigate(typeof(MainPage),part);
         }
 
 

@@ -45,12 +45,15 @@ namespace TPCWare.SQLiteTest
         }
         private void Back_button_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(MainPage));
+            this.Frame.Navigate(typeof(SearchPage));
         }
 
         private void UserList_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-
+            if (viewcourses.SelectedIndex >= -1)
+            {
+                viewcourses.IsEnabled = false;
+            }
         }
     }
 }

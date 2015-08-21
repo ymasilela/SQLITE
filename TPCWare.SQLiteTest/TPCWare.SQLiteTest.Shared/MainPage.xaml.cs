@@ -179,7 +179,7 @@ namespace TPCWare.SQLiteTest
             Campuses seg = UserList.SelectedItem as Campuses;
             if (seg != null)
             {
-                this.Frame.Navigate(typeof(ViewPage),seg.Name);//TextBlock called bckChoiceSelected
+                this.Frame.Navigate(typeof(ViewLocation),seg.Name);//TextBlock called bckChoiceSelected
             }
        }
            

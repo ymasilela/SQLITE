@@ -9,8 +9,8 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <TextBlock HorizontalAlignment="Left" Margin="10,26,0,0" TextWrapping="Wrap" Text="Institution Finder App" VerticalAlignment="Top" FontSize="36" Height="101" FontWeight="Bold" Width="380"/>
-        <Button x:Name="back_se" Content="Back" HorizontalAlignment="Left" Margin="10,566,0,0" VerticalAlignment="Top" Width="380" Height="73" Background="#FF27996F" Foreground="#FF060606" Click="back_se_Click"/>
-        <ListView x:Name="searchViewList" Margin="20,93,20,96" SelectionChanged="UserList_SelectionChanged">
+        <Button x:Name="back_se" Content="Back" HorizontalAlignment="Left" Margin="13,699,0,0" VerticalAlignment="Top" Width="380" Height="48" Background="#FF27996F" Foreground="#FF060606" Click="back_se_Click"/>
+        <ListView x:Name="searchViewList" Margin="16,127,931,98" SelectionChanged="UserList_SelectionChanged">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Margin="10">

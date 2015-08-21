@@ -10,13 +10,14 @@
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <TextBlock HorizontalAlignment="Left" Margin="24,27,0,0" TextWrapping="Wrap" Text="Institution Finder App" VerticalAlignment="Top" FontSize="36" Height="62"/>
         <TextBlock x:Name="label" HorizontalAlignment="Left" Margin="10,94,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Height="30" Width="390" Foreground="#FF27996F" FontWeight="Bold" FontStyle="Italic"/>
-        <Button x:Name="Back_button" Content="Back" HorizontalAlignment="Left" Margin="10,582,0,0" VerticalAlignment="Top" Width="380" Click="Back_button_Click" Background="#FF27996F" Foreground="#FF0A0909"/>
-        <ListView x:Name="viewcourses" Grid.Row="1" Margin="20,132,20,0" SelectionChanged="UserList_SelectionChanged">
+        <Button x:Name="Back_button" Content="Back" HorizontalAlignment="Left" Margin="7,692,0,0" VerticalAlignment="Top" Width="380" Click="Back_button_Click" Background="#FF27996F" Foreground="#FF0A0909" Height="54"/>
+        <ListView x:Name="viewcourses" Margin="20,124,912,114" SelectionChanged="UserList_SelectionChanged" IsItemClickEnabled="False">
             <ListView.ItemTemplate>
+
                 <DataTemplate>
                     <StackPanel Margin="10">
                         <TextBlock Text="{Binding courses}" />
-                     
+
                     </StackPanel>
                 </DataTemplate>
             </ListView.ItemTemplate>

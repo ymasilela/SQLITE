@@ -104,7 +104,7 @@ namespace TPCWare.SQLiteTest
             Universities seg = searchViewList.SelectedItem as Universities;
             if (seg != null)
             {
-               this.Frame.Navigate(typeof(MainPage), seg.Name);
+               this.Frame.Navigate(typeof(ViewPage), seg.Name);
                
             }
 
