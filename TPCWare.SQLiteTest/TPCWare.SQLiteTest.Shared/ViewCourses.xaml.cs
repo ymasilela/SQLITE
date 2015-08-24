@@ -25,6 +25,7 @@ namespace TPCWare.SQLiteTest
     public sealed partial class ViewCourses : Page
     {
         public List<Courses> users { get; set; }
+        string part = "";
         public ViewCourses()
         {
             this.InitializeComponent();
@@ -33,8 +34,8 @@ namespace TPCWare.SQLiteTest
         {
 
 
-            string part = e.Parameter as string;
-           // label.Text = part;
+             part = e.Parameter as string;
+            label.Text = part;
             // Get users
 
             SQLiteAsyncConnection connection = new SQLiteAsyncConnection("institutionFinder.db");
@@ -45,7 +46,7 @@ namespace TPCWare.SQLiteTest
         }
         private void Back_button_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(SearchPage));
+            this.Frame.Navigate(typeof(ViewPage),part);
         }
 
         private void UserList_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -54,6 +55,11 @@ namespace TPCWare.SQLiteTest
             {
                 viewcourses.IsEnabled = false;
             }
+        }
+
+        private void viewcourses_ItemClick(object sender, ItemClickEventArgs e)
+        {
+
         }
     }
 }

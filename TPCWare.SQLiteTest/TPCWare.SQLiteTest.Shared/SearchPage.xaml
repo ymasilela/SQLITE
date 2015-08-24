@@ -7,16 +7,16 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBlock HorizontalAlignment="Left" Margin="10,26,0,0" TextWrapping="Wrap" Text="Institution Finder App" VerticalAlignment="Top" FontSize="36" Height="101" FontWeight="Bold" Width="380"/>
-        <Button x:Name="back_se" Content="Back" HorizontalAlignment="Left" Margin="13,699,0,0" VerticalAlignment="Top" Width="380" Height="48" Background="#FF27996F" Foreground="#FF060606" Click="back_se_Click"/>
-        <ListView x:Name="searchViewList" Margin="16,127,931,98" SelectionChanged="UserList_SelectionChanged">
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="0,0.333,0,93.667">
+        <TextBlock HorizontalAlignment="Left" Margin="10,26,0,0" TextWrapping="Wrap" Text="Institution Finder App" VerticalAlignment="Top" FontSize="36" Height="46" FontWeight="Bold" Width="380"/>
+        <Button x:Name="back_se" Content="Back" HorizontalAlignment="Left" Margin="16,563,0,-75" VerticalAlignment="Top" Width="380" Height="48" Background="#FF27996F" Foreground="#FF060606" Click="back_se_Click"/>
+        <ListView x:Name="searchViewList" Margin="16,97,10,10" SelectionChanged="UserList_SelectionChanged">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Margin="10">
                         <TextBlock Text="{Binding Name}" >
                      
-                        <Run Text="{Binding ElementName=searchViewList, Path=SelectedItem.Name}" FontWeight="Bold" />
+                        <Run Text="{Binding ElementName=s, Path=SelectedItem.Name}" FontWeight="Bold" />
                         </TextBlock>
                     </StackPanel>
                 </DataTemplate>

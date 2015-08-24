@@ -23,18 +23,28 @@ namespace TPCWare.SQLiteTest
     /// </summary>
     public sealed partial class ViewLocation : Page
     {
+        String part = "";
         public ViewLocation()
         {
             this.InitializeComponent();
+           
+        }
+        protected async override void OnNavigatedTo(NavigationEventArgs e)
+        {
+
+
+            part = e.Parameter as string;
+            textLoc1.Text = part;
+            // Get users
             Uri targetUris = new Uri(@"https://www.google.co.za/maps/@-25.7759525,28.1377125,13z?hl=en");
             webView.Navigate(targetUris);
-        }
 
+        }
  
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(SearchPage));
+            this.Frame.Navigate(typeof(Search));
         }
     }
 }

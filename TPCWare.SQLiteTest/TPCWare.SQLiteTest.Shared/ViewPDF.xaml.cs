@@ -5,6 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using TPCWare.SQLiteTest.Model;
+using TPCWare.SQLiteTest.ViewModels;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -24,7 +25,9 @@ namespace TPCWare.SQLiteTest
     /// </summary>
     public sealed partial class ViewPDF : Page
     {
-        public List<Campuses> users { get; set; }
+        private CampusModels Model = null;
+        public Campuses users { get; set; }
+        string part = "";
         public ViewPDF()
         {
            
@@ -36,18 +39,20 @@ namespace TPCWare.SQLiteTest
         protected async override void OnNavigatedTo(NavigationEventArgs e)
         {
 
-
-            string part = e.Parameter as string;
-        
+            Model = new CampusModels();
+             part = e.Parameter as string;
+            
             // Get users
-
+             Campuses c= Model.getAll("Soweto Campus");
             SQLiteAsyncConnection connection = new SQLiteAsyncConnection("institutionFinder.db");
-            users = await connection.QueryAsync<Campuses>("Select websiteLink FROM Campuses WHERE Name ='" + part + "'");
+          //  users = await connection.QueryAsync<Campuses>("Select WebsiteLink FROM Campuses WHERE Name = '" +part+ "'").Single();
+           // users = await connection.QueryAsync<Campuses>("Select WebsiteLink FROM Campuses WHERE Name = '" + part + "'").FirstOrDefault();
             // Show users
+     
          
            // Uri targetUri = new Uri("@" + users);
            // webView1.Navigate(targetUri);
-            MessageBox(users + "");
+            MessageBox(c.WebsiteLink + "");
 
         }
         public async void MessageBox(String message)
@@ -58,7 +63,7 @@ namespace TPCWare.SQLiteTest
 
         private void back_web_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(ViewPage));
+            this.Frame.Navigate(typeof(ViewPage),part);
         }
 
         private void webView1_LoadCompleted(object sender, NavigationEventArgs e)

@@ -64,12 +64,17 @@ namespace TPCWare.SQLiteTest
 
         private void UserList_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            College seg = searchColleges.SelectedItem as College;
+            if (seg != null)
+            {
+                this.Frame.Navigate(typeof(ViewPage), seg.Name);
 
+            }
         }
 
         private void back_main_Click(object sender, RoutedEventArgs e)
         {
-
+            this.Frame.Navigate(typeof(Search));
         }
     }
 }

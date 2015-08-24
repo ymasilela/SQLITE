@@ -64,14 +64,15 @@ namespace TPCWare.SQLiteTest
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(ViewCourses));
+            string name = part;
+            this.Frame.Navigate(typeof(ViewCourses),part);
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
         
             
-            this.Frame.Navigate(typeof(SearchPage));
+            this.Frame.Navigate(typeof(Search));
         }
 
      

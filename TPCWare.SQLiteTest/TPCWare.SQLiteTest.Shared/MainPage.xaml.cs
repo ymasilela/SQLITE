@@ -30,7 +30,8 @@ namespace TPCWare.SQLiteTest
     {
         public List<Campuses> users { get; set; }
         private string item = string.Empty;
-       
+   
+        string part = "";
            Campuses newUser = new Campuses();
         public MainPage()
         {
@@ -41,7 +42,8 @@ namespace TPCWare.SQLiteTest
         {
 
 
-            string part = e.Parameter as string;
+             part = e.Parameter as string;
+         
             navigated.Text = part;
                 // Get users
 
@@ -74,24 +76,7 @@ namespace TPCWare.SQLiteTest
             await dialog.ShowAsync();
         }
 
-        private async void AddUserAppBarButton_Click(object sender, RoutedEventArgs e)
-        {
-            // Create a random user
-         
-          
-          
-               // Add row to the User Table
-               SQLiteAsyncConnection conn = new SQLiteAsyncConnection("institutionFinder.db");
-               await conn.InsertAsync(newUser);
 
-               // Add to the user list
-               users.Add(newUser);
-
-               // Refresh user list
-               UserList.ItemsSource = null;
-               UserList.ItemsSource = users;
-           
-        }
         private void listView1_DoubleClick(object sender, EventArgs e)
         {
             var i = UserList.SelectedItems.ToArray();
@@ -103,27 +88,7 @@ namespace TPCWare.SQLiteTest
             MessageBox(item +"");
         }
 
-        private async void DeleteUserAppBarButton_Click(object sender, RoutedEventArgs e)
-        {
-            if (users != null && users.Count > 0)
-            {
-                // get last inserted user
-                Campuses user = users.Last();
-
-                // delete the row of the table
-                // SQLite uses the User.Id to find witch row correspond to the user instance
-                SQLiteAsyncConnection conn = new SQLiteAsyncConnection("institutionFinder.db");
-                await conn.DeleteAsync(user);
-
-                // delete the user from the user list
-                users.RemoveAt(users.Count - 1);
-
-                // Refresh user list
-                UserList.ItemsSource = null;
-                UserList.ItemsSource = users;
-            }
-            
-        }
+    
 
         #region SQLite utils
 
@@ -179,14 +144,15 @@ namespace TPCWare.SQLiteTest
             Campuses seg = UserList.SelectedItem as Campuses;
             if (seg != null)
             {
-                this.Frame.Navigate(typeof(ViewLocation),seg.Name);//TextBlock called bckChoiceSelected
+                this.Frame.Navigate(typeof(ViewLocation),part +", "+seg.Name);//TextBlock called bckChoiceSelected
+                
             }
        }
            
 
         private void back_main_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(SearchPage));
+            this.Frame.Navigate(typeof(ViewPage), part);
 
         }
     }

@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Linq;
 using System.Collections.Generic;
 using System.Text;
+using TPCWare.SQLiteTest.Model;
 using Windows.UI.Xaml;
 
 namespace TPCWare.SQLiteTest.ViewModels
@@ -32,6 +34,14 @@ namespace TPCWare.SQLiteTest.ViewModels
                 if (id == value)
                 { return; }
                 id = value;
+            }
+        }
+        public Campuses getAll(string na)
+        {
+            using (var db = new SQLite.SQLiteConnection(app.DBPath))
+            {
+                var q = db.Query<Campuses>("select * from Campuses where City ='"+na+"'").FirstOrDefault();
+                return q;
             }
         }
     }

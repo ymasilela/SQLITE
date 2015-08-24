@@ -35,7 +35,7 @@ namespace TPCWare.SQLiteTest
 #endif
 
         public static SQLiteAsyncConnection conn = new SQLiteAsyncConnection("institutionFinder.db");
-      
+    
 
 
         /// <summary>
@@ -62,7 +62,7 @@ namespace TPCWare.SQLiteTest
                 this.DebugSettings.EnableFrameRateCounter = true;
             }
 #endif
-
+            DBPath = Path.Combine(Windows.Storage.ApplicationData.Current.LocalFolder.Path, "institutionFinder.db");
             // Create Db if not exist
             bool dbExist = await CheckDbAsync("institutionFinder.db");
             if (!dbExist)
@@ -187,88 +187,89 @@ namespace TPCWare.SQLiteTest
                 new Campuses()
                 {
                     City = "Tshwane University of Technology",
-                    Name = "Soshanguve South Campus"
+                    Name = "Soshanguve South Campus",
+                    WebsiteLink = "www.tut.ac.za"
                     
                 },
                 new Campuses()
                 {
                     City = "Tshwane University of Technology",
-                    Name = "Soshanguve North Campus"
-                   
+                    Name = "Soshanguve North Campus",
+                   WebsiteLink = "www.tut.ac.za"
                 },
                 new Campuses()
                 {
                     City = "Tshwane University of Technology",
-                    Name = "Pretoria Campus"
-                
+                    Name = "Pretoria Campus",
+                    WebsiteLink = "www.tut.ac.za"
                 },
                  new Campuses()
                 {
                     City = "Tshwane University of Technology",
-                    Name = "Malahleni Campus"
-                
+                    Name = "Malahleni Campus",
+                    WebsiteLink = "www.tut.ac.za"
                 },
                  new Campuses()
                 {
                     City = "Tshwane University of Technology",
-                    Name = "Nelpruit Campus"
-                
+                    Name = "Nelpruit Campus",
+                    WebsiteLink = "www.tut.ac.za"
                 },
                  new Campuses()
                 {
                     City = "Tshwane University of Technology",
-                    Name = "Ga-Rankuwa Campus"
-                
+                    Name = "Ga-Rankuwa Campus",
+                    WebsiteLink = "www.tut.ac.za"
                 },
                  new Campuses()
                 {
                     City = "University Of Johannesburg",
-                    Name = "Randburg Campus"
-                
+                    Name = "Randburg Campus",
+                    WebsiteLink = "www.uj.ac.za"
                 },
                     //TNC
                  new Campuses()
             
                 {
                     City = "University Of Johannesburg",
-                    Name = "Soweto Campus"
-                
+                    Name = "Soweto Campus",
+                    WebsiteLink = "www.uj.ac.za"
                 },
                  new Campuses()
                 {
                     City = "University Of Johannesburg",
-                    Name = "Johannesburg Campus"
-                
+                    Name = "Johannesburg Campus",
+                    WebsiteLink = "www.uj.ac.za"
                 },
                  new Campuses()
                 {
                    City = "TNC",
-                    Name = "Arcadia Campus"
-                
+                    Name = "Arcadia Campus",
+                    WebsiteLink = "www.tnc.ac.za"
                 },
                  new Campuses()
                 {
                     City = "ROSEBANK",
-                    Name = "Only Pretoria campus"
-                
+                    Name = "Only Pretoria campus",
+                    WebsiteLink = "www.rosebank.ac.za"
                 },
                   new Campuses()
                 {
                     City = "University Of Limpopo",
-                    Name = "Polokwane campus"
-                
+                    Name = "Polokwane campus",
+                    WebsiteLink = "www.ul.ac.za"
                 },
                    new Campuses()
                 {
                     City = "University Of Limpopo",
-                    Name = "Medunsa campus"
-                
+                    Name = "Medunsa campus",
+                    WebsiteLink = "www.ul.ac.za"
                 },
                    new Campuses()
                 {
                     City = "University Of Limpopo",
-                    Name = "Turfloop Campus"
-                
+                    Name = "Turfloop Campus",
+                    WebsiteLink = "www.ul.ac.za"
                 }
             };
 
@@ -344,6 +345,186 @@ namespace TPCWare.SQLiteTest
                 
                 },
                  new Courses()
+                {
+                    Id = 1,
+                    courses = "Public Management",
+                   
+                },
+                new Courses()
+                {
+                    Id = 3,
+                    courses = "Language Practise",
+                
+                },
+                 new Courses()
+                {
+                    Id = 1,
+                    courses = "Language Practise",
+                
+                },
+                    new Courses()
+                {
+                    Id = 1,
+                    courses = "Public Management",
+                   
+                },
+                new Courses()
+                {
+                    Id = 3,
+                    courses = "Language Practise",
+                
+                },
+                 new Courses()
+                {
+                    Id = 1,
+                    courses = "Language Practise",
+                
+                },
+                    new Courses()
+                {
+                    Id = 1,
+                    courses = "Public Management",
+                   
+                },
+                new Courses()
+                {
+                    Id = 3,
+                    courses = "Language Practise",
+                
+                },
+                 new Courses()
+                {
+                    Id = 1,
+                    courses = "Language Practise",
+                
+                },
+                    new Courses()
+                {
+                    Id = 1,
+                    courses = "Public Management",
+                   
+                },
+                new Courses()
+                {
+                    Id = 3,
+                    courses = "Language Practise",
+                
+                },
+                 new Courses()
+                {
+                    Id = 1,
+                    courses = "Language Practise",
+                
+                },
+                    new Courses()
+                {
+                    Id = 1,
+                    courses = "Public Management",
+                   
+                },
+                new Courses()
+                {
+                    Id = 3,
+                    courses = "Language Practise",
+                
+                },
+                 new Courses()
+                {
+                    Id = 1,
+                    courses = "Language Practise",
+                
+                },
+                    new Courses()
+                {
+                    Id = 1,
+                    courses = "Public Management",
+                   
+                },
+                new Courses()
+                {
+                    Id = 3,
+                    courses = "Language Practise",
+                
+                },
+                 new Courses()
+                {
+                    Id = 1,
+                    courses = "Language Practise",
+                
+                },
+                    new Courses()
+                {
+                    Id = 1,
+                    courses = "Public Management",
+                   
+                },
+                new Courses()
+                {
+                    Id = 3,
+                    courses = "Language Practise",
+                
+                },
+                 new Courses()
+                {
+                    Id = 1,
+                    courses = "Language Practise",
+                
+                },
+                    new Courses()
+                {
+                    Id = 1,
+                    courses = "Public Management",
+                   
+                },
+                new Courses()
+                {
+                    Id = 3,
+                    courses = "Language Practise",
+                
+                },
+                 new Courses()
+                {
+                    Id = 1,
+                    courses = "Language Practise",
+                
+                },
+                    new Courses()
+                {
+                    Id = 1,
+                    courses = "Public Management",
+                   
+                },
+                new Courses()
+                {
+                    Id = 3,
+                    courses = "Language Practise",
+                
+                },
+                 new Courses()
+                {
+                    Id = 1,
+                    courses = "Language Practise",
+                
+                },
+                    new Courses()
+                {
+                    Id = 1,
+                    courses = "Public Management",
+                   
+                },
+                new Courses()
+                {
+                    Id = 3,
+                    courses = "Language Practise",
+                
+                },
+                 new Courses()
+                {
+                    Id = 1,
+                    courses = "Language Practise",
+                
+                },
+                    new Courses()
                 {
                     Id = 1,
                     courses = "Public Management",

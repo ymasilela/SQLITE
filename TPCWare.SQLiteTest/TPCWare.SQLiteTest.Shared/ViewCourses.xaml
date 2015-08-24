@@ -9,9 +9,9 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <TextBlock HorizontalAlignment="Left" Margin="24,27,0,0" TextWrapping="Wrap" Text="Institution Finder App" VerticalAlignment="Top" FontSize="36" Height="62"/>
-        <TextBlock x:Name="label" HorizontalAlignment="Left" Margin="10,94,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Height="30" Width="390" Foreground="#FF27996F" FontWeight="Bold" FontStyle="Italic"/>
-        <Button x:Name="Back_button" Content="Back" HorizontalAlignment="Left" Margin="7,692,0,0" VerticalAlignment="Top" Width="380" Click="Back_button_Click" Background="#FF27996F" Foreground="#FF0A0909" Height="54"/>
-        <ListView x:Name="viewcourses" Margin="20,124,912,114" SelectionChanged="UserList_SelectionChanged" IsItemClickEnabled="False">
+        <TextBlock x:Name="label" HorizontalAlignment="Left" Margin="24,89,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Height="44" Width="376" Foreground="#FF27996F" FontWeight="Bold" FontStyle="Italic"/>
+        <Button x:Name="Back_button" Content="Back" HorizontalAlignment="Left" Margin="10,582,0,0" VerticalAlignment="Top" Width="380" Click="Back_button_Click" Background="#FF27996F" Foreground="#FF0A0909" Height="54"/>
+        <ListView x:Name="viewcourses" HorizontalAlignment="Left" Height="398" Margin="20,154,0,0" VerticalAlignment="Top" Width="370" IsEnabled="True" >
             <ListView.ItemTemplate>
 
                 <DataTemplate>
@@ -22,5 +22,6 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
+
     </Grid>
 </Page>
