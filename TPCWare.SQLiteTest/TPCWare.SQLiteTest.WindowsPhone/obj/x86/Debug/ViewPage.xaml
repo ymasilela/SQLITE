@@ -7,7 +7,13 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="#FF090A09">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black" Offset="0"/>
+                <GradientStop Color="#FF52E291" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
         <Button x:ConnectionId='1' Content="View Campuses" HorizontalAlignment="Left" Margin="23,424,0,0" VerticalAlignment="Top" Width="178"                      Background="#FF27996F" Foreground="#FF151515" Height="134"/>
         <Button x:ConnectionId='2' x:Name="pdf" Content="Download Form" HorizontalAlignment="Left" Margin="212,249,0,0" VerticalAlignment="Top" Width="178" Foreground="#FF151515"                   Background="#FF27996F" Height="139"/>
         <TextBlock x:Name="loc" HorizontalAlignment="Left" Margin="23,26,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36"/>

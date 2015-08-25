@@ -7,7 +7,13 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black" Offset="0"/>
+                <GradientStop Color="#FF52E291" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
         <TextBlock HorizontalAlignment="Left" Margin="24,27,0,0" TextWrapping="Wrap" Text="Institution Finder App" VerticalAlignment="Top" FontSize="36" Height="62"/>
         <TextBlock x:Name="label" HorizontalAlignment="Left" Margin="24,89,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Height="44" Width="376" Foreground="#FF27996F" FontWeight="Bold" FontStyle="Italic"/>
         <Button x:ConnectionId='1' x:Name="Back_button" Content="Back" HorizontalAlignment="Left" Margin="10,582,0,0" VerticalAlignment="Top" Width="380"                           Background="#FF27996F" Foreground="#FF0A0909" Height="54"/>

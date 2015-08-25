@@ -33,26 +33,125 @@ namespace TPCWare.SQLiteTest
            
             
             this.InitializeComponent();
-    
+         
             
         }
         protected async override void OnNavigatedTo(NavigationEventArgs e)
         {
 
-            Model = new CampusModels();
-             part = e.Parameter as string;
-            
-            // Get users
-             Campuses c= Model.getAll("Soweto Campus");
-            SQLiteAsyncConnection connection = new SQLiteAsyncConnection("institutionFinder.db");
-          //  users = await connection.QueryAsync<Campuses>("Select WebsiteLink FROM Campuses WHERE Name = '" +part+ "'").Single();
-           // users = await connection.QueryAsync<Campuses>("Select WebsiteLink FROM Campuses WHERE Name = '" + part + "'").FirstOrDefault();
-            // Show users
      
-         
-           // Uri targetUri = new Uri("@" + users);
-           // webView1.Navigate(targetUri);
-            MessageBox(c.WebsiteLink + "");
+             part = e.Parameter as string;
+
+
+             if (part.Equals("Tshwane University of Technology"))
+             {
+
+                 Uri targetUris = new Uri(@"http://www.tut.ac.za/enrol/apply/Pages/default.aspx");
+                 webView1.Navigate(targetUris);
+             }
+             else if (part.Equals("Port Elizabeth TVET College"))
+             {
+                 Uri targetUris = new Uri(@"http://www.pecollege.edu.za/");
+                 webView1.Navigate(targetUris);
+             }
+             else if (part.Equals("University Of Johannesburg"))
+             {
+                 Uri targetUris = new Uri(@"http://www.uj.ac.za/EN/StudyatUJ/StudentEnrolmentCentre/ApplicationProcess/Pages/home.aspx");
+                 webView1.Navigate(targetUris);
+             }
+             else if (part.Equals("University Of Limpopo"))
+             {
+                 Uri targetUris = new Uri(@"http://www.ul.ac.za/index.php?Entity=Admission%20Requirements");
+                 webView1.Navigate(targetUris);
+             }
+             else if (part.Equals("University of South Africa"))
+             {
+                 Uri targetUris = new Uri(@"http://www.unisa.ac.za/Default.asp?Cmd=ViewContent&ContentID=24624");
+                 webView1.Navigate(targetUris);
+             }
+             else if (part.Equals("University of Kwazulu Natal"))
+             {
+                 Uri targetUris = new Uri(@"http://applications.ukzn.ac.za/Homepage.aspx");
+                 webView1.Navigate(targetUris);
+             }
+             else if (part.Equals("University of Mpumalanga"))
+             {
+                 Uri targetUris = new Uri(@"http://www.ump.ac.za/appform.html#.VdwyZvmqpBc");
+                 webView1.Navigate(targetUris);
+             }
+             else if (part.Equals("University of Stellenbosch"))
+             {
+                 Uri targetUris = new Uri(@"http://www.sun.ac.za/english");
+                 webView1.Navigate(targetUris);
+             }
+             else if (part.Equals("University of Venda"))
+             {
+                 Uri targetUris = new Uri(@"http://www.univen.ac.za/");
+                 webView1.Navigate(targetUris);
+             }
+             else if (part.Equals("Nelson Mandela Metropolitan Univesity"))
+             {
+                 Uri targetUris = new Uri(@"http://www.nmmu.ac.za/");
+                 webView1.Navigate(targetUris);
+             }
+             else if (part.Equals("Central JHB TVET College"))
+             {
+
+                 Uri targetUris = new Uri(@"http://www.cjc.edu.za/");
+                 webView1.Navigate(targetUris);
+             }
+             else if (part.Equals("Sedibeng TVET College"))
+             {
+                 Uri targetUris = new Uri(@"http://www.sedcol.co.za/Home.aspx");
+                 webView1.Navigate(targetUris);
+             }
+             else if (part.Equals("Tshwane North TVET College"))
+             {
+                 Uri targetUris = new Uri(@"http://www.tnc4fet.co.za/tshwane-north-tvet-college-overview");
+                 webView1.Navigate(targetUris);
+             }
+            else if (part.Equals("CN Mahlangu"))
+             {
+                 Uri targetUris = new Uri(@"http://www.nkangalafet.edu.za/cn-mahlangu-campus-");
+                 webView1.Navigate(targetUris);
+             }
+
+             else if (part.Equals("Sekhu-khune TVET College"))
+             {
+
+                 Uri targetUris = new Uri(@"http://www.sekfetcol.org/");
+                 webView1.Navigate(targetUris);
+             }
+             else if (part.Equals("Thekwini TVET College"))
+             {
+                 Uri targetUris = new Uri(@"http://www.thekwinicollege.co.za/#");
+                 webView1.Navigate(targetUris);
+             }
+             else if (part.Equals("False Bay TVET College"))
+             {
+                 Uri targetUris = new Uri(@"http://www.falsebaycollege.co.za/");
+                 webView1.Navigate(targetUris);
+             }
+             else if (part.Equals("South Cape TVET College"))
+             {
+                 Uri targetUris = new Uri(@"http://sccollege.co.za/index.php?p=1");
+                 webView1.Navigate(targetUris);
+             }
+             else if (part.Equals("Buffalo City TVET College"))
+             {
+                 Uri targetUris = new Uri(@"http://www.bccollege.co.za/index.php?option=com_content&view=article&id=19&Itemid=38");
+                 webView1.Navigate(targetUris);
+             }
+             else if (part.Equals("University Of Pretoria"))
+             {
+                 Uri targetUris = new Uri(@"http://www.up.ac.za/");
+                 webView1.Navigate(targetUris);
+             }
+             else
+             {
+                 MessageBox("No website for "+ part);
+             }
+     
 
         }
         public async void MessageBox(String message)

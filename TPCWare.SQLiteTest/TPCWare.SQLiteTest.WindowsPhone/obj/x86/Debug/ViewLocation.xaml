@@ -7,8 +7,20 @@
     xmlns:Maps="using:Windows.UI.Xaml.Controls.Maps"
     x:Class="TPCWare.SQLiteTest.ViewLocation"
     mc:Ignorable="d">
+    <Page.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="Black" Offset="0"/>
+            <GradientStop Color="#FF52E291" Offset="1"/>
+        </LinearGradientBrush>
+    </Page.Background>
 
-    <Grid x:Name="textLoc" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid x:Name="textLoc">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black" Offset="0"/>
+                <GradientStop Color="#FF52E291" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="92*"/>
             <ColumnDefinition Width="23*"/>

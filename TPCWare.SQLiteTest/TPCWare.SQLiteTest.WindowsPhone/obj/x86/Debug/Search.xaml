@@ -7,7 +7,13 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black" Offset="0"/>
+                <GradientStop Color="#FF52E291" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
         <TextBlock HorizontalAlignment="Left" Margin="10,59,0,0" TextWrapping="Wrap" Text="Institution Finder App" VerticalAlignment="Top" FontSize="36" Height="101" FontWeight="Bold" Width="380"/>
         <Button x:ConnectionId='1' Content="Universities" HorizontalAlignment="Left" Margin="79,155,0,0" VerticalAlignment="Top" Width="225"                        Height="159" Foreground="#FF0F0F0F" Background="#FF27996F"/>
         <Button x:ConnectionId='2' Content="FET Colleges&#xA;" HorizontalAlignment="Left" Margin="79,360,0,0" VerticalAlignment="Top" Width="225" Height="166"                        Background="#FF27996F" Foreground="#FF151515"/>

@@ -224,7 +224,7 @@ namespace TPCWare.SQLiteTest
                  new Campuses()
                 {
                     City = "University Of Johannesburg",
-                    Name = "Randburg Campus",
+                    Name = "Bunting Road Campus",
                     WebsiteLink = "www.uj.ac.za"
                 },
                     //TNC
@@ -238,19 +238,19 @@ namespace TPCWare.SQLiteTest
                  new Campuses()
                 {
                     City = "University Of Johannesburg",
-                    Name = "Johannesburg Campus",
+                    Name = "Auckland Park Campus ",
                     WebsiteLink = "www.uj.ac.za"
                 },
                  new Campuses()
                 {
-                   City = "TNC",
-                    Name = "Arcadia Campus",
+                   City = "Port Elizabeth TVET College",
+                    Name = "Mthatha  Campus",
                     WebsiteLink = "www.tnc.ac.za"
                 },
                  new Campuses()
                 {
-                    City = "ROSEBANK",
-                    Name = "Only Pretoria campus",
+                    City = "Port Elizabeth TVET College",
+                    Name = "Dower Campus ",
                     WebsiteLink = "www.rosebank.ac.za"
                 },
                   new Campuses()
@@ -265,12 +265,239 @@ namespace TPCWare.SQLiteTest
                     Name = "Medunsa campus",
                     WebsiteLink = "www.ul.ac.za"
                 },
+
+
+
+
+
+                 new Campuses()
+                {
+                    City = "University Of Pretoria",
+                    Name = "Onderstepoort Campus",
+                    WebsiteLink = "www.tut.ac.za"
+                    
+                },
+                new Campuses()
+                {
+                    City = "University Of Pretoria",
+                    Name = "Groenkloof Campus",
+                   WebsiteLink = "www.tut.ac.za"
+                },
+                new Campuses()
+                {
+                    City = "University Of Pretoria",
+                    Name = "Prinshof Campus",
+                    WebsiteLink = "www.tut.ac.za"
+                },
+                 new Campuses()
+                {
+                    City = "University of South Africa",
+                    Name = "Middelburg Campus",
+                    WebsiteLink = "www.tut.ac.za"
+                },
+                 new Campuses()
+                {
+                    City = "University of South Africa",
+                    Name = "Pretoria Campus",
+                    WebsiteLink = "www.tut.ac.za"
+                },
+                 new Campuses()
+                {
+                    City = "University of South Africa",
+                    Name = " Muckleneuk Campus ",
+                    WebsiteLink = "www.tut.ac.za"
+                },
+                 new Campuses() 
+                {
+                    City = "University of Kwazulu Natal",
+                    Name = "Durban Campus",
+                    WebsiteLink = "www.uj.ac.za"
+                },
+                    //TNC
+                 new Campuses()
+            
+                {
+                    City = "University of Kwazulu Natal",
+                    Name = "Pietermaritzburg Campus",
+                    WebsiteLink = "www.uj.ac.za"
+                },
+                 new Campuses()
+                {
+                    City = "University of Kwazulu Natal",
+                    Name = "Westville Campus",
+                    WebsiteLink = "www.uj.ac.za"
+                },
+                 new Campuses()
+                {
+                   City = "University of Stellenbosch",
+                    Name = "Tygerberg Campus",
+                    WebsiteLink = "www.tnc.ac.za"
+                },
+                 new Campuses()
+                {
+                    City = "University of Stellenbosch",
+                    Name = "Saldanha Bay campus",
+                    WebsiteLink = "www.rosebank.ac.za"
+                },
+                  new Campuses()
+                {
+                    City = "University of Stellenbosch",
+                    Name = "Bellville campus",
+                    WebsiteLink = "www.ul.ac.za"
+                },
                    new Campuses()
                 {
-                    City = "University Of Limpopo",
-                    Name = "Turfloop Campus",
+                    City = "University of Venda",
+                    Name = "Russell Road campus",
+                    WebsiteLink = "www.ul.ac.za"
+                },
+                   new Campuses()
+                {
+                    City = "University of Venda",
+                    Name = "Thohoyandou Campus",
+                    WebsiteLink = "www.ul.ac.za"
+                },
+                new Campuses()
+                {
+                    City = "University of Venda",
+                    Name = "Thohoyandou Campus",
+                    WebsiteLink = "www.ul.ac.za"
+                },
+
+
+
+
+
+                 new Campuses()
+                {
+                    City = "Tshwane North TVET College",
+                    Name = "Soshanguve South Campus",
+                    WebsiteLink = "www.tut.ac.za"
+                    
+                },
+                new Campuses()
+                {
+                    City = "Tshwane North TVET College",
+                    Name = "Soshanguve North Campus",
+                   WebsiteLink = "www.tut.ac.za"
+                },
+                new Campuses()
+                {
+                    City = "Tshwane North TVET College",
+                    Name = "Pretoria Campus",
+                    WebsiteLink = "www.tut.ac.za"
+                },
+                 new Campuses()
+                {
+                    City = "Central JHB TVET College",
+                    Name = "Ellis Park Campus",
+                    WebsiteLink = "www.tut.ac.za"
+                },
+                 new Campuses()
+                {
+                    City = "Central JHB TVET College",
+                    Name = "Alexandra Campus",
+                    WebsiteLink = "www.tut.ac.za"
+                },
+                 new Campuses()
+                {
+                    City = "Central JHB TVET College",
+                    Name = "Parktown Campus",
+                    WebsiteLink = "www.tut.ac.za"
+                },
+                 new Campuses()
+                {
+                    City = "Sedibeng TVET College",
+                    Name = "Heidelberg Satelite  Campus",
+                    WebsiteLink = "www.uj.ac.za"
+                },
+                    //TNC
+                 new Campuses()
+            
+                {
+                    City = "Sedibeng TVET College",
+                    Name = "Vereeniging Campus",
+                    WebsiteLink = "www.uj.ac.za"
+                },
+                 new Campuses()
+                {
+                    City = "Sedibeng TVET College",
+                    Name = "Sebokeng Campus",
+                    WebsiteLink = "www.uj.ac.za"
+                },
+                 new Campuses()
+                {
+                   City = "CN Mahlangu",
+                    Name = "Nkangala Campus",
+                    WebsiteLink = "www.tnc.ac.za"
+                },
+                 new Campuses()
+                {
+                    City = "CN Mahlangu",
+                    Name = "Siysbuswa campus",
+                    WebsiteLink = "www.rosebank.ac.za"
+                },
+                  new Campuses()
+                {
+                    City = "CN Mahlangu",
+                    Name = "Middleburg campus",
+                    WebsiteLink = "www.ul.ac.za"
+                },
+                   new Campuses()
+                {
+                    City = "False Bay TVET College",
+                    Name = "Muizenberg campus",
+                    WebsiteLink = "www.ul.ac.za"
+                },
+                   new Campuses()
+                {
+                    City = "False Bay TVET College",
+                    Name = "Khayelitsha  Campus",
+                    WebsiteLink = "www.ul.ac.za"
+                },
+                      new Campuses()
+                {
+                    City = "False Bay TVET College",
+                    Name = "Mitchell’s Plain  Campus",
+                    WebsiteLink = "www.ul.ac.za"
+                },
+                new Campuses()
+                {
+                    City = "South Cape TVET College",
+                    Name = "George Campus",
+                    WebsiteLink = "www.ul.ac.za"
+                },
+                  new Campuses()
+                {
+                    City = "South Cape TVET College",
+                    Name = "Bitou Campus",
+                    WebsiteLink = "www.ul.ac.za"
+                },
+                   new Campuses()
+                {
+                    City = "South Cape TVET College",
+                    Name = "Mossel Bay Campus",
+                    WebsiteLink = "www.ul.ac.za"
+                },
+                   new Campuses()
+                {
+                    City = "Buffalo City TVET College",
+                    Name = "Southeast Technical College Campus",
+                    WebsiteLink = "www.ul.ac.za"
+                },
+                     new Campuses()
+                {
+                    City = "Buffalo City TVET College",
+                    Name = "St Teresa Campus",
+                    WebsiteLink = "www.ul.ac.za"
+                },
+                new Campuses()
+                {
+                    City = "Buffalo City TVET College",
+                    Name = "Luther College Rochester Campus",
                     WebsiteLink = "www.ul.ac.za"
                 }
+
             };
 
 
@@ -293,61 +520,67 @@ namespace TPCWare.SQLiteTest
                 new Courses()
                 {
                     Id = 2,
+                    courses = "International Law and Global Justice - LLM",
+                   
+                },
+                  new Courses()
+                {
+                    Id = 2,
                     courses = "Public Management",
                    
                 },
                 new Courses()
                 {
                     Id = 3,
-                    courses = "Language Practise",
+                    courses = "Legal Practice - MA",
                 
                 },
                  new Courses()
                 {
                     Id = 2,
-                    courses = "Language Practise",
+                    courses = "Translation Studies - MA",
                 
                 },
                  new Courses()
                 {
                     Id = 4,
-                    courses = "Public Management",
+                    courses = "Political Theory - MA",
                    
                 },
                 new Courses()
                 {
                     Id = 5,
-                    courses = "Language Practise",
+                    courses = "English Studies (online) - MA (distance learning)",
                 
                 },
                  new Courses()
                 {
                     Id = 6,
-                    courses = "Language Practise",
+                    courses = "Ethnomusicology - MA",
                 
                 },
                  new Courses()
                 {
                     Id = 4,
-                    courses = "Public Management",
+                    courses = "Creative Writing - MA",
                    
                 },
                 new Courses()
                 {
                     Id = 5,
-                    courses = "Language Practise",
+                    courses = "Translational Neuroscience - MSc",
                 
                 },
                  new Courses()
                 {
                     Id = 6,
-                    courses = "Language Practise",
+                    courses = "Periodontics - DClinDent",
                 
                 },
                  new Courses()
                 {
                     Id = 1,
-                    courses = "Public Management",
+                    courses = "Health Economics and Decision Modelling - MSc",
                    
                 },
                 new Courses()
@@ -359,190 +592,190 @@ namespace TPCWare.SQLiteTest
                  new Courses()
                 {
                     Id = 1,
-                    courses = "Language Practise",
+                    courses = "Dental Technology - MSc",
                 
                 },
                     new Courses()
                 {
                     Id = 1,
-                    courses = "Public Management",
+                    courses = "Dementia Studies - MA",
                    
                 },
                 new Courses()
                 {
                     Id = 3,
-                    courses = "Language Practise",
+                    courses = "Cancer Care - PG Cert",
                 
                 },
                  new Courses()
                 {
                     Id = 1,
-                    courses = "Language Practise",
+                    courses = "Data Communications - MSc(Eng)",
                 
                 },
                     new Courses()
                 {
                     Id = 1,
-                    courses = "Public Management",
+                    courses = "Civil Engineering – MSc",
                    
                 },
                 new Courses()
                 {
                     Id = 3,
-                    courses = "Language Practise",
+                    courses = "Dental Materials Science - MSc",
                 
                 },
                  new Courses()
                 {
                     Id = 1,
-                    courses = "Language Practise",
+                    courses = "Advanced Mechanical Engineering - MSc(Res)",
                 
                 },
                     new Courses()
                 {
                     Id = 1,
-                    courses = "Public Management",
+                    courses = "Architectural Engineering Design - MSc(Eng)",
                    
                 },
                 new Courses()
                 {
                     Id = 3,
-                    courses = "Language Practise",
+                    courses = "Finance - MSc",
                 
                 },
                  new Courses()
                 {
                     Id = 1,
-                    courses = "Language Practise",
+                    courses = "Marketing Management Practice - MSc",
                 
                 },
                     new Courses()
                 {
                     Id = 1,
-                    courses = "Public Management",
+                    courses = "Leadership and Management - MSc",
                    
                 },
                 new Courses()
                 {
                     Id = 3,
-                    courses = "Language Practise",
+                    courses = "Political Communication",
                 
                 },
                  new Courses()
                 {
                     Id = 1,
-                    courses = "Language Practise",
+                    courses = "Department of Geography, Faculty of Social Sciences",
                 
                 },
                     new Courses()
                 {
                     Id = 1,
-                    courses = "Public Management",
+                    courses = "School of Languages and Cultures, Faculty of Arts and Humanities",
                    
                 },
                 new Courses()
                 {
                     Id = 3,
-                    courses = "Language Practise",
+                    courses = "Information Management",
                 
                 },
                  new Courses()
                 {
                     Id = 1,
-                    courses = "Language Practise",
+                    courses = "Human Resource Management",
                 
                 },
                     new Courses()
                 {
                     Id = 1,
-                    courses = "Public Management",
+                    courses = "Global Journalism ",
                    
                 },
                 new Courses()
                 {
                     Id = 3,
-                    courses = "Language Practise",
+                    courses = "Financial Economics ",
                 
                 },
                  new Courses()
                 {
                     Id = 1,
-                    courses = "Language Practise",
+                    courses = "Educational Studies ",
                 
                 },
                     new Courses()
                 {
                     Id = 1,
-                    courses = "Public Management",
+                    courses = "Education ",
                    
                 },
                 new Courses()
                 {
                     Id = 3,
-                    courses = "Language Practise",
+                    courses = "Creative Writing",
                 
                 },
                  new Courses()
                 {
                     Id = 1,
-                    courses = "Language Practise",
+                    courses = "Computer Science, Advanced (Enterprise Computing)",
                 
                 },
                     new Courses()
                 {
                     Id = 1,
-                    courses = "Public Management",
+                    courses = "Business Administration",
                    
                 },
                 new Courses()
                 {
                     Id = 3,
-                    courses = "Language Practise",
+                    courses = "All Engineering",
                 
                 },
                  new Courses()
                 {
                     Id = 1,
-                    courses = "Language Practise",
+                    courses = "Applied Linguistics with TESOL - MA/Diploma",
                 
                 },
                     new Courses()
                 {
                     Id = 1,
-                    courses = "Public Management",
+                    courses = "Advanced Software Engineering - MSc(Eng)",
                    
                 },
                 new Courses()
                 {
                     Id = 3,
-                    courses = "Language Practise",
+                    courses = "Utility Lineworker Technology",
                 
                 },
                  new Courses()
                 {
                     Id = 1,
-                    courses = "Language Practise",
+                    courses = "Health Care Assistant",
                 
                 },
                     new Courses()
                 {
                     Id = 1,
-                    courses = "Public Management",
+                    courses = "Commercial Truck Driving",
                    
                 },
                 new Courses()
                 {
                     Id = 3,
-                    courses = "Language Practise",
+                    courses = "Business & Marketing Management",
                 
                 },
                  new Courses()
                 {
                     Id = 1,
-                    courses = "Language Practise",
+                    courses = "Automation & Control",
                 
                 }
-             
+
             };
 
 
@@ -589,7 +822,7 @@ namespace TPCWare.SQLiteTest
                     new College()
                 {
                    
-                    Name = "Tshwane South TVET College",
+                    Name = "Sekhu-khune TVET College",
                 
                 },
                     new College()
@@ -598,12 +831,7 @@ namespace TPCWare.SQLiteTest
                     Name = "Thekwini TVET College",
                 
                 },
-                    new College()
-                {
-                   
-                    Name = "Nkangala TVET College",
-                
-                },
+              
                     new College()
                 {
                    

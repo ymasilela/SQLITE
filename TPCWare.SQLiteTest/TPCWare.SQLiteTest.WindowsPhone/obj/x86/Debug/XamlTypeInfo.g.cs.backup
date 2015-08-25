@@ -608,7 +608,7 @@ namespace TPCWare.SQLiteTest.TPCWare_SQLiteTest_WindowsPhone_XamlTypeInfo
         private void set_18_ViewPDF_users(object instance, object Value)
         {
             var that = (global::TPCWare.SQLiteTest.ViewPDF)instance;
-            that.users = (global::System.Collections.Generic.List<global::TPCWare.SQLiteTest.Model.Campuses>)Value;
+            that.users = (global::TPCWare.SQLiteTest.Model.Campuses)Value;
         }
         private object get_19_Wrong_users(object instance)
         {
@@ -738,7 +738,7 @@ namespace TPCWare.SQLiteTest.TPCWare_SQLiteTest_WindowsPhone_XamlTypeInfo
                 break;
             case "TPCWare.SQLiteTest.ViewPDF.users":
                 userType = (global::TPCWare.SQLiteTest.TPCWare_SQLiteTest_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TPCWare.SQLiteTest.ViewPDF");
-                xamlMember = new global::TPCWare.SQLiteTest.TPCWare_SQLiteTest_WindowsPhone_XamlTypeInfo.XamlMember(this, "users", "System.Collections.Generic.List`1<TPCWare.SQLiteTest.Model.Campuses>");
+                xamlMember = new global::TPCWare.SQLiteTest.TPCWare_SQLiteTest_WindowsPhone_XamlTypeInfo.XamlMember(this, "users", "TPCWare.SQLiteTest.Model.Campuses");
                 xamlMember.Getter = get_18_ViewPDF_users;
                 xamlMember.Setter = set_18_ViewPDF_users;
                 break;
