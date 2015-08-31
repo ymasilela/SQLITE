@@ -7,16 +7,13 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid>
+    <Grid Margin="0,0.333,0,213.667">
         <Grid.Background>
-            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                <GradientStop Color="Black" Offset="0"/>
-                <GradientStop Color="#FF52E291" Offset="1"/>
-            </LinearGradientBrush>
+            <ImageBrush Stretch="Fill" ImageSource="ViewModels/down1.png"/>
         </Grid.Background>
-        <TextBlock HorizontalAlignment="Left" Margin="10,59,0,0" TextWrapping="Wrap" Text="Institution Finder App" VerticalAlignment="Top" FontSize="36" Height="101" FontWeight="Bold" Width="380"/>
-        <Button Content="Universities" HorizontalAlignment="Left" Margin="79,155,0,0" VerticalAlignment="Top" Width="225" Click="Button_Click_1" Height="159" Foreground="#FF0F0F0F" Background="#FF27996F"/>
-        <Button Content="FET Colleges&#xA;" HorizontalAlignment="Left" Margin="79,360,0,0" VerticalAlignment="Top" Width="225" Height="166" Click="Button_Click_2" Background="#FF27996F" Foreground="#FF151515"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,17,0,0" TextWrapping="Wrap" Text="Institution Finder App" VerticalAlignment="Top" FontSize="36" Height="79" FontWeight="Bold" Width="380"/>
+        <Button Content="Universities" HorizontalAlignment="Left" Margin="23,442,0,-113" VerticalAlignment="Top" Width="363" Click="Button_Click_1" Height="97" Foreground="#FF0F0F0F" Background="#FF27996F"/>
+        <Button Content="&#xD;&#xA;FET Colleges&#xA;" HorizontalAlignment="Left" Margin="23,542,0,-212" VerticalAlignment="Top" Width="361" Height="96" Click="Button_Click_2" Background="#FF27996F" Foreground="#FF151515"/>
 
     </Grid>
 </Page>

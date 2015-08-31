@@ -7,6 +7,9 @@
     xmlns:Maps="using:Windows.UI.Xaml.Controls.Maps"
     x:Class="TPCWare.SQLiteTest.ViewLocation"
     mc:Ignorable="d">
+    <Page.Foreground>
+        <ImageBrush Stretch="Fill" ImageSource="ViewModels/down.png"/>
+    </Page.Foreground>
     <Page.Background>
         <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
             <GradientStop Color="Black" Offset="0"/>
@@ -16,19 +19,15 @@
 
     <Grid x:Name="textLoc">
         <Grid.Background>
-            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                <GradientStop Color="Black" Offset="0"/>
-                <GradientStop Color="#FF52E291" Offset="1"/>
-            </LinearGradientBrush>
+            <ImageBrush Stretch="Fill" ImageSource="ViewModels/down.png"/>
         </Grid.Background>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="92*"/>
             <ColumnDefinition Width="23*"/>
             <ColumnDefinition Width="85*"/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="back_button" Grid.ColumnSpan="3" Content="Main Menu" HorizontalAlignment="Left" Margin="10,574,0,0" VerticalAlignment="Top" Click="Button_Click_1" Width="380" Foreground="#FF0A0A0A" Background="#FF27996F"/>
-        <WebView x:Name="webView" HorizontalAlignment="Left" Height="505" VerticalAlignment="Top" Width="400" Grid.ColumnSpan="3" Margin="0,62,0,0"/>
-        <TextBlock x:Name="textLoc1" HorizontalAlignment="Left" Margin="26,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="47" Width="342" Grid.ColumnSpan="3" FontSize="18"/>
+        <Button x:Name="back_button" Grid.ColumnSpan="3" Content="Back" HorizontalAlignment="Left" Margin="10,574,0,0" VerticalAlignment="Top" Click="Button_Click_1" Width="380" Foreground="#FF0A0A0A" Background="#FF27996F"/>
+        <WebView x:Name="webView" HorizontalAlignment="Left" Height="568" VerticalAlignment="Top" Width="400" Grid.ColumnSpan="3" Margin="0,-1,0,0"/>
 
 
     </Grid>

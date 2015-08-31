@@ -94,5 +94,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="$(MSBuildThisFileDirectory)B.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)ViewModels\down.png" />
+    <Content Include="$(MSBuildThisFileDirectory)ViewModels\down1.png" />
+    <Content Include="$(MSBuildThisFileDirectory)ViewModels\downs.png" />
+    <Content Include="$(MSBuildThisFileDirectory)ViewModels\images.png" />
   </ItemGroup>
 </Project>

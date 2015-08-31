@@ -61,5 +61,10 @@ namespace TPCWare.SQLiteTest
         {
 
         }
+
+        private void viewcourses_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }
