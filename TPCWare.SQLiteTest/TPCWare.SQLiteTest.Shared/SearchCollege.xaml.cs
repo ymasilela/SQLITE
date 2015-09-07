@@ -74,6 +74,7 @@ namespace TPCWare.SQLiteTest
 
         private void back_main_Click(object sender, RoutedEventArgs e)
         {
+            
             this.Frame.Navigate(typeof(Search));
         }
     }

@@ -51,7 +51,7 @@ namespace TPCWare.SQLiteTest
              }
              else if (part.Equals("Port Elizabeth TVET College"))
              {
-                 Uri targetUris = new Uri(@"http://www.pecollege.edu.za/");
+                 Uri targetUris = new Uri(@"http://www.pecollege.edu.za/index.php/2013-03-01-07-32-34/application-form1");
                  webView1.Navigate(targetUris);
              }
              else if (part.Equals("University Of Johannesburg"))
@@ -61,7 +61,7 @@ namespace TPCWare.SQLiteTest
              }
              else if (part.Equals("University Of Limpopo"))
              {
-                 Uri targetUris = new Uri(@"http://www.ul.ac.za/index.php?Entity=Admission%20Requirements");
+                 Uri targetUris = new Uri(@"http://www.ul.ac.za/index.php?Entity=Admission%20Requirements#");
                  webView1.Navigate(targetUris);
              }
              else if (part.Equals("University of South Africa"))
@@ -71,7 +71,7 @@ namespace TPCWare.SQLiteTest
              }
              else if (part.Equals("University of Kwazulu Natal"))
              {
-                 Uri targetUris = new Uri(@"http://applications.ukzn.ac.za/Homepage.aspx");
+                 Uri targetUris = new Uri(@"http://applications.ukzn.ac.za/ApplicationProcedures/Undergraduate-Applicants/How-to-Apply-First-Time-Applicants.aspx");
                  webView1.Navigate(targetUris);
              }
              else if (part.Equals("University of Mpumalanga"))
@@ -81,23 +81,23 @@ namespace TPCWare.SQLiteTest
              }
              else if (part.Equals("University of Stellenbosch"))
              {
-                 Uri targetUris = new Uri(@"http://www.sun.ac.za/english");
+                 Uri targetUris = new Uri(@"http://web-apps.sun.ac.za/eAansoek2/alg2.jsp");
                  webView1.Navigate(targetUris);
              }
              else if (part.Equals("University of Venda"))
              {
-                 Uri targetUris = new Uri(@"http://www.univen.ac.za/");
+                 Uri targetUris = new Uri(@"http://www.univen.ac.za/index.php?Entity=Student%20Info");
                  webView1.Navigate(targetUris);
              }
              else if (part.Equals("Nelson Mandela Metropolitan Univesity"))
              {
-                 Uri targetUris = new Uri(@"http://www.nmmu.ac.za/");
+                 Uri targetUris = new Uri(@"http://www.nmmu.ac.za/Apply/Admission/How-do-I-apply");
                  webView1.Navigate(targetUris);
              }
              else if (part.Equals("Central JHB TVET College"))
              {
 
-                 Uri targetUris = new Uri(@"http://www.cjc.edu.za/");
+                 Uri targetUris = new Uri(@"http://www.cjc.edu.za/pre-enrolments-for-engineering-studies/");
                  webView1.Navigate(targetUris);
              }
              else if (part.Equals("Sedibeng TVET College"))
@@ -107,11 +107,12 @@ namespace TPCWare.SQLiteTest
              }
              else if (part.Equals("Tshwane North TVET College"))
              {
-                 Uri targetUris = new Uri(@"http://www.tnc4fet.co.za/tshwane-north-tvet-college-overview");
+                 Uri targetUris = new Uri(@"http://www.tnc4fet.co.za/how-enrol-tnc");
                  webView1.Navigate(targetUris);
              }
             else if (part.Equals("CN Mahlangu"))
              {
+                 MessageBox("No Application form for " + part + " you need to apply manual at the Campus. View campus location to see directions. In the mean time you can visit their website.");
                  Uri targetUris = new Uri(@"http://www.nkangalafet.edu.za/cn-mahlangu-campus-");
                  webView1.Navigate(targetUris);
              }
@@ -119,32 +120,36 @@ namespace TPCWare.SQLiteTest
              else if (part.Equals("Sekhu-khune TVET College"))
              {
 
-                 Uri targetUris = new Uri(@"http://www.sekfetcol.org/");
+                 Uri targetUris = new Uri(@"http://www.sekfetcol.org/index.php?page=ncv-programmes-2");
                  webView1.Navigate(targetUris);
              }
              else if (part.Equals("Thekwini TVET College"))
              {
-                 Uri targetUris = new Uri(@"http://www.thekwinicollege.co.za/#");
+
+                 MessageBox("No Application form for " + part + " you need to apply manual at the Campus. View campus location to see directions. In the mean time you can visit their website.");
+                 Uri targetUris = new Uri(@"http://www.thekwinicollege.co.za/");
                  webView1.Navigate(targetUris);
+
              }
              else if (part.Equals("False Bay TVET College"))
              {
-                 Uri targetUris = new Uri(@"http://www.falsebaycollege.co.za/");
+                 Uri targetUris = new Uri(@"http://www.falsebaycollege.co.za/index.php?option=com_content&view=article&id=63&Itemid=194");
                  webView1.Navigate(targetUris);
              }
              else if (part.Equals("South Cape TVET College"))
              {
+                 MessageBox("No Application form for " + part + " you need to apply manual at the Campus. View campus location to see directions. In the mean time you can visit their website.");
                  Uri targetUris = new Uri(@"http://sccollege.co.za/index.php?p=1");
                  webView1.Navigate(targetUris);
              }
              else if (part.Equals("Buffalo City TVET College"))
              {
-                 Uri targetUris = new Uri(@"http://www.bccollege.co.za/index.php?option=com_content&view=article&id=19&Itemid=38");
+                 Uri targetUris = new Uri(@"http://www.bccollege.co.za/index.php?option=com_content&view=article&id=7&Itemid=6");
                  webView1.Navigate(targetUris);
              }
              else if (part.Equals("University Of Pretoria"))
              {
-                 Uri targetUris = new Uri(@"http://www.up.ac.za/");
+                 Uri targetUris = new Uri(@"http://www.up.ac.za/new-students-undergraduate/article/268803/laai-pdf-aansoekvorm-2016-af");
                  webView1.Navigate(targetUris);
              }
              else

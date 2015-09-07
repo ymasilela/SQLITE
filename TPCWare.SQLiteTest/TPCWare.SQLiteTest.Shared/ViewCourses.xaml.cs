@@ -51,19 +51,19 @@ namespace TPCWare.SQLiteTest
 
         private void UserList_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            if (viewcourses.SelectedIndex >= -1)
-            {
-                viewcourses.IsEnabled = false;
-            }
+
+            viewcourses.IsActiveView = false;
+            
         }
 
         private void viewcourses_ItemClick(object sender, ItemClickEventArgs e)
         {
-
+           
         }
 
         private void viewcourses_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            viewcourses.IsActiveView = false;
 
         }
     }

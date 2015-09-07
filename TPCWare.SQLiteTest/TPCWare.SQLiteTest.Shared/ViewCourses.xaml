@@ -12,9 +12,9 @@
             <ImageBrush Stretch="Fill" ImageSource="ViewModels/down.png"/>
         </Grid.Background>
         <TextBlock HorizontalAlignment="Left" Margin="24,27,0,0" TextWrapping="Wrap" Text="Institution Finder App" VerticalAlignment="Top" FontSize="36" Height="62"/>
-        <TextBlock x:Name="label" HorizontalAlignment="Left" Margin="24,89,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Height="44" Width="376" Foreground="#FF27996F" FontWeight="Bold" FontStyle="Italic"/>
+        <TextBlock x:Name="label" HorizontalAlignment="Left" Margin="24,89,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Height="44" Width="369" Foreground="#FF27996F" FontWeight="Bold" FontStyle="Italic"/>
         <Button x:Name="Back_button" Content="Back" HorizontalAlignment="Left" Margin="10,582,0,0" VerticalAlignment="Top" Width="380" Click="Back_button_Click" Background="#FF27996F" Foreground="#FF0A0909" Height="54"/>
-        <ListView x:Name="viewcourses" HorizontalAlignment="Left" Height="398" Margin="20,154,0,0" VerticalAlignment="Top" Width="370" IsEnabled="True" SelectionChanged="viewcourses_SelectionChanged" >
+        <ListView x:Name="viewcourses" HorizontalAlignment="Left" Height="398" Margin="20,154,0,0" VerticalAlignment="Top" Width="370" SelectionChanged="viewcourses_SelectionChanged" >
             <ListView.ItemTemplate>
 
                 <DataTemplate>
