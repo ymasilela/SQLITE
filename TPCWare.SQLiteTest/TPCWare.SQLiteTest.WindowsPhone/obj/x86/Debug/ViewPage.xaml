@@ -5,20 +5,19 @@
     xmlns:local="using:TPCWare.SQLiteTest"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d">
+    mc:Ignorable="d" Background="White">
 
-    <Grid Height="453" Margin="0,-1.667,0,0" VerticalAlignment="Top">
-        <Grid.Background>
-            <ImageBrush Stretch="Fill" ImageSource="ViewModels/down.png"/>
-        </Grid.Background>
-        <Button x:ConnectionId='1' Content="View Campuses" HorizontalAlignment="Left" Margin="16,497,0,-289" VerticalAlignment="Top" Width="178"                      Background="#FF27996F" Foreground="#FF151515" Height="134"/>
-        <Button x:ConnectionId='2' x:Name="pdf" Content="Download Form" HorizontalAlignment="Left" Margin="204,370,0,-58" VerticalAlignment="Top" Width="178" Foreground="#FF151515"                   Background="#FF27996F" Height="139"/>
+    <Grid Height="452" Margin="0,-0.667,0,0" VerticalAlignment="Top" Background="White">
+        <Button x:ConnectionId='1' Content="View Campuses" HorizontalAlignment="Left" Margin="16,497,0,-289" VerticalAlignment="Top" Width="178"                      Background="#FF27996F" Foreground="#FF151515" Height="134" BorderBrush="#FF151515"/>
+        <Button x:ConnectionId='2' x:Name="pdf" Content="Download Form" HorizontalAlignment="Left" Margin="204,370,0,-58" VerticalAlignment="Top" Width="178" Foreground="#FF151515"                   Background="#FF27996F" Height="139" BorderBrush="#FF151515"/>
         <TextBlock x:Name="loc" HorizontalAlignment="Left" Margin="23,26,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36"/>
         <TextBlock x:Name="course" HorizontalAlignment="Left" Margin="64,175,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <Button x:ConnectionId='3' x:Name="view_courses" Content="View Courses " HorizontalAlignment="Left" Margin="16,367,0,-57" VerticalAlignment="Top" Width="178" Background="#FF27996F"                        Height="141" RenderTransformOrigin="0.755,0.255" Foreground="#FF151515" ToolTipService.ToolTip="View Courses"/>
-        <TextBlock HorizontalAlignment="Left" Margin="7,6,0,0" TextWrapping="Wrap" Text="Institution Finder App" VerticalAlignment="Top" FontSize="36" Height="73" FontWeight="Bold" Width="380"/>
-        <Button x:ConnectionId='4' Content="Back" HorizontalAlignment="Left" Margin="203,498,0,-290" VerticalAlignment="Top" Width="178" Height="134" Background="#FF27996F" Foreground="#FF0F0F0F"                       />
+        <Button x:ConnectionId='3' x:Name="view_courses" Content="View Courses " HorizontalAlignment="Left" Margin="16,367,0,-57" VerticalAlignment="Top" Width="178" Background="#FF27996F"                        Height="141" RenderTransformOrigin="0.755,0.255" Foreground="#FF151515" ToolTipService.ToolTip="View Courses" BorderBrush="#FF151515"/>
+        <TextBlock HorizontalAlignment="Left" Margin="7,6,0,0" TextWrapping="Wrap" Text="Institution Finder App" VerticalAlignment="Top" FontSize="36" Height="73" FontWeight="Bold" Width="380" Foreground="#FF0C0B0B"/>
+        <Button x:ConnectionId='4' Content="Universities" HorizontalAlignment="Left" Margin="203,497,0,-119" VerticalAlignment="Top" Width="178" Height="75" Background="#FF27996F" Foreground="#FF0F0F0F"                        BorderBrush="#FF151515"/>
         <TextBlock x:Name="campName" HorizontalAlignment="Left" Margin="10,46,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FF27996F" FontSize="24" FontWeight="Bold" Width="383" Height="65"/>
+        <Button x:ConnectionId='5' x:Name="colleges" Content="Colleges" HorizontalAlignment="Left" Margin="204,558,0,-177" VerticalAlignment="Top" Width="178" Height="72" Background="#FF27996F" Foreground="#FF0C0B0B"                        RenderTransformOrigin="0.499,0.672" BorderBrush="#FF151515"/>
+        <Image x:Name="images" HorizontalAlignment="Left" Height="238" Margin="40,111,0,0" VerticalAlignment="Top" Width="306"/>
 
 
     </Grid>

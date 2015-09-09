@@ -16,7 +16,7 @@
                 <DataTemplate>
                     <StackPanel Margin="10">
                         <TextBlock Text="{Binding Name}" />
-
+                      
                     </StackPanel>
                 </DataTemplate>
             </ListView.ItemTemplate>

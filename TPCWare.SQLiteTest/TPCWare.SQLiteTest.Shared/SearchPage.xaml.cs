@@ -26,6 +26,7 @@ namespace TPCWare.SQLiteTest
     /// </summary>
     public sealed partial class SearchPage : Page
     {
+      
         public List<Universities> users { get; set; }
 
         Universities newUser = new Universities();
@@ -39,7 +40,7 @@ namespace TPCWare.SQLiteTest
         protected async override void OnNavigatedTo(NavigationEventArgs e)
         {
 
-
+          
             // Get users
             var query = App.conn.Table<Universities>();
             users = await query.ToListAsync();
@@ -93,7 +94,7 @@ namespace TPCWare.SQLiteTest
             if (seg != null)
             {
                 this.Frame.Navigate(typeof(MainPage), seg.Name);
-
+              
             }
             
         }

@@ -25,6 +25,8 @@ namespace TPCWare.SQLiteTest
     public sealed partial class ViewPage : Page
     {
         string part;
+        String selection = "";
+   
         public ViewPage()
         {
             this.InitializeComponent();
@@ -36,15 +38,108 @@ namespace TPCWare.SQLiteTest
 
 
              part = e.Parameter as string;
-            campName.Text = part;
-            // Get users
-         
 
+            
+             campName.Text = part;
+
+
+             if (part.Equals("Tshwane University of Technology"))
+             {
+
+                 images.Source = new BitmapImage(new Uri("ms-appx:///ViewModels/tut.jpg"));
+             }
+             else if (part.Equals("Port Elizabeth TVET College"))
+             {
+                 images.Source = new BitmapImage(new Uri("ms-appx:///ViewModels/Port-Elizabeth.jpg"));
+             }
+             else if (part.Equals("University Of Johannesburg"))
+             {
+                 images.Source = new BitmapImage(new Uri("ms-appx:///ViewModels/uj.jpg"));
+             }
+             else if (part.Equals("University Of Limpopo"))
+             {
+                 images.Source = new BitmapImage(new Uri("ms-appx:///ViewModels/UL.jpg"));
+             }
+             else if (part.Equals("University of South Africa"))
+             {
+                 images.Source = new BitmapImage(new Uri("ms-appx:///ViewModels/Unisa.png"));
+             }
+             else if (part.Equals("University of Kwazulu Natal"))
+             {
+                 images.Source = new BitmapImage(new Uri("ms-appx:///ViewModels/UKZN.jpg"));
+             }
+             else if (part.Equals("University of Mpumalanga"))
+             {
+                 images.Source = new BitmapImage(new Uri("ms-appx:///ViewModels/UM.jpg"));
+             }
+             else if (part.Equals("University of Stellenbosch"))
+             {
+                 images.Source = new BitmapImage(new Uri("ms-appx:///ViewModels/US.jpg"));
+             }
+             else if (part.Equals("University of Venda"))
+             {
+                 images.Source = new BitmapImage(new Uri("ms-appx:///ViewModels/UV.jpg"));
+             }
+             else if (part.Equals("Nelson Mandela Metropolitan Univesity"))
+             {
+                 images.Source = new BitmapImage(new Uri("ms-appx:///ViewModels/nmmu.jpg"));
+             }
+             else if (part.Equals("Central JHB TVET College"))
+             {
+
+                 images.Source = new BitmapImage(new Uri("ms-appx:///ViewModels/central.jpg"));
+             }
+             else if (part.Equals("Sedibeng TVET College"))
+             {
+                 images.Source = new BitmapImage(new Uri("ms-appx:///ViewModels/sedibeng.jpg"));
+             }
+             else if (part.Equals("Tshwane North TVET College"))
+             {
+                 images.Source = new BitmapImage(new Uri("ms-appx:///ViewModels/tnc.jpg"));
+             }
+             else if (part.Equals("CN Mahlangu"))
+             {
+                 images.Source = new BitmapImage(new Uri("ms-appx:///ViewModels/Nkangala-FET-College.jpg"));
+             }
+
+             else if (part.Equals("Sekhu-khune TVET College"))
+             {
+                 images.Source = new BitmapImage(new Uri("ms-appx:///ViewModels/sekhukhune.jpg"));
+             }
+             else if (part.Equals("Thekwini TVET College"))
+             {
+                 images.Source = new BitmapImage(new Uri("ms-appx:///ViewModels/Thekwini-FET-College.jpg"));
+
+             }
+             else if (part.Equals("False Bay TVET College"))
+             {
+                 images.Source = new BitmapImage(new Uri("ms-appx:///ViewModels/False.png"));
+             }
+             else if (part.Equals("South Cape TVET College"))
+             {
+                 images.Source = new BitmapImage(new Uri("ms-appx:///ViewModels/south-Cape.jpg"));
+             }
+             else if (part.Equals("Buffalo City TVET College"))
+             {
+                 images.Source = new BitmapImage(new Uri("ms-appx:///ViewModels/buffalo.jpg"));
+             }
+             else if (part.Equals("University Of Pretoria"))
+             {
+                 images.Source = new BitmapImage(new Uri("ms-appx:///ViewModels/UP.jpg"));
+             }
+           
+     
+
+       
+            // Get users
+
+          
                    
 
 
 
         }
+      
         private void Button_Click(object sender, RoutedEventArgs e)
         {
 
@@ -70,9 +165,17 @@ namespace TPCWare.SQLiteTest
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-        
+
+          
+                this.Frame.Navigate(typeof(SearchPage));
+          
             
-            this.Frame.Navigate(typeof(Search));
+        
+        }
+
+        private void colleges_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(SearchCollege));
         }
 
      

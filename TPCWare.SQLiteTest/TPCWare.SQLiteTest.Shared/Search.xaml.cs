@@ -22,6 +22,8 @@ namespace TPCWare.SQLiteTest
     /// </summary>
     public sealed partial class Search : Page
     {
+    
+        
         public Search()
         {
             this.InitializeComponent();
@@ -29,11 +31,13 @@ namespace TPCWare.SQLiteTest
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
+          
             this.Frame.Navigate(typeof(SearchPage));
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
+           
             this.Frame.Navigate(typeof(SearchCollege));
         }
     }

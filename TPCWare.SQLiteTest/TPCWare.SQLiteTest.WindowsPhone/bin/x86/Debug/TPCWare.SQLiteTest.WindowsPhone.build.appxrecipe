@@ -55,11 +55,71 @@
     <AppxPackagedFile Include="C:\Users\Mod\Desktop\usb\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.Shared\ViewModels\downs.png">
       <PackagePath>ViewModels\downs.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Mod\Desktop\usb\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.Shared\ViewModels\False.png">
+      <PackagePath>ViewModels\False.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Mod\Desktop\usb\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.Shared\ViewModels\images.png">
       <PackagePath>ViewModels\images.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Mod\Desktop\usb\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.Shared\ViewModels\Unisa.png">
+      <PackagePath>ViewModels\Unisa.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Mod\Desktop\usb\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.Shared\B.jpg">
       <PackagePath>B.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Mod\Desktop\usb\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.Shared\ViewModels\buffalo.jpg">
+      <PackagePath>ViewModels\buffalo.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Mod\Desktop\usb\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.Shared\ViewModels\central.jpg">
+      <PackagePath>ViewModels\central.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Mod\Desktop\usb\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.Shared\ViewModels\Nkangala-FET-College.jpg">
+      <PackagePath>ViewModels\Nkangala-FET-College.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Mod\Desktop\usb\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.Shared\ViewModels\nmmu.jpg">
+      <PackagePath>ViewModels\nmmu.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Mod\Desktop\usb\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.Shared\ViewModels\Port-Elizabeth.jpg">
+      <PackagePath>ViewModels\Port-Elizabeth.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Mod\Desktop\usb\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.Shared\ViewModels\sedibeng.jpg">
+      <PackagePath>ViewModels\sedibeng.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Mod\Desktop\usb\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.Shared\ViewModels\sekhukhune.jpg">
+      <PackagePath>ViewModels\sekhukhune.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Mod\Desktop\usb\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.Shared\ViewModels\south-Cape.jpg">
+      <PackagePath>ViewModels\south-Cape.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Mod\Desktop\usb\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.Shared\ViewModels\Thekwini-FET-College.jpg">
+      <PackagePath>ViewModels\Thekwini-FET-College.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Mod\Desktop\usb\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.Shared\ViewModels\tnc.jpg">
+      <PackagePath>ViewModels\tnc.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Mod\Desktop\usb\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.Shared\ViewModels\tut.jpg">
+      <PackagePath>ViewModels\tut.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Mod\Desktop\usb\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.Shared\ViewModels\uj.jpg">
+      <PackagePath>ViewModels\uj.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Mod\Desktop\usb\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.Shared\ViewModels\UKZN.jpg">
+      <PackagePath>ViewModels\UKZN.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Mod\Desktop\usb\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.Shared\ViewModels\UL.jpg">
+      <PackagePath>ViewModels\UL.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Mod\Desktop\usb\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.Shared\ViewModels\UM.jpg">
+      <PackagePath>ViewModels\UM.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Mod\Desktop\usb\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.Shared\ViewModels\UP.jpg">
+      <PackagePath>ViewModels\UP.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Mod\Desktop\usb\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.Shared\ViewModels\US.jpg">
+      <PackagePath>ViewModels\US.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Mod\Desktop\usb\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.Shared\ViewModels\UV.jpg">
+      <PackagePath>ViewModels\UV.jpg</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Mod\Desktop\usb\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.WindowsPhone\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>

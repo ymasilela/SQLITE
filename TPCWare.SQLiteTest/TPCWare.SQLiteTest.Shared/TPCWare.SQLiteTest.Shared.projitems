@@ -94,9 +94,29 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="$(MSBuildThisFileDirectory)B.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)ViewModels\buffalo.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)ViewModels\central.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)ViewModels\down.png" />
     <Content Include="$(MSBuildThisFileDirectory)ViewModels\down1.png" />
     <Content Include="$(MSBuildThisFileDirectory)ViewModels\downs.png" />
+    <Content Include="$(MSBuildThisFileDirectory)ViewModels\False.png" />
     <Content Include="$(MSBuildThisFileDirectory)ViewModels\images.png" />
+    <Content Include="$(MSBuildThisFileDirectory)ViewModels\Nkangala-FET-College.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)ViewModels\nmmu.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)ViewModels\Port-Elizabeth.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)ViewModels\sedibeng.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)ViewModels\sekhukhune.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)ViewModels\south-Cape.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)ViewModels\Thekwini-FET-College.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)ViewModels\tnc.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)ViewModels\tut.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)ViewModels\uj.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)ViewModels\UKZN.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)ViewModels\UL.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)ViewModels\UM.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)ViewModels\Unisa.png" />
+    <Content Include="$(MSBuildThisFileDirectory)ViewModels\UP.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)ViewModels\US.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)ViewModels\UV.jpg" />
   </ItemGroup>
 </Project>

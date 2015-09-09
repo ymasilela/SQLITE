@@ -24,6 +24,7 @@ namespace TPCWare.SQLiteTest
     /// </summary>
     public sealed partial class SearchCollege : Page
     {
+        String part = "";
         public List<College> college { get; set; }
         College newColleges = new College();
 
@@ -31,9 +32,10 @@ namespace TPCWare.SQLiteTest
         {
             this.InitializeComponent();
         }
+
         protected async override void OnNavigatedTo(NavigationEventArgs e)
         {
-
+            part = e.Parameter as string;
 
             // Get users
             var query = App.conn.Table<College>();
@@ -72,9 +74,11 @@ namespace TPCWare.SQLiteTest
             }
         }
 
+       
+
         private void back_main_Click(object sender, RoutedEventArgs e)
         {
-            
+           
             this.Frame.Navigate(typeof(Search));
         }
     }

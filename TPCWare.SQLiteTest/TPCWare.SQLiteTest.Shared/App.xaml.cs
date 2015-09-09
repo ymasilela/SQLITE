@@ -496,7 +496,189 @@ namespace TPCWare.SQLiteTest
                     City = "Buffalo City TVET College",
                     Name = "Luther College Rochester Campus",
                     WebsiteLink = "www.ul.ac.za"
-                }
+                },
+
+
+
+               //////////////////////////new
+
+                     new Campuses()
+                  {
+                  
+                    City = "North West University",
+                    Name = "Luther College Rochester Campus",
+                
+                },
+                new Campuses()
+                  {
+                  
+                    City = "University of the Witwatersrand",
+                    Name = "Luther College Rochester Campus",
+                
+                },
+                new Campuses()
+             {
+                  
+                    City = "University of Cape Town",
+                    Name = "Luther College Rochester Campus",
+                
+                },
+                  new Campuses()
+                {
+                    
+                    City = "Durban University of Technology",
+                Name = "Luther College Rochester Campus",
+                },
+                 new Campuses()
+                  {
+                  
+                    City = "University of the Western Cape",
+                Name = "Luther College Rochester Campus",
+                },
+                new Campuses()
+                  {
+                  
+                    City = "Walter Sisulu University",
+                Name = "Luther College Rochester Campus",
+                },
+
+                 new Campuses()
+                  {
+                  
+                    City = "Cape Peninsula University of Technology",
+                    Name = "Luther College Rochester Campus",
+                },
+                new Campuses()
+                  {
+                  
+                    City = "Vaal University of Technology",
+                    Name = "Luther College Rochester Campus",
+                },
+                new Campuses()
+             {
+                  
+                    City = "Sol Plaatje University",
+                    Name = "Luther College Rochester Campus",
+                },
+
+
+                 //////////////////////////new
+
+                     new Campuses()
+                  {
+                  
+                    City = "North West University",
+                    Name = "Mossel Bay Campus",
+                },
+                new Campuses()
+                  {
+                  
+                    City = "University of the Witwatersrand",
+                    Name = "Mossel Bay Campus",
+                },
+                new Campuses()
+             {
+                  
+                    City = "University of Cape Town",
+                    Name = "Mossel Bay Campus",
+                },
+                  new Campuses()
+                {
+                    
+                    City = "Durban University of Technology",
+                    Name = "Mossel Bay Campus",
+                },
+                 new Campuses()
+                  {
+                  
+                    City = "University of the Western Cape",
+                    Name = "Mossel Bay Campus",
+                },
+                new Campuses()
+                  {
+                  
+                    City = "Walter Sisulu University",
+                    Name = "Mossel Bay Campus",
+                },
+
+                 new Campuses()
+                  {
+                  
+                    City = "Cape Peninsula University of Technology",
+                    Name = "Mossel Bay Campus",
+                },
+                new Campuses()
+                  {
+                  
+                    City = "Vaal University of Technology",
+                    Name = "Mossel Bay Campus",
+                },
+                new Campuses()
+             {
+                  
+                    City = "Sol Plaatje University",
+                    Name = "Mossel Bay Campus",
+                },
+                
+
+                 //////////////////////////new
+
+                     new Campuses()
+                  {
+                  
+                    City = "North West University",
+                    Name = "Campus",
+                },
+                new Campuses()
+                  {
+                  
+                    City = "University of the Witwatersrand",
+                     Name = "Campus",
+                },
+                new Campuses()
+             {
+                  
+                    City = "University of Cape Town",
+                     Name = "Campus",
+                },
+                  new Campuses()
+                {
+                    
+                    City = "Durban University of Technology",
+                     Name = "Campus",
+                },
+                 new Campuses()
+                  {
+                  
+                    City = "University of the Western Cape",
+                     Name = "Campus",
+                },
+                new Campuses()
+                  {
+                  
+                    City = "Walter Sisulu University",
+                     Name = "Campus",
+                },
+
+                 new Campuses()
+                  {
+                  
+                    City = "Cape Peninsula University of Technology",
+                     Name = "Campus",
+                },
+                new Campuses()
+                  {
+                  
+                    City = "Vaal University of Technology",
+                     Name = "Campus",
+                },
+                new Campuses()
+             {
+                  
+                    City = "Sol Plaatje University",
+                     Name = "Campus",
+                },
+
 
             };
 
@@ -807,6 +989,7 @@ namespace TPCWare.SQLiteTest
                     Name = "Sedibeng TVET College",
                 
                 },
+             
                  new College()
                 {
                    
@@ -922,6 +1105,64 @@ namespace TPCWare.SQLiteTest
                 {
                     
                     Name = "Nelson Mandela Metropolitan Univesity",
+                
+                },
+
+                /////////////////////////////////////////////////////////New
+
+                 new Universities()
+                  {
+                  
+                    Name = "North West University",
+                
+                },
+                new Universities()
+                  {
+                  
+                    Name = "University of the Witwatersrand",
+                
+                },
+                new Universities()
+             {
+                  
+                    Name = "University of Cape Town",
+                
+                },
+                  new Universities()
+                {
+                    
+                    Name = "Durban University of Technology",
+                
+                },
+                 new Universities()
+                  {
+                  
+                    Name = "University of the Western Cape",
+                
+                },
+                new Universities()
+                  {
+                  
+                    Name = "Walter Sisulu University",
+                
+                },
+
+                 new Universities()
+                  {
+                  
+                    Name = "Cape Peninsula University of Technology",
+                
+                },
+                new Universities()
+                  {
+                  
+                    Name = "Vaal University of Technology",
+                
+                },
+                new Universities()
+             {
+                  
+                    Name = "Sol Plaatje University",
                 
                 },
               
