@@ -66,5 +66,10 @@ namespace TPCWare.SQLiteTest
             viewcourses.IsActiveView = false;
 
         }
+
+        private void viewcourses_IsEnabledChanged(object sender, DependencyPropertyChangedEventArgs e)
+        {
+
+        }
     }
 }

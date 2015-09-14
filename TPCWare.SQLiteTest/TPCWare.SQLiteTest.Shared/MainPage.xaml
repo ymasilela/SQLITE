@@ -5,7 +5,7 @@
     xmlns:local="using:TPCWare.SQLiteTest"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d" Height="702.821" >
+    mc:Ignorable="d" Height="671" Width="398" >
     <Page.Background>
         <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
             <GradientStop Color="Black" Offset="0"/>
@@ -13,16 +13,14 @@
         </LinearGradientBrush>
     </Page.Background>
 
-    <Grid Margin="0,0.333,0,8.5">
-        <Grid.Background>
-            <ImageBrush Stretch="Fill" ImageSource="ViewModels/down.png"/>
-        </Grid.Background>
+    <Grid Margin="0,0.333,0,0" Background="#FFFBFAFA" Height="666" VerticalAlignment="Top">
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto" MinHeight="8"/>
+            <RowDefinition Height="631*"/>
+            <RowDefinition Height="26*"/>
         </Grid.RowDefinitions>
 
-        <ListView x:Name="UserList" Grid.Row="1" Margin="0,194,0,89.833" SelectionChanged="UserList_SelectionChanged">
+        <ListView x:Name="UserList" Grid.Row="1" Margin="0,170,0,0" SelectionChanged="UserList_SelectionChanged" Foreground="#FF060606" Height="387" VerticalAlignment="Top">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Margin="10">
@@ -34,8 +32,8 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        <TextBlock HorizontalAlignment="Left" Margin="10,26,0,0" TextWrapping="Wrap" Text="Institution Finder App" VerticalAlignment="Top" FontSize="36" Height="101" FontWeight="Bold" Width="380" Grid.RowSpan="2"/>
-        <Button x:Name="back_main" Content="Back" HorizontalAlignment="Left" Margin="20,593,0,14.833" Grid.Row="1" VerticalAlignment="Stretch" Width="360" Height="48" Foreground="#FF0E0D0D" Background="#FF27996F" Click="back_main_Click"/>
-        <TextBlock x:Name="navigated" HorizontalAlignment="Left" Margin="10,90,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" Width="370" Height="93"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,25,0,0" TextWrapping="Wrap" Text="Institution Finder App" VerticalAlignment="Top" FontSize="36" Height="44" FontWeight="Bold" Width="380" Foreground="#FF0A0A0A" Grid.Row="1"/>
+        <Button x:Name="back_main" Content="Back" HorizontalAlignment="Left" Margin="14,573,0,0" Grid.Row="1" VerticalAlignment="Top" Width="370" Height="58" Foreground="#FF0E0D0D" Background="#FF27996F" Click="back_main_Click" BorderBrush="#FF020202"/>
+        <TextBlock x:Name="navigated" HorizontalAlignment="Left" Margin="10,90,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Width="370" Height="48" Foreground="#FF27996F" FontWeight="Bold"/>
     </Grid>
 </Page>

@@ -4,12 +4,10 @@
     xmlns:local="using:TPCWare.SQLiteTest"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:Maps="using:Windows.UI.Xaml.Controls.Maps"
+   xmlns:Maps="using:Windows.UI.Xaml.Controls.Maps"
     x:Class="TPCWare.SQLiteTest.ViewLocation"
     mc:Ignorable="d">
-    <Page.Foreground>
-        <ImageBrush Stretch="Fill" ImageSource="ViewModels/down.png"/>
-    </Page.Foreground>
+
     <Page.Background>
         <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
             <GradientStop Color="Black" Offset="0"/>
@@ -17,19 +15,21 @@
         </LinearGradientBrush>
     </Page.Background>
 
-    <Grid x:Name="textLoc">
-        <Grid.Background>
-            <ImageBrush Stretch="Fill" ImageSource="ViewModels/down.png"/>
-        </Grid.Background>
+    <Grid x:Name="textLoc" Background="#FFFDFBFB" Margin="0,0.333,0,54.667">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="92*"/>
             <ColumnDefinition Width="23*"/>
             <ColumnDefinition Width="85*"/>
         </Grid.ColumnDefinitions>
-        <Button x:ConnectionId='1' x:Name="back_button" Grid.ColumnSpan="3" Content="Back" HorizontalAlignment="Left" Margin="10,574,0,0" VerticalAlignment="Top"                        Width="380" Foreground="#FF0A0A0A" Background="#FF27996F"/>
-        <WebView x:Name="webView" HorizontalAlignment="Left" Height="568" VerticalAlignment="Top" Width="400" Grid.ColumnSpan="3" Margin="0,-1,0,0"/>
+        
+
+        <Button x:ConnectionId='1' x:Name="back_button" Content="Back" HorizontalAlignment="Left" Margin="4,585,0,-57" VerticalAlignment="Top"                        Width="162" Foreground="#FF0A0A0A" Background="#FF27996F" BorderBrush="#FF060606"/>
+        <Button x:ConnectionId='2' x:Name="tbOutputTexts" Content="Get Directions" Grid.Column="2" HorizontalAlignment="Left" Margin="28,585,0,-57" VerticalAlignment="Top"                           />
+        <Maps:MapControl x:Name="map" MapServiceToken="yvPVkyiTloR2lug6UK3uVg" VerticalAlignment="Top" Grid.ColumnSpan="3" Height="557"/>
+
 
 
     </Grid>
+
 </Page>
 

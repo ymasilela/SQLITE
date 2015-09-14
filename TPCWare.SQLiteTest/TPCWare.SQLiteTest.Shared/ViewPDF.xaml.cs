@@ -152,12 +152,100 @@ namespace TPCWare.SQLiteTest
                  Uri targetUris = new Uri(@"http://www.up.ac.za/new-students-undergraduate/article/268803/laai-pdf-aansoekvorm-2016-af");
                  webView1.Navigate(targetUris);
              }
+                 //////////////////////////////////new
+                  else if (part.Equals("North West University"))
+             {
+
+                 Uri targetUris = new Uri(@"http://www.nwu.ac.za/content/vtc-academic-administration-admissions");
+                 webView1.Navigate(targetUris);
+             }
+
+             else if (part.Equals("Cape Peninsula University of Technology"))
+             {
+
+                 Uri targetUris = new Uri(@"http://www.cput.ac.za/study/apply/step-2-get-an-application-form");
+                 webView1.Navigate(targetUris);
+             }
+             else if (part.Equals("Walter Sisulu University"))
+             {
+
+               
+                 Uri targetUris = new Uri(@"http://www.wsu.ac.za/waltersisulu/index.php/recruitment-2015/");
+                 webView1.Navigate(targetUris);
+
+             }
+             else if (part.Equals("University of the Western Cape"))
+             {
+                 MessageBox("No Application form for " + part + " they prefer students to apply online.");
+                 Uri targetUris = new Uri(@"https://www.uwc.ac.za/Students/Admin/Pages/Applications-Information.aspx");
+                 webView1.Navigate(targetUris);
+             }
+             else if (part.Equals("Durban University of Technology"))
+             {
+                 MessageBox("No Application form for " + part + " you need to apply onlines.");
+                 Uri targetUris = new Uri(@"http://www.dut.ac.za/student_portal/student_registration/how_to/");
+                 webView1.Navigate(targetUris);
+             }
+             else if (part.Equals("University of Cape Town"))
+             {
+                 Uri targetUris = new Uri(@"http://www.uct.ac.za/apply/applications/forms/");
+                 webView1.Navigate(targetUris);
+             }
+             else if (part.Equals("University of the Witwatersrand"))
+             {
+                 Uri targetUris = new Uri(@"http://www.wits.ac.za/prospective/postgraduate/11580/applications.html");
+                 webView1.Navigate(targetUris);
+             }
+                   else if (part.Equals("Vaal University of Technology"))
+             {
+                 Uri targetUris = new Uri(@"http://www.vut.ac.za/index.php/admissions/undergraduate/how-do-i-apply");
+                 webView1.Navigate(targetUris);
+             }
+
+             else if (part.Equals("Ikhala FET College"))
+             {
+
+
+                 Uri targetUris = new Uri(@"http://www.wsu.ac.za/waltersisulu/index.php/recruitment-2015/");
+                 webView1.Navigate(targetUris);
+
+             }
+             else if (part.Equals("King Hintsa FET College"))
+             {
+                 MessageBox("No Application form for " + part + " they prefer students to apply online.");
+                 Uri targetUris = new Uri(@"https://www.uwc.ac.za/Students/Admin/Pages/Applications-Information.aspx");
+                 webView1.Navigate(targetUris);
+             }
+             else if (part.Equals("Goldfields FET College"))
+             {
+                 MessageBox("No Application form for " + part + " you need to apply onlines.");
+                 Uri targetUris = new Uri(@"http://www.dut.ac.za/student_portal/student_registration/how_to/");
+                 webView1.Navigate(targetUris);
+             }
+             else if (part.Equals("Elangeni FET College"))
+             {
+                 Uri targetUris = new Uri(@"http://www.uct.ac.za/apply/applications/forms/");
+                 webView1.Navigate(targetUris);
+             }
+             else if (part.Equals("Majuba FET College"))
+             {
+                 Uri targetUris = new Uri(@"http://www.wits.ac.za/prospective/postgraduate/11580/applications.html");
+                 webView1.Navigate(targetUris);
+             }
+             else if (part.Equals("Letaba FET College"))
+             {
+                 Uri targetUris = new Uri(@"http://www.vut.ac.za/index.php/admissions/undergraduate/how-do-i-apply");
+                 webView1.Navigate(targetUris);
+             }
              else
              {
                  MessageBox("No website for "+ part);
              }
      
 
+
+
+               
         }
         public async void MessageBox(String message)
         {

@@ -8,7 +8,7 @@
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
   <Identity Name="91c2641e-be6b-41d9-9f57-43df1b398f0d" Publisher="CN=Nick" Version="1.0.0.0" ProcessorArchitecture="x86" />
-  <mp:PhoneIdentity PhoneProductId="91c2641e-be6b-41d9-9f57-43df1b398f0d" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <mp:PhoneIdentity PhoneProductId="8a42348b-a7e7-4e27-ae28-98fc4b1f290d" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>TPCWare.SQLiteTest.WindowsPhone</DisplayName>
     <PublisherDisplayName>Nick</PublisherDisplayName>

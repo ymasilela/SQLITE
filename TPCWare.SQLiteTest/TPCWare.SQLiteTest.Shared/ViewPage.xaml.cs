@@ -127,6 +127,73 @@ namespace TPCWare.SQLiteTest
              {
                  images.Source = new BitmapImage(new Uri("ms-appx:///ViewModels/UP.jpg"));
              }
+
+             else if (part.Equals("North West University"))
+             {
+                 images.Source = new BitmapImage(new Uri("ms-appx:///ViewModels/unw.jpg"));
+             }
+
+
+             else if (part.Equals("University of the Witwatersrand"))
+             {
+                 images.Source = new BitmapImage(new Uri("ms-appx:///ViewModels/wits.png"));
+
+             }
+             else if (part.Equals("University of Cape Town"))
+             {
+                 images.Source = new BitmapImage(new Uri("ms-appx:///ViewModels/uct.jpg"));
+             }
+             else if (part.Equals("Durban University of Technology"))
+             {
+                 images.Source = new BitmapImage(new Uri("ms-appx:///ViewModels/dut.png"));
+             }
+             else if (part.Equals("University of the Western Cape"))
+             {
+                 images.Source = new BitmapImage(new Uri("ms-appx:///ViewModels/uwc.jpg"));
+             }
+             else if (part.Equals("Walter Sisulu University"))
+             {
+                 images.Source = new BitmapImage(new Uri("ms-appx:///ViewModels/Walter-Sisulu.jpg"));
+             }
+             else if (part.Equals("Cape Peninsula University of Technology"))
+             {
+                 images.Source = new BitmapImage(new Uri("ms-appx:///ViewModels/cape.jpg"));
+             }
+             else if (part.Equals("Sol Plaatje University"))
+             {
+                 images.Source = new BitmapImage(new Uri("ms-appx:///ViewModels/sol.jpg"));
+             }
+             else if (part.Equals("Vaal University of Technology"))
+             {
+                 images.Source = new BitmapImage(new Uri("ms-appx:///ViewModels/vaal.png"));
+             }
+            /////////////////new
+             else if (part.Equals("Ikhala FET College"))
+             {
+                 images.Source = new BitmapImage(new Uri("ms-appx:///ViewModels/Ikhala.jpeg"));
+             }
+             else if (part.Equals("King Hintsa FET College"))
+             {
+                 images.Source = new BitmapImage(new Uri("ms-appx:///ViewModels/king.jpg"));
+             }
+             else if (part.Equals("Goldfields FET College"))
+             {
+                 images.Source = new BitmapImage(new Uri("ms-appx:///ViewModels/Gold-Fields-FET-College.jpg"));
+             }
+             else if (part.Equals("Elangeni FET College"))
+             {
+                 images.Source = new BitmapImage(new Uri("ms-appx:///ViewModels/Elangeni-College.jpg"));
+             }
+             else if (part.Equals("Majuba FET College"))
+             {
+                 images.Source = new BitmapImage(new Uri("ms-appx:///ViewModels/majuba.jpeg"));
+             }
+             else if (part.Equals("Letaba FET College"))
+             {
+                 images.Source = new BitmapImage(new Uri("ms-appx:///ViewModels/pic.jpg"));
+             }
+            
+            
            
      
 

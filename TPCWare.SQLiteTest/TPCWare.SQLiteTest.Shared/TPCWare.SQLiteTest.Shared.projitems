@@ -15,6 +15,9 @@
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)GetDirections.xaml.cs">
+      <DependentUpon>GetDirections.xaml</DependentUpon>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -52,6 +55,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Include="$(MSBuildThisFileDirectory)GetDirections.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="$(MSBuildThisFileDirectory)MainPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -95,28 +102,45 @@
   <ItemGroup>
     <Content Include="$(MSBuildThisFileDirectory)B.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)ViewModels\buffalo.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)ViewModels\cape.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)ViewModels\central.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)ViewModels\down.png" />
     <Content Include="$(MSBuildThisFileDirectory)ViewModels\down1.png" />
     <Content Include="$(MSBuildThisFileDirectory)ViewModels\downs.png" />
+    <Content Include="$(MSBuildThisFileDirectory)ViewModels\dut.png" />
+    <Content Include="$(MSBuildThisFileDirectory)ViewModels\Elangeni-College.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)ViewModels\False.png" />
+    <Content Include="$(MSBuildThisFileDirectory)ViewModels\Gold-Fields-FET-College.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)ViewModels\Ikhala.jpeg" />
     <Content Include="$(MSBuildThisFileDirectory)ViewModels\images.png" />
+    <Content Include="$(MSBuildThisFileDirectory)ViewModels\king.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)ViewModels\main.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)ViewModels\majuba.jpeg" />
+    <Content Include="$(MSBuildThisFileDirectory)ViewModels\map.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)ViewModels\Nkangala-FET-College.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)ViewModels\nmmu.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)ViewModels\pic.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)ViewModels\Port-Elizabeth.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)ViewModels\sedibeng.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)ViewModels\sekhukhune.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)ViewModels\sol.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)ViewModels\south-Cape.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)ViewModels\Thekwini-FET-College.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)ViewModels\tnc.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)ViewModels\tut.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)ViewModels\uct.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)ViewModels\uj.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)ViewModels\UKZN.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)ViewModels\UL.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)ViewModels\UM.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)ViewModels\Unisa.png" />
+    <Content Include="$(MSBuildThisFileDirectory)ViewModels\unw.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)ViewModels\UP.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)ViewModels\US.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)ViewModels\UV.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)ViewModels\uwc.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)ViewModels\vaal.png" />
+    <Content Include="$(MSBuildThisFileDirectory)ViewModels\Walter-Sisulu.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)ViewModels\wits.png" />
   </ItemGroup>
 </Project>

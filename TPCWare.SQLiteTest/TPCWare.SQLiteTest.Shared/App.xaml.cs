@@ -506,53 +506,53 @@ namespace TPCWare.SQLiteTest
                   {
                   
                     City = "North West University",
-                    Name = "Luther College Rochester Campus",
+                    Name = "Mafikeng Campus",
                 
                 },
                 new Campuses()
                   {
                   
                     City = "University of the Witwatersrand",
-                    Name = "Luther College Rochester Campus",
+                    Name = "West Campus",
                 
                 },
                 new Campuses()
              {
                   
                     City = "University of Cape Town",
-                    Name = "Luther College Rochester Campus",
+                    Name = "Breakwater Campus",
                 
                 },
                   new Campuses()
                 {
                     
                     City = "Durban University of Technology",
-                Name = "Luther College Rochester Campus",
+                Name = "ML Sultan Campus",
                 },
                  new Campuses()
                   {
                   
                     City = "University of the Western Cape",
-                Name = "Luther College Rochester Campus",
+                Name = "Bellville Campus",
                 },
                 new Campuses()
                   {
                   
                     City = "Walter Sisulu University",
-                Name = "Luther College Rochester Campus",
+                Name = "Mthatha campus",
                 },
 
                  new Campuses()
                   {
                   
                     City = "Cape Peninsula University of Technology",
-                    Name = "Luther College Rochester Campus",
+                    Name = "Cape Town Campus",
                 },
                 new Campuses()
                   {
                   
                     City = "Vaal University of Technology",
-                    Name = "Luther College Rochester Campus",
+                    Name = "Vanderbijlpark Campus",
                 },
                 new Campuses()
              {
@@ -568,50 +568,50 @@ namespace TPCWare.SQLiteTest
                   {
                   
                     City = "North West University",
-                    Name = "Mossel Bay Campus",
+                    Name = "Potchefstroom Campus",
                 },
                 new Campuses()
                   {
                   
                     City = "University of the Witwatersrand",
-                    Name = "Mossel Bay Campus",
+                    Name = "East Campus",
                 },
                 new Campuses()
              {
                   
                     City = "University of Cape Town",
-                    Name = "Mossel Bay Campus",
+                    Name = "Hiddingh Campus",
                 },
                   new Campuses()
                 {
                     
                     City = "Durban University of Technology",
-                    Name = "Mossel Bay Campus",
+                    Name = "Steve Biko Campus",
                 },
                  new Campuses()
                   {
                   
                     City = "University of the Western Cape",
-                    Name = "Mossel Bay Campus",
+                    Name = "Tygerberg Hospital Campus",
                 },
                 new Campuses()
                   {
                   
                     City = "Walter Sisulu University",
-                    Name = "Mossel Bay Campus",
+                    Name = "Butterworth campus",
                 },
 
                  new Campuses()
                   {
                   
                     City = "Cape Peninsula University of Technology",
-                    Name = "Mossel Bay Campus",
+                    Name = "Granger Bay Campus",
                 },
                 new Campuses()
                   {
                   
                     City = "Vaal University of Technology",
-                    Name = "Mossel Bay Campus",
+                    Name = "Secunda Campus",
                 },
                 new Campuses()
              {
@@ -627,57 +627,178 @@ namespace TPCWare.SQLiteTest
                   {
                   
                     City = "North West University",
-                    Name = "Campus",
+                    Name = "Vaal Triangle Campus",
                 },
                 new Campuses()
                   {
                   
                     City = "University of the Witwatersrand",
-                     Name = "Campus",
+                     Name = "Parktown Campus",
                 },
                 new Campuses()
              {
                   
                     City = "University of Cape Town",
-                     Name = "Campus",
+                     Name = "Medical Groote Schuur Campus",
                 },
                   new Campuses()
                 {
                     
                     City = "Durban University of Technology",
-                     Name = "Campus",
+                     Name = "Brickfield Campus",
                 },
                  new Campuses()
                   {
                   
                     City = "University of the Western Cape",
-                     Name = "Campus",
+                     Name = "Mitchell’s Plain Campus",
                 },
                 new Campuses()
                   {
                   
                     City = "Walter Sisulu University",
-                     Name = "Campus",
+                     Name = "Buffalo City campus",
                 },
 
                  new Campuses()
                   {
                   
                     City = "Cape Peninsula University of Technology",
-                     Name = "Campus",
+                     Name = "Mowbray Campus",
+                },
+                    new Campuses()
+                  {
+                  
+                    City = "Cape Peninsula University of Technology",
+                     Name = "Bellville Campus",
                 },
                 new Campuses()
                   {
                   
-                    City = "Vaal University of Technology",
-                     Name = "Campus",
-                },
-                new Campuses()
-             {
-                  
                     City = "Sol Plaatje University",
-                     Name = "Campus",
+                     Name = "Kimberley",
                 },
+             
+                 ///////////////////new
+
+                  new Campuses()
+                {
+                     
+                    City = "Ikhala FET College",
+                     Name = "Bellville Campus",
+                },
+                    new Campuses()
+                {
+                   
+                    City = "King Hintsa FET College",
+                     Name = "Bellville Campus",
+                },
+                    new Campuses()
+                {
+                   
+                    City = "Goldfields FET College",
+                     Name = "Bellville Campus",
+                },
+              
+                    new Campuses()
+                {
+                   
+                    City = "Elangeni FET College",
+                     Name = "Bellville Campus",
+                },
+                    new Campuses()
+                {
+                    Name = "Bellville Campus",
+                    City = "Majuba FET College",
+                
+                },
+                    new Campuses()
+                {
+                   
+                    City = "Letaba FET College",
+                     Name = "Bellville Campus",
+                },
+
+                  ///////////////////new
+
+                  new Campuses()
+                {
+                     
+                    City = "Ikhala FET College",
+                     Name = "Bellville Campus",
+                },
+                    new Campuses()
+                {
+                   
+                    City = "King Hintsa FET College",
+                     Name = "Bellville Campus",
+                },
+                    new Campuses()
+                {
+                   
+                    City = "Goldfields FET College",
+                     Name = "Bellville Campus",
+                },
+              
+                    new Campuses()
+                {
+                   
+                    City = "Elangeni FET College",
+                     Name = "Bellville Campus",
+                },
+                    new Campuses()
+                {
+                   
+                    City = "Majuba FET College",
+                     Name = "Bellville Campus",
+                },
+                    new Campuses()
+                {
+                   
+                    City = "Letaba FET College",
+                     Name = "Bellville Campus",
+                },
+
+                  ///////////////////new
+
+                  new Campuses()
+                {
+                     
+                    City = "Ikhala FET College",
+                     Name = "Bellville Campus",
+                },
+                    new Campuses()
+                {
+                   
+                    City = "King Hintsa FET College",
+                     Name = "Bellville Campus",
+                },
+                    new Campuses()
+                {
+                   
+                    City = "Goldfields FET College",
+                     Name = "Bellville Campus",
+                },
+              
+                    new Campuses()
+                {
+                   
+                    City = "Elangeni FET College",
+                     Name = "Bellville Campus",
+                },
+                    new Campuses()
+                {
+                   
+                    City = "Majuba FET College",
+                     Name = "Bellville Campus",
+                },
+                    new Campuses()
+                {
+                   
+                    City = "Letaba FET College",
+                     Name = "Bellville Campus",
+                },
+
 
 
             };
@@ -1031,6 +1152,45 @@ namespace TPCWare.SQLiteTest
                 {
                    
                     Name = "Buffalo City TVET College",
+                
+                },
+                ///////////////////new
+
+                  new College()
+                {
+                     
+                    Name = "Ikhala FET College",
+                
+                },
+                    new College()
+                {
+                   
+                    Name = "King Hintsa FET College",
+                
+                },
+                    new College()
+                {
+                   
+                    Name = "Goldfields FET College",
+                
+                },
+              
+                    new College()
+                {
+                   
+                    Name = "Elangeni FET College",
+                
+                },
+                    new College()
+                {
+                   
+                    Name = "Majuba FET College",
+                
+                },
+                    new College()
+                {
+                   
+                    Name = "Letaba FET College",
                 
                 },
                  

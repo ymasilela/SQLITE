@@ -11,6 +11,7 @@ using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
+using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
@@ -26,7 +27,9 @@ namespace TPCWare.SQLiteTest
         
         public Search()
         {
+           
             this.InitializeComponent();
+            img.Source = new BitmapImage(new Uri("ms-appx:///ViewModels/main.jpg"));
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
