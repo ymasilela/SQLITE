@@ -46,8 +46,8 @@ namespace TPCWare.SQLiteTest
             map.Center =
                new Geopoint(new BasicGeoposition()
                {
-                   Latitude = 47.604,
-                   Longitude = -122.329 
+                   Latitude = -25.540486,
+                   Longitude = 28.096136 
                });
             map.ZoomLevel = 15;
             map.LandmarksVisible = true;
@@ -55,26 +55,32 @@ namespace TPCWare.SQLiteTest
             MapIcon MapIcon1 = new MapIcon();
             MapIcon1.Location = new Geopoint(new BasicGeoposition()
             {
-                Latitude = 47.620,
-                Longitude = -122.349
+
+                Latitude = -25.540486,
+                Longitude = 28.096136 
             });
-            MapIcon1.NormalizedAnchorPoint = new Point(0,0);
+            MapIcon1.NormalizedAnchorPoint = new Point(10,10);
             MapIcon1.Title = part;
             map.MapElements.Add(MapIcon1);
 
+
             MapIcon1.Image = RandomAccessStreamReference.CreateFromUri(new Uri("ms-appx:///ViewModels/map.jpg"));
+            Windows.UI.Xaml.Shapes.Ellipse fence = new Windows.UI.Xaml.Shapes.Ellipse();
+           
+            MapControl.SetNormalizedAnchorPoint(fence, new Point(0.5, 0.5));
+
         }
         private async void ShowRouteOnMap()
         {
             // Get a route as shown previously.
             BasicGeoposition startLocation = new BasicGeoposition();
-            startLocation.Latitude = 47.643;
-            startLocation.Longitude = -122.131;
+            startLocation.Latitude = -25.540486;
+            startLocation.Longitude = 28.096136;
             Geopoint startPoint = new Geopoint(startLocation);
 
             // End at the city of Seattle, Washington.
             BasicGeoposition endLocation = new BasicGeoposition();
-            endLocation.Latitude = 47.604;
+            endLocation.Latitude = -25.540486;
             endLocation.Longitude = -122.329;
             Geopoint endPoint = new Geopoint(endLocation);
 
@@ -91,7 +97,7 @@ namespace TPCWare.SQLiteTest
                 MapRouteView viewOfRoute = new MapRouteView(routeResult.Route);
                 viewOfRoute.RouteColor = Colors.Yellow;
                 viewOfRoute.OutlineColor = Colors.Black;
-
+                
                 // Add the new MapRouteView to the Routes collection
                 // of the MapControl.
                 map.Routes.Add(viewOfRoute);

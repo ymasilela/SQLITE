@@ -39,6 +39,7 @@ namespace TPCWare.SQLiteTest
 
 
             part = e.Parameter as string;
+            heading.Text = part;
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
@@ -46,7 +47,7 @@ namespace TPCWare.SQLiteTest
         }
 
         private async void GetRouteAndDirections()
-        {
+        { 
             // Start at Microsoft in Redmond, Washington.
             BasicGeoposition startLocation = new BasicGeoposition();
             startLocation.Latitude = 47.643;
@@ -55,8 +56,8 @@ namespace TPCWare.SQLiteTest
 
             // End at the city of Seattle, Washington.
             BasicGeoposition endLocation = new BasicGeoposition();
-            endLocation.Latitude = 47.604;
-            endLocation.Longitude = -122.329;
+            endLocation.Latitude =  -25.540486;
+            endLocation.Longitude = 28.096136 ;
             Geopoint endPoint = new Geopoint(endLocation);
 
             // Get the route between the points.
