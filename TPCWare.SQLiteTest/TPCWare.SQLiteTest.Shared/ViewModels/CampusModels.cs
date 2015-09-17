@@ -36,11 +36,11 @@ namespace TPCWare.SQLiteTest.ViewModels
                 id = value;
             }
         }
-        public Campuses getAll(string na)
+        public Courses getAll(string na)
         {
             using (var db = new SQLite.SQLiteConnection(app.DBPath))
             {
-                var q = db.Query<Campuses>("select * from Campuses where City ='"+na+"'").FirstOrDefault();
+                var q = db.Query<Courses>("select * from Courses where Id ="+na+"").FirstOrDefault();
                 return q;
             }
         }

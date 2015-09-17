@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using TPCWare.SQLiteTest.Model;
 using Windows.Devices.Geolocation;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
@@ -27,7 +28,7 @@ namespace TPCWare.SQLiteTest
     /// </summary>
     public sealed partial class GetDirections : Page
     {
-        String part = "";
+        Campuses part = null;
         public GetDirections()
         {
             this.InitializeComponent();
@@ -38,26 +39,19 @@ namespace TPCWare.SQLiteTest
         {
 
 
-            part = e.Parameter as string;
-            heading.Text = part;
-        }
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(ViewLocation),part);
-        }
+            part = e.Parameter as Campuses;
+            heading.Text = part.City + " " + part.Name;
 
-        private async void GetRouteAndDirections()
-        { 
-            // Start at Microsoft in Redmond, Washington.
+
             BasicGeoposition startLocation = new BasicGeoposition();
-            startLocation.Latitude = 47.643;
-            startLocation.Longitude = -122.131;
+            startLocation.Latitude = -25.73134;
+            startLocation.Longitude = 28.21837;
             Geopoint startPoint = new Geopoint(startLocation);
 
             // End at the city of Seattle, Washington.
             BasicGeoposition endLocation = new BasicGeoposition();
-            endLocation.Latitude =  -25.540486;
-            endLocation.Longitude = 28.096136 ;
+            endLocation.Latitude = part.Latitude;
+            endLocation.Longitude = part.Longitude;
             Geopoint endPoint = new Geopoint(endLocation);
 
             // Get the route between the points.
@@ -110,6 +104,16 @@ namespace TPCWare.SQLiteTest
                     "A problem occurred: " + routeResult.Status.ToString();
             }
 
+        }
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(ViewLocation),part);
+        }
+
+        private async void GetRouteAndDirections()
+        { 
+            // Start at Microsoft in Redmond, Washington.
+          
         }
         
     }

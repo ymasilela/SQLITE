@@ -245,6 +245,11 @@ namespace TPCWare.SQLiteTest
             this.Frame.Navigate(typeof(SearchCollege));
         }
 
+        private void calculateAPS_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Calculate),part);
+        }
+
      
 
         

@@ -8,7 +8,7 @@
     mc:Ignorable="d" Background="White">
 
     <Grid Height="452" Margin="0,-0.667,0,0" VerticalAlignment="Top" Background="White">
-        <Button Content="View Campuses" HorizontalAlignment="Left" Margin="16,497,0,-289" VerticalAlignment="Top" Width="178" Click="Button_Click" Background="#FF27996F" Foreground="#FF151515" Height="134" BorderBrush="#FF151515"/>
+        <Button Content="View Campuses" HorizontalAlignment="Left" Margin="16,497,0,-120" VerticalAlignment="Top" Width="178" Click="Button_Click" Background="#FF27996F" Foreground="#FF151515" Height="75" BorderBrush="#FF151515"/>
         <Button x:Name="pdf" Content="Download Form" HorizontalAlignment="Left" Margin="204,370,0,-58" VerticalAlignment="Top" Width="178" Foreground="#FF151515" Click="pdf_Click" Background="#FF27996F" Height="139" BorderBrush="#FF151515"/>
         <TextBlock x:Name="loc" HorizontalAlignment="Left" Margin="23,26,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36"/>
         <TextBlock x:Name="course" HorizontalAlignment="Left" Margin="64,175,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
@@ -18,6 +18,7 @@
         <TextBlock x:Name="campName" HorizontalAlignment="Left" Margin="10,46,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FF27996F" FontSize="24" FontWeight="Bold" Width="383" Height="65"/>
         <Button x:Name="colleges" Content="Colleges" HorizontalAlignment="Left" Margin="204,558,0,-177" VerticalAlignment="Top" Width="178" Height="72" Background="#FF27996F" Foreground="#FF0C0B0B" Click="colleges_Click" RenderTransformOrigin="0.499,0.672" BorderBrush="#FF151515"/>
         <Image x:Name="images" HorizontalAlignment="Left" Height="238" Margin="40,111,0,0" VerticalAlignment="Top" Width="306"/>
+        <Button x:Name="calculateAPS" Content="Calculate APS" HorizontalAlignment="Left" Margin="16,558,0,-178" VerticalAlignment="Top" Width="178" Height="72" Background="#FF27996F" BorderBrush="#FF080808" Foreground="#FF040404" Click="calculateAPS_Click"/>
 
 
     </Grid>

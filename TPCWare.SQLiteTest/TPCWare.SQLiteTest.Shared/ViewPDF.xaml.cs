@@ -206,7 +206,7 @@ namespace TPCWare.SQLiteTest
              {
 
 
-                 Uri targetUris = new Uri(@"http://www.wsu.ac.za/waltersisulu/index.php/recruitment-2015/");
+                 Uri targetUris = new Uri(@"http://www.ikhalatvet.com/#!admissions/c1ylq");
                  webView1.Navigate(targetUris);
 
              }
