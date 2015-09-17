@@ -71,6 +71,7 @@ namespace TPCWare.SQLiteTest
             int subject5 = Int32.Parse(txtSubject5.Text);
             int subject6 = Int32.Parse(txtSubject6.Text);
 
+          
 
 
 
@@ -85,7 +86,7 @@ namespace TPCWare.SQLiteTest
             {
                 foreach (var obj in users)
                 {
-                    qualifyFor.Items.Add("You Qualify for " + obj.courses);
+                    qualifyFor.Items.Add("Your point is "+aps+" Excluding Life Orientation. You Qualify for " + obj.courses);
                 }
             }
             else {
