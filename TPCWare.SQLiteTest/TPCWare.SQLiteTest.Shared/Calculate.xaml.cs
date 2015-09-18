@@ -46,10 +46,81 @@ namespace TPCWare.SQLiteTest
 
 
             cHome.Items.Add("IsiNdebele");
+            cHome.Items.Add("English");
+            cHome.Items.Add("IsiNdebele");
+            cHome.Items.Add("English");
+            cHome.Items.Add("IsiNdebele");
+            cHome.Items.Add("English");
+            cHome.Items.Add("English");
+            cHome.Items.Add("IsiNdebele");
+            cHome.Items.Add("English");
+            cHome.Items.Add("IsiNdebele");
+            cHome.Items.Add("English");
+
+
             cFirst.Items.Add("English");
+            cFirst.Items.Add("IsiNdebele");
+            cFirst.Items.Add("English");
+            cFirst.Items.Add("IsiNdebele");
+            cFirst.Items.Add("English");
+            cFirst.Items.Add("English");
+            cFirst.Items.Add("IsiNdebele");
+            cFirst.Items.Add("English");
+            cFirst.Items.Add("IsiNdebele");
+            cFirst.Items.Add("English");
+
+            cMaths.Items.Add("English");
             cMaths.Items.Add("IsiNdebele");
+            cMaths.Items.Add("English");
+            cMaths.Items.Add("IsiNdebele");
+            cMaths.Items.Add("English");
+            cMaths.Items.Add("English");
+            cMaths.Items.Add("IsiNdebele");
+            cMaths.Items.Add("English");
+            cMaths.Items.Add("IsiNdebele");
+            cMaths.Items.Add("English");
+
             cLifeO.Items.Add("English");
+            cLifeO.Items.Add("IsiNdebele");
+            cLifeO.Items.Add("English");
+            cLifeO.Items.Add("IsiNdebele");
+            cLifeO.Items.Add("English");
+            cLifeO.Items.Add("English");
+            cLifeO.Items.Add("IsiNdebele");
+            cLifeO.Items.Add("English");
+            cLifeO.Items.Add("IsiNdebele");
+            cLifeO.Items.Add("English");
+
+            cSubject5.Items.Add("English");
             cSubject5.Items.Add("IsiNdebele");
+            cSubject5.Items.Add("English");
+            cSubject5.Items.Add("IsiNdebele");
+            cSubject5.Items.Add("English");
+            cSubject5.Items.Add("English");
+            cSubject5.Items.Add("IsiNdebele");
+            cSubject5.Items.Add("English");
+            cSubject5.Items.Add("IsiNdebele");
+            cSubject5.Items.Add("English");
+            cSubject5.Items.Add("English");
+            cSubject5.Items.Add("IsiNdebele");
+            cSubject5.Items.Add("English");
+            cSubject5.Items.Add("IsiNdebele");
+            cSubject5.Items.Add("English");
+
+            cSubject6.Items.Add("English");
+            cSubject6.Items.Add("IsiNdebele");
+            cSubject6.Items.Add("English");
+            cSubject6.Items.Add("IsiNdebele");
+            cSubject6.Items.Add("English");
+            cSubject6.Items.Add("English");
+            cSubject6.Items.Add("IsiNdebele");
+            cSubject6.Items.Add("English");
+            cSubject6.Items.Add("IsiNdebele");
+            cSubject6.Items.Add("English");
+            cSubject6.Items.Add("English");
+            cSubject6.Items.Add("IsiNdebele");
+            cSubject6.Items.Add("English");
+            cSubject6.Items.Add("IsiNdebele");
             cSubject6.Items.Add("English");
            
          
@@ -79,7 +150,7 @@ namespace TPCWare.SQLiteTest
 
 
             SQLiteAsyncConnection connection = new SQLiteAsyncConnection("institutionFinder.db");
-            var users = await connection.QueryAsync<Courses>("Select courses FROM Courses where Id = " + aps + "");
+            var users = await connection.QueryAsync<Courses>("Select * FROM Courses where Id = " + aps + "");
             // Get users
            
             if (users != null)
