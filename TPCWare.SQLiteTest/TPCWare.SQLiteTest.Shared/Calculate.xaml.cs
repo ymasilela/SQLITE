@@ -150,14 +150,14 @@ namespace TPCWare.SQLiteTest
 
 
             SQLiteAsyncConnection connection = new SQLiteAsyncConnection("institutionFinder.db");
-            var users = await connection.QueryAsync<Courses>("Select * FROM Courses where Id = " + aps + "");
+            var users = await connection.QueryAsync<Courses>("Select courses FROM Courses where Id = " + aps + "");
             // Get users
            
             if (users != null)
             {
                 foreach (var obj in users)
                 {
-                    qualifyFor.Items.Add("Your point is "+aps+" Excluding Life Orientation. You Qualify for " + obj.courses);
+                    qualifyFor.Items.Add("Your APS is "+aps+" Excluding Life Orientation. You Qualify for " + obj.courses);
                 }
             }
             else {
@@ -171,6 +171,11 @@ namespace TPCWare.SQLiteTest
         private void backToViewPage_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(ViewPage),part);
+        }
+
+        private void qualifyFor_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }

@@ -47,9 +47,10 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Width" />
-      <RootProperty Name="Foreground" />
       <RootProperty Name="BorderBrush" />
       <RootProperty Name="Height" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="Background" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
       <RootProperty Name="HorizontalAlignment" />
@@ -84,6 +85,7 @@
       <RootProperty Name="RenderTransformOrigin" />
       <RootProperty Name="UseLayoutRounding" />
       <RootProperty Name="RenderTransform" />
+      <RootEvent Name="SelectionChanged" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Media.CompositeTransform">
       <RootProperty Name="Rotation" />
