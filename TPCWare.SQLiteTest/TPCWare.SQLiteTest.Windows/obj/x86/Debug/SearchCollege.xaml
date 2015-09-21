@@ -1,0 +1,30 @@
+﻿<Page
+    x:Class="TPCWare.SQLiteTest.SearchCollege"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TPCWare.SQLiteTest"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Margin="0,0.333,0,-0.333">
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="ViewModels/down.png"/>
+        </Grid.Background>
+        <ListView x:ConnectionId='1' x:Name="searchColleges" Margin="20,122,20,93"                                             >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Margin="10">
+                        <TextBlock Text="{Binding Name}" />
+                      
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <TextBlock HorizontalAlignment="Left" Margin="10,26,0,0" TextWrapping="Wrap" Text="Institution Finder App" VerticalAlignment="Top" FontSize="36" Height="43" FontWeight="Bold" Width="380"/>
+        <Button x:ConnectionId='2' x:Name="back_main" Content="Back" HorizontalAlignment="Left" Margin="20,575,0,0" VerticalAlignment="Top" Width="360" Height="64" Foreground="#FF0E0D0D" Background="#FF27996F"                         RenderTransformOrigin="0.449,1.584"/>
+
+
+    </Grid>
+</Page>
+

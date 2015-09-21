@@ -1,0 +1,18 @@
+﻿<Page
+    x:Class="TPCWare.SQLiteTest.QualifyCourses"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TPCWare.SQLiteTest"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource AppBarItemPointerOverForegroundThemeBrush}">
+        <TextBlock HorizontalAlignment="Left" Margin="10,19,0,0" TextWrapping="Wrap" Text="Institution Finder App" VerticalAlignment="Top" FontSize="36" Height="62" Width="380" Foreground="#FF040404" FontWeight="Bold"/>
+        <TextBlock x:Name="heading" HorizontalAlignment="Left" Margin="10,89,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FF27996F" FontSize="24" FontWeight="Bold"/>
+        <TextBlock x:Name="qCourses" HorizontalAlignment="Left" Margin="16,224,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FF040404" FontWeight="Bold"/>
+        <Button x:ConnectionId='1' x:Name="backToCal" Content="Back" HorizontalAlignment="Left" Margin="24,582,0,0" VerticalAlignment="Top" Width="354" Background="#FF27996F" BorderBrush="#FF080808" Foreground="#FF040404"                             />
+
+    </Grid>
+</Page>
+
