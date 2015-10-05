@@ -47,28 +47,25 @@ namespace TPCWare.SQLiteTest
 
             cHome.Items.Add("IsiNdebele");
             cHome.Items.Add("English");
-            cHome.Items.Add("IsiNdebele");
-            cHome.Items.Add("English");
-            cHome.Items.Add("IsiNdebele");
-            cHome.Items.Add("English");
-            cHome.Items.Add("English");
-            cHome.Items.Add("IsiNdebele");
-            cHome.Items.Add("English");
-            cHome.Items.Add("IsiNdebele");
-            cHome.Items.Add("English");
+            cHome.Items.Add("AFRIKAANS (1ST LANGUAGE)");
+            cHome.Items.Add("SESOTHO (FIRST LANGUAGE)");
+            cHome.Items.Add("ZULU (1ST LANGUAGE)");
+            cHome.Items.Add("XHOSA (1ST LANGUAGE)");
+            cHome.Items.Add("VENDA (1ST LANGUAGE)");
+            cHome.Items.Add("TSWANA (1ST LANGUAGE)");
+            cHome.Items.Add("TSONGA (1ST LANGUAGE)");
+            cHome.Items.Add("SWAZI (1ST LANGUAGE)");
+            cHome.Items.Add("SEPEDI (FIRST LANGUAGE)");
 
 
-            cFirst.Items.Add("English");
             cFirst.Items.Add("IsiNdebele");
             cFirst.Items.Add("English");
-            cFirst.Items.Add("IsiNdebele");
-            cFirst.Items.Add("English");
-            cFirst.Items.Add("English");
-            cFirst.Items.Add("IsiNdebele");
-            cFirst.Items.Add("English");
-            cFirst.Items.Add("IsiNdebele");
-            cFirst.Items.Add("English");
-
+            cFirst.Items.Add("AFRIKAANS (1ST LANGUAGE)");
+            cFirst.Items.Add("SESOTHO (FIRST LANGUAGE)");
+            cFirst.Items.Add("ZULU (1ST LANGUAGE)");
+            cFirst.Items.Add("RUSSIAN");
+            cFirst.Items.Add("PORTUGESE");
+          
             cMaths.Items.Add("English");
             cMaths.Items.Add("IsiNdebele");
             cMaths.Items.Add("English");
@@ -91,8 +88,8 @@ namespace TPCWare.SQLiteTest
             cLifeO.Items.Add("IsiNdebele");
             cLifeO.Items.Add("English");
 
-            cSubject5.Items.Add("English");
-            cSubject5.Items.Add("IsiNdebele");
+            cSubject5.Items.Add("ENGINEERING SCIENCE N4");
+            cSubject5.Items.Add("ENVIRONMENTAL SCIENCE A SUBSID");
             cSubject5.Items.Add("English");
             cSubject5.Items.Add("IsiNdebele");
             cSubject5.Items.Add("English");
@@ -107,21 +104,21 @@ namespace TPCWare.SQLiteTest
             cSubject5.Items.Add("IsiNdebele");
             cSubject5.Items.Add("English");
 
-            cSubject6.Items.Add("English");
-            cSubject6.Items.Add("IsiNdebele");
-            cSubject6.Items.Add("English");
-            cSubject6.Items.Add("IsiNdebele");
-            cSubject6.Items.Add("English");
-            cSubject6.Items.Add("English");
-            cSubject6.Items.Add("IsiNdebele");
-            cSubject6.Items.Add("English");
-            cSubject6.Items.Add("IsiNdebele");
-            cSubject6.Items.Add("English");
-            cSubject6.Items.Add("English");
-            cSubject6.Items.Add("IsiNdebele");
-            cSubject6.Items.Add("English");
-            cSubject6.Items.Add("IsiNdebele");
-            cSubject6.Items.Add("English");
+            cSubject6.Items.Add("COMPUTER SCIENCE");
+            cSubject6.Items.Add("CIVIL TECHNOLOGY");
+            cSubject6.Items.Add("CONCRETE STRUCTURE");
+            cSubject6.Items.Add("BUSINESS AFRIKAANS N2");
+            cSubject6.Items.Add("BOOKKEEPING AND COMMERCIAL ARC");
+            cSubject6.Items.Add("APPLIED SCIENCE III");
+            cSubject6.Items.Add("APPLIED PHYSIOLOGY");
+            cSubject6.Items.Add("ANATOMY AND MUSIC");
+            cSubject6.Items.Add("AIRCRAFT ELECTRICAL THEORY N3");
+            cSubject6.Items.Add("2-D DESIGN N2");
+            cSubject6.Items.Add("ABATTOIR HYGIENE N3");
+            cSubject6.Items.Add("AFRIKAANSE LITERATURE");
+            cSubject6.Items.Add("AGRICULTURAL SCIENCES");
+            cSubject6.Items.Add("APPLIED GENTS' HAIRDRESSING N3");
+            cSubject6.Items.Add("ART DESIGN");
            
          
 
@@ -134,35 +131,56 @@ namespace TPCWare.SQLiteTest
 
         private async void calculate_Click(object sender, RoutedEventArgs e)
         {
-
-            int homeL = Int32.Parse(txtHomeL.Text);
-            int fisrtL = Int32.Parse(txtFirstEL.Text);
-            int maths = Int32.Parse(txtMaths.Text);
-            int lifeO = Int32.Parse(txtLifeO.Text);
-            int subject5 = Int32.Parse(txtSubject5.Text);
-            int subject6 = Int32.Parse(txtSubject6.Text);
-
+            
+              
+            
+            try
+            {
+                if (string.IsNullOrWhiteSpace(txtHomeL.Text) || string.IsNullOrWhiteSpace(txtFirstEL.Text) || string.IsNullOrWhiteSpace(txtMaths.Text) || string.IsNullOrWhiteSpace(txtLifeO.Text) || string.IsNullOrWhiteSpace(txtSubject5.Text) || string.IsNullOrWhiteSpace(txtSubject6.Text))
+            {
+                MessageBox("Please fill all the fields with the required value");
+                   
+                }
           
+                      
+  
+               else
+               {
+                   int homeL = Int32.Parse(txtHomeL.Text);
+                   int fisrtL = Int32.Parse(txtFirstEL.Text);
+                   int maths = Int32.Parse(txtMaths.Text);
+                   int lifeO = Int32.Parse(txtLifeO.Text);
+                   int subject5 = Int32.Parse(txtSubject5.Text);
+                   int subject6 = Int32.Parse(txtSubject6.Text);
+
+                   aps = homeL + fisrtL + maths + subject5 + subject6;
 
 
+                   SQLiteAsyncConnection connection = new SQLiteAsyncConnection("institutionFinder.db");
+                   var users = await connection.QueryAsync<Courses>("Select courses FROM Courses where Id = " + aps + "");
 
-            aps = homeL + fisrtL + maths  + subject5 + subject6;
+                   if (users != null)
+                   {
+                       foreach (var obj in users)
+                       {
+                           qualifyFor.Items.Add("Your APS is " + aps + " Excluding Life Orientation. You Qualify for " + obj.courses);
+                       }
+                   }
+                   else
+                   {
+                       qualifyFor.Items.Add("You dont Qualify to study at" + part);
+                   }
+
+               }
+            }catch(Exception ex)
+            {
+              
+            }
 
 
-            SQLiteAsyncConnection connection = new SQLiteAsyncConnection("institutionFinder.db");
-            var users = await connection.QueryAsync<Courses>("Select courses FROM Courses where Id = " + aps + "");
             // Get users
            
-            if (users != null)
-            {
-                foreach (var obj in users)
-                {
-                    qualifyFor.Items.Add("Your APS is "+aps+" Excluding Life Orientation. You Qualify for " + obj.courses);
-                }
-            }
-            else {
-                qualifyFor.Items.Add("You dont Qualify to study at" + part);
-            }
+           
            
           //  this.Frame.Navigate(typeof(QualifyCourses), aps);
 

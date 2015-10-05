@@ -276,3 +276,15 @@ C:\Users\Mod\Desktop\usb\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.Windows\ob
 C:\Users\Mod\Desktop\usb\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.Windows\obj\x86\Debug\qualifiers.txt.intermediate
 C:\Users\Mod\Desktop\usb\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.Windows\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Mod\Desktop\usb\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.Windows\obj\x86\Debug\ProjectArchitectures.txt
+C:\Users\Mod\Desktop\usb\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.Windows\obj\x86\Debug\Calculate.g.i.cs
+C:\Users\Mod\Desktop\usb\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.Windows\obj\x86\Debug\Calculate.g.cs
+C:\Users\Mod\Desktop\usb\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.Windows\obj\x86\Debug\GetDirections.g.i.cs
+C:\Users\Mod\Desktop\usb\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.Windows\obj\x86\Debug\GetDirections.g.cs
+C:\Users\Mod\Desktop\usb\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.Windows\obj\x86\Debug\QualifyCourses.g.i.cs
+C:\Users\Mod\Desktop\usb\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.Windows\obj\x86\Debug\QualifyCourses.g.cs
+C:\Users\Mod\Desktop\usb\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.Windows\obj\x86\Debug\GetDirections.xaml
+C:\Users\Mod\Desktop\usb\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.Windows\obj\x86\Debug\GetDirections.xbf
+C:\Users\Mod\Desktop\usb\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.Windows\obj\x86\Debug\Calculate.xaml
+C:\Users\Mod\Desktop\usb\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.Windows\obj\x86\Debug\QualifyCourses.xaml
+C:\Users\Mod\Desktop\usb\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.Windows\obj\x86\Debug\Calculate.xbf
+C:\Users\Mod\Desktop\usb\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.Windows\obj\x86\Debug\QualifyCourses.xbf
