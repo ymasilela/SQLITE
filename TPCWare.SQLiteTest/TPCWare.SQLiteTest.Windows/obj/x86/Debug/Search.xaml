@@ -7,13 +7,10 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Margin="0,0.333,0,213.667">
-        <Grid.Background>
-            <ImageBrush Stretch="Fill" ImageSource="ViewModels/down1.png"/>
-        </Grid.Background>
-        <TextBlock HorizontalAlignment="Left" Margin="10,17,0,0" TextWrapping="Wrap" Text="Institution Finder App" VerticalAlignment="Top" FontSize="36" Height="79" FontWeight="Bold" Width="380"/>
-        <Button x:ConnectionId='1' Content="Universities" HorizontalAlignment="Left" Margin="23,442,0,-113" VerticalAlignment="Top" Width="363"                        Height="97" Foreground="#FF0F0F0F" Background="#FF27996F"/>
-        <Button x:ConnectionId='2' Content="&#xD;&#xA;FET Colleges&#xA;" HorizontalAlignment="Left" Margin="23,542,0,-212" VerticalAlignment="Top" Width="361" Height="96"                        Background="#FF27996F" Foreground="#FF151515"/>
+    <Grid  Background="#FFFBFBFB" Margin="0,0,0,0">
+        <Button x:ConnectionId='1' Content="Universities" HorizontalAlignment="Left" Margin="687,509,0,0" VerticalAlignment="Top" Width="378"                        Height="160" Foreground="#FF0F0F0F" Background="#FF27996F" BorderBrush="#FF0F0F0F" FontSize="36"/>
+        <Button x:ConnectionId='2' Content="&#xD;&#xA;FET Colleges&#xA;" HorizontalAlignment="Left" Margin="202,509,0,0" VerticalAlignment="Top" Width="378" Height="160"                        Background="#FF27996F" Foreground="#FF151515" BorderBrush="#FF0F0F0F" FontSize="36"/>
+        <Image x:Name="img" HorizontalAlignment="Left" Height="293" VerticalAlignment="Top" Width="400" Margin="440,98,0,0"/>
 
     </Grid>
 </Page>

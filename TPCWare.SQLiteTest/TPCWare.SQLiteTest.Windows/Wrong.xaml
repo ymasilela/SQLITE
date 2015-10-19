@@ -9,8 +9,7 @@
 
     <Grid Background="#FFFDFCFC">
         <ListView x:Name="UserLists" HorizontalAlignment="Left" Height="661" Margin="33,44,0,0" VerticalAlignment="Top" Width="1054" Foreground="#FF080808"/>
-        <Button x:ConnectionId='1' Content="Back" HorizontalAlignment="Left" Margin="1135,115,0,0" VerticalAlignment="Top" Width="224"                      Foreground="#FF060606" Background="#FF27996F" BorderBrush="#FF060606" RenderTransformOrigin="3.19,0.907" Height="559" FontSize="40"/>
+        <Button Content="Back" HorizontalAlignment="Left" Margin="1135,115,0,0" VerticalAlignment="Top" Width="224" Click="Button_Click" Foreground="#FF060606" Background="#FF27996F" BorderBrush="#FF060606" RenderTransformOrigin="3.19,0.907" Height="559" FontSize="40"/>
 
     </Grid>
 </Page>
-

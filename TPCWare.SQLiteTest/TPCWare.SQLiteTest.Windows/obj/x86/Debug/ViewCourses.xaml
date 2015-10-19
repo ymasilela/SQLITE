@@ -7,16 +7,13 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid>
-        <Grid.Background>
-            <ImageBrush Stretch="Fill" ImageSource="ViewModels/down.png"/>
-        </Grid.Background>
-        <TextBlock HorizontalAlignment="Left" Margin="24,27,0,0" TextWrapping="Wrap" Text="Institution Finder App" VerticalAlignment="Top" FontSize="36" Height="62"/>
-        <TextBlock x:Name="label" HorizontalAlignment="Left" Margin="24,89,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Height="44" Width="369" Foreground="#FF27996F" FontWeight="Bold" FontStyle="Italic"/>
-        <Button x:ConnectionId='1' x:Name="Back_button" Content="Back" HorizontalAlignment="Left" Margin="10,582,0,0" VerticalAlignment="Top" Width="380"                           Background="#FF27996F" Foreground="#FF0A0909" Height="54"/>
-        <ListView x:ConnectionId='2' x:Name="viewcourses" HorizontalAlignment="Left" Height="398" Margin="20,154,0,0" VerticalAlignment="Top" IsEnabled="True"  Width="370"                                                 >
+    <Grid Background="#FFFDFBFB">
+        <TextBlock HorizontalAlignment="Left" Margin="422,23,0,0" TextWrapping="Wrap" Text="Institution Finder App" VerticalAlignment="Top" FontSize="36" Height="62" Width="380" Foreground="#FF040404" FontWeight="Bold"/>
+        <TextBlock x:Name="label" HorizontalAlignment="Left" Margin="422,105,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Height="44" Width="383" Foreground="#FF27996F" FontWeight="Bold"/>
+        <Button x:ConnectionId='1' x:Name="Back_button" Content="Back" HorizontalAlignment="Left" Margin="1090,186,0,0" VerticalAlignment="Top" Width="256"                           Background="#FF27996F" Foreground="#FF0A0909" Height="532" BorderBrush="#FF060606" FontSize="36"/>
+        <ListView x:ConnectionId='2' x:Name="viewcourses" HorizontalAlignment="Left" Height="526" Margin="10,189,0,0" VerticalAlignment="Top" IsEnabled="True"  Width="1037"                                                 Foreground="#FF040404" >
             <ListView.ItemTemplate>
-            
+
                 <DataTemplate>
                     <StackPanel Margin="10">
                         <TextBlock Text="{Binding courses}" />

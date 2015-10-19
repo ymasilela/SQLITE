@@ -16,8 +16,8 @@
         </Grid.ColumnDefinitions>
 
 
-        <Button x:ConnectionId='1' x:Name="back_button" Content="Back" HorizontalAlignment="Left" Margin="337,428,0,0" VerticalAlignment="Top"                        Width="209" Foreground="#FF0A0A0A" Background="#FF27996F" BorderBrush="#FF060606" Grid.Column="2" Height="172" FontSize="36"/>
-        <Button x:ConnectionId='2' x:Name="tbOutputTexts" Content="Get Directions" Grid.Column="2" HorizontalAlignment="Left" Margin="337,204,0,0" VerticalAlignment="Top"                            Background="#FF27996F" BorderBrush="#FF060606" Foreground="#FF040404" Height="175" Width="209" FontSize="27"/>
+        <Button x:Name="back_button" Content="Back" HorizontalAlignment="Left" Margin="337,428,0,0" VerticalAlignment="Top" Click="Button_Click_1" Width="209" Foreground="#FF0A0A0A" Background="#FF27996F" BorderBrush="#FF060606" Grid.Column="2" Height="172" FontSize="36"/>
+        <Button x:Name="tbOutputTexts" Content="Get Directions" Grid.Column="2" HorizontalAlignment="Left" Margin="337,204,0,0" VerticalAlignment="Top" Click="tbOutputText_Click" Background="#FF27996F" BorderBrush="#FF060606" Foreground="#FF040404" Height="175" Width="209" FontSize="27"/>
 
 
 
@@ -25,4 +25,3 @@
     </Grid>
 
 </Page>
-

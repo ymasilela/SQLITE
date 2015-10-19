@@ -112,7 +112,54 @@
     </SDKReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Calculate.xaml.cs">
+      <DependentUpon>Calculate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GetDirections.xaml.cs">
+      <DependentUpon>GetDirections.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Campuses.cs" />
+    <Compile Include="Model\College.cs" />
+    <Compile Include="Model\Courses.cs" />
+    <Compile Include="Model\Universities.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QualifyCourses.xaml.cs">
+      <DependentUpon>QualifyCourses.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Search.xaml.cs">
+      <DependentUpon>Search.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SearchCollege.xaml.cs">
+      <DependentUpon>SearchCollege.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SearchPage.xaml.cs">
+      <DependentUpon>SearchPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SQLite.cs" />
+    <Compile Include="SQLiteAsync.cs" />
+    <Compile Include="ViewCourses.xaml.cs">
+      <DependentUpon>ViewCourses.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewLocation.xaml.cs">
+      <DependentUpon>ViewLocation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModels\CampusModels.cs" />
+    <Compile Include="ViewModels\U_Models.cs" />
+    <Compile Include="ViewPage.xaml.cs">
+      <DependentUpon>ViewPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewPDF.xaml.cs">
+      <DependentUpon>ViewPDF.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Wrong.xaml.cs">
+      <DependentUpon>Wrong.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -126,6 +173,100 @@
     <Content Include="Assets\SmallLogo.scale-100.png" />
     <Content Include="Assets\SplashScreen.scale-100.png" />
     <Content Include="Assets\StoreLogo.scale-100.png" />
+    <Content Include="ViewModels\buffalo.jpg" />
+    <Content Include="ViewModels\cape.jpg" />
+    <Content Include="ViewModels\central.jpg" />
+    <Content Include="ViewModels\down.png" />
+    <Content Include="ViewModels\down1.png" />
+    <Content Include="ViewModels\downs.png" />
+    <Content Include="ViewModels\dut.png" />
+    <Content Include="ViewModels\Elangeni-College.jpg" />
+    <Content Include="ViewModels\False.png" />
+    <Content Include="ViewModels\Gold-Fields-FET-College.jpg" />
+    <Content Include="ViewModels\Ikhala.jpeg" />
+    <Content Include="ViewModels\images.png" />
+    <Content Include="ViewModels\king.jpg" />
+    <Content Include="ViewModels\main.jpg" />
+    <Content Include="ViewModels\majuba.jpeg" />
+    <Content Include="ViewModels\map.jpg" />
+    <Content Include="ViewModels\Nkangala-FET-College.jpg" />
+    <Content Include="ViewModels\nmmu.jpg" />
+    <Content Include="ViewModels\pic.jpg" />
+    <Content Include="ViewModels\Port-Elizabeth.jpg" />
+    <Content Include="ViewModels\sedibeng.jpg" />
+    <Content Include="ViewModels\sekhukhune.jpg" />
+    <Content Include="ViewModels\sol.jpg" />
+    <Content Include="ViewModels\south-Cape.jpg" />
+    <Content Include="ViewModels\Thekwini-FET-College.jpg" />
+    <Content Include="ViewModels\tnc.jpg" />
+    <Content Include="ViewModels\tut.jpg" />
+    <Content Include="ViewModels\uct.jpg" />
+    <Content Include="ViewModels\uj.jpg" />
+    <Content Include="ViewModels\UKZN.jpg" />
+    <Content Include="ViewModels\UL.jpg" />
+    <Content Include="ViewModels\UM.jpg" />
+    <Content Include="ViewModels\Unisa.png" />
+    <Content Include="ViewModels\unw.jpg" />
+    <Content Include="ViewModels\UP.jpg" />
+    <Content Include="ViewModels\US.jpg" />
+    <Content Include="ViewModels\UV.jpg" />
+    <Content Include="ViewModels\uwc.jpg" />
+    <Content Include="ViewModels\vaal.png" />
+    <Content Include="ViewModels\Walter-Sisulu.jpg" />
+    <Content Include="ViewModels\wits.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="Calculate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GetDirections.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="QualifyCourses.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Search.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SearchCollege.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SearchPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ViewCourses.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ViewLocation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ViewPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ViewPDF.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Wrong.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
     <VisualStudioVersion>12.0</VisualStudioVersion>

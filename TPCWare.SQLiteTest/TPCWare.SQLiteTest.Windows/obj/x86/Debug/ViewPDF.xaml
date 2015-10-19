@@ -7,14 +7,11 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Margin="0,-1.667,0,-0.333">
-        <Grid.Background>
-            <ImageBrush Stretch="Fill" ImageSource="ViewModels/down.png"/>
-        </Grid.Background>
+    <Grid Margin="0,-1.667,0,-0.333" Background="#FFFFFEFE">
 
-        <WebView x:ConnectionId='1' Name="webView1"                                        Height="557" VerticalAlignment="Top" HorizontalAlignment="Left" Width="400" Margin="0,6,0,0"/>
+        <WebView x:ConnectionId='1' Name="webView1"                                        Height="684" VerticalAlignment="Top" HorizontalAlignment="Left" Width="1075" Margin="28,55,0,0"/>
 
-        <Button x:ConnectionId='2' x:Name="back_web" Content="Back" HorizontalAlignment="Left" Margin="10,584,0,0" VerticalAlignment="Top" Width="380"                        Background="#FF27996F" Foreground="#FF171616" Height="46"/>
+        <Button x:ConnectionId='2' x:Name="back_web" Content="Back" HorizontalAlignment="Left" Margin="1129,135,0,0" VerticalAlignment="Top" Width="216"                        Background="#FF27996F" Foreground="#FF171616" Height="580" BorderBrush="#FF060606"/>
     </Grid>
 </Page>
 

@@ -1,1 +1,1 @@
-C:\Users\Mod\Desktop\usb\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.Windows\TPCWare.SQLiteTest.Windows.csproj;x86
+C:\Users\Mod\Desktop\usb\Project\SQLITE\TPCWare.SQLiteTest\TPCWare.SQLiteTest.Windows\TPCWare.SQLiteTest.Windows.csproj;x86
